@@ -8135,8 +8135,7 @@
   "answer": "D",
   "explain": "O rendimento da caderneta de poupança é calculado com base no menor saldo existente entre a data de aniversário da aplicação e o dia imediatamente anterior ao próximo aniversário. Assim, saques realizados antes do aniversário reduzem a base de cálculo dos juros, pois o rendimento incide sobre o menor saldo mantido no período.",
 },
-
-  {
+{
     "id": "Q1995420223088",
     "module": "Título II – Mercados de bolsa e de balcão",
     "chapter": "Capítulo III – Mercado de renda fixa",
