@@ -2657,7 +2657,7 @@ body{
     }
     
     /* =========================================================
-       Sistema de Simulado - ATUALIZADO COM EXCLUSÃO DE ALTERNATIVAS
+       Sistema de Simulado - CORRIGIDO
     ========================================================= */
     const sim = {
         queue: [],
@@ -2669,7 +2669,7 @@ body{
         corrected: false,
         timePerQuestion: 0,
         questionStartTime: null,
-        excludedOptions: {} // Nova propriedade para armazenar opções excluídas por questão
+        excludedOptions: {}
     };
     
     function startSimulado(config) {
@@ -2736,7 +2736,6 @@ body{
         
         const currentQuestion = sim.queue[sim.idx];
         if (!sim.selected) {
-            // Se não selecionou, marcar como errada
             sim.selected = "X";
         }
         
@@ -2761,20 +2760,26 @@ body{
         $("qDifficulty").textContent = current.level;
         $("qText").textContent = current.q;
         
+        // Recuperar a resposta salva
+        const savedAnswer = sim.answers[current.id];
+        sim.selected = savedAnswer?.selected || null;
+        sim.corrected = savedAnswer?.corrected || false;
+        
         // Atualizar progresso
         const progress = ((sim.idx) / total) * 100;
         $("progressBar").style.width = `${progress}%`;
         
-        // Resetar estado
-        sim.selected = sim.answers[current.id]?.selected || null;
-        sim.corrected = sim.answers[current.id]?.corrected || false;
+        // Iniciar timer para a questão
         sim.questionStartTime = Date.now();
         
-        // Atualizar botões - REMOVIDO O BLOQUEIO DO BOTÃO PRÓXIMA
+        // Atualizar botões
         $("btnPrev").disabled = sim.idx === 0;
-        $("btnNext").disabled = false; // SEMPRE ATIVO AGORA
+        $("btnNext").disabled = false;
         $("btnCorrect").disabled = sim.corrected || !sim.selected;
         $("btnFlag").classList.toggle("active", BookmarkManager.isBookmarked(current.id));
+        
+        // Atualizar dica superior
+        updateQuizHint(savedAnswer);
         
         // Limpar toast
         clearToast();
@@ -2794,6 +2799,7 @@ body{
             const optionDiv = document.createElement("div");
             optionDiv.className = `opt ${isExcluded ? 'excluded' : ''}`;
             
+            // MARCA COMO SELECIONADA SE FOI SALVA ANTERIORMENTE
             if (sim.selected === letter) optionDiv.classList.add("selected");
             if (sim.corrected) {
                 if (letter === current.answer) optionDiv.classList.add("correct");
@@ -2837,10 +2843,23 @@ body{
         $("qTimer").style.fontWeight = "";
     }
     
+    function updateQuizHint(savedAnswer) {
+        const hintElement = $("qHintTop");
+        if (savedAnswer?.selected && !savedAnswer?.corrected) {
+            hintElement.textContent = "✅ Alternativa selecionada (pode corrigir depois)";
+            hintElement.style.color = "var(--warn)";
+        } else if (savedAnswer?.corrected) {
+            hintElement.textContent = savedAnswer.correct ? "✓ Correta!" : "✗ Incorreta";
+            hintElement.style.color = savedAnswer.correct ? "var(--ok)" : "var(--bad)";
+        } else {
+            hintElement.textContent = "Selecione uma alternativa e clique em 'Corrigir'";
+            hintElement.style.color = "";
+        }
+    }
+    
     function selectOption(letter) {
         if (sim.corrected) return;
         
-        // Verificar se a opção está excluída
         const currentQuestion = sim.queue[sim.idx];
         const excluded = sim.excludedOptions[currentQuestion.id] || [];
         if (excluded.includes(letter)) {
@@ -2859,6 +2878,9 @@ body{
         });
         
         $("btnCorrect").disabled = false;
+        
+        // Atualizar dica
+        updateQuizHint(sim.answers[currentQuestion.id]);
     }
     
     function toggleExcludeOption(letter) {
@@ -2916,7 +2938,6 @@ body{
         
         // Atualizar botões
         $("btnCorrect").disabled = true;
-        // REMOVIDO: $("btnNext").disabled = false; // Já está sempre ativo
         
         // Mostrar resultado
         if (isCorrect) {
@@ -2930,8 +2951,19 @@ body{
             }
         }
         
+        // Atualizar dica
+        updateQuizHint(sim.answers[current.id]);
+        
         // Atualizar visual das opções
-        renderQuiz(); // Re-render para mostrar cores corretas
+        $$(".opt").forEach(opt => {
+            opt.classList.remove("correct", "wrong");
+            const letter = opt.querySelector(".letter").textContent.charAt(0);
+            if (letter === current.answer) {
+                opt.classList.add("correct");
+            } else if (letter === sim.selected) {
+                opt.classList.add("wrong");
+            }
+        });
         
         // Salvar sessão atualizada
         SessionManager.saveSession({
@@ -2945,23 +2977,39 @@ body{
     }
     
     function nextQuestion() {
-        // SEMPRE PERMITIR AVANÇAR, MESMO SEM CORRIGIR
-        // Se não corrigiu, marcar como não respondida
-        if (!sim.corrected && sim.idx < sim.queue.length - 1) {
-            const current = sim.queue[sim.idx];
+        // Salvar a resposta selecionada mesmo sem corrigir
+        const current = sim.queue[sim.idx];
+        
+        if (sim.selected && !sim.corrected) {
+            // Salvar a resposta selecionada
             if (!sim.answers[current.id]) {
                 sim.answers[current.id] = {
-                    selected: null,
+                    selected: sim.selected,
                     correct: false,
                     corrected: false,
                     timeSpent: Date.now() - sim.questionStartTime
                 };
+            } else {
+                // Atualizar se já existir
+                sim.answers[current.id].selected = sim.selected;
+                sim.answers[current.id].corrected = false;
+                sim.answers[current.id].timeSpent = Date.now() - sim.questionStartTime;
             }
-            // Não atualiza estatísticas se não foi corrigido
+        } else if (!sim.selected && !sim.answers[current.id]) {
+            // Salvar como não respondida
+            sim.answers[current.id] = {
+                selected: null,
+                correct: false,
+                corrected: false,
+                timeSpent: 0
+            };
         }
         
+        // Avançar para próxima questão
         sim.idx++;
+        
         if (sim.idx >= sim.queue.length) {
+            // Se chegou ao final, verificar se pode finalizar
             finishSimulado();
         } else {
             renderQuiz();
@@ -2974,31 +3022,77 @@ body{
         renderQuiz();
     }
     
-    function toggleBookmark() {
-        const current = sim.queue[sim.idx];
-        const added = BookmarkManager.toggleBookmark(current.id);
-        $("btnFlag").classList.toggle("active", added);
-        showToast(
-            added ? "⭐ Questão marcada para revisão" : "📝 Marcação removida",
-            "info"
-        );
+    function checkAllAnswered() {
+        const totalQuestions = sim.queue.length;
+        const answeredQuestions = sim.queue.filter(q => 
+            sim.answers[q.id]?.selected !== null && sim.answers[q.id]?.selected !== undefined
+        ).length;
+        
+        const unansweredQuestions = totalQuestions - answeredQuestions;
+        
+        if (unansweredQuestions > 0) {
+            // Encontrar questões não respondidas
+            const unansweredList = sim.queue
+                .filter(q => !sim.answers[q.id]?.selected && sim.answers[q.id]?.selected !== "")
+                .map((q, index) => `${sim.queue.indexOf(q) + 1}. ${q.theme}`)
+                .join('\n');
+            
+            showToast(
+                `❌ ${unansweredQuestions} questão(ões) sem resposta!\n\nPor favor, responda todas as questões antes de finalizar.`,
+                "bad",
+                5000
+            );
+            
+            // Voltar para primeira questão não respondida
+            const firstUnanswered = sim.queue.findIndex(q => !sim.answers[q.id]?.selected);
+            if (firstUnanswered >= 0) {
+                sim.idx = firstUnanswered;
+                renderQuiz();
+            }
+            return false;
+        }
+        
+        return true;
     }
     
     function finishSimulado() {
+        // Primeiro, salvar resposta da questão atual se houver seleção
+        const current = sim.queue[sim.idx];
+        if (sim.selected && !sim.corrected && !sim.answers[current.id]) {
+            sim.answers[current.id] = {
+                selected: sim.selected,
+                correct: false,
+                corrected: false,
+                timeSpent: Date.now() - sim.questionStartTime
+            };
+        }
+        
+        // Verificar se todas as questões foram respondidas
+        if (!checkAllAnswered()) {
+            return; // Impede o término do simulado
+        }
+        
         stopTimer();
         
         // Corrigir automaticamente questões não corrigidas
         const uncorrected = sim.queue.filter(q => !sim.answers[q.id]?.corrected);
         uncorrected.forEach(question => {
-            if (!sim.answers[question.id]) {
+            const answerRecord = sim.answers[question.id];
+            if (answerRecord && answerRecord.selected) {
+                // Verificar se a resposta selecionada está correta
+                answerRecord.correct = answerRecord.selected === question.answer;
+                answerRecord.corrected = true;
+                
+                // Atualizar estatísticas
+                StatsManager.updateQuestionStats(question.id, answerRecord.correct, answerRecord.timeSpent || 0);
+            } else {
+                // Se não tem resposta selecionada (não deveria acontecer após validação)
                 sim.answers[question.id] = {
                     selected: null,
                     correct: false,
                     corrected: true,
                     timeSpent: 0
                 };
-            } else {
-                sim.answers[question.id].corrected = true;
             }
         });
         
@@ -3035,6 +3129,23 @@ body{
         });
     }
     
+    function toggleBookmark() {
+        const current = sim.queue[sim.idx];
+        const added = BookmarkManager.toggleBookmark(current.id);
+        $("btnFlag").classList.toggle("active", added);
+        showToast(
+            added ? "⭐ Questão marcada para revisão" : "📝 Marcação removida",
+            "info"
+        );
+    }
+    
+    function stopTimer() {
+        if (sim.timerId) {
+            clearInterval(sim.timerId);
+            sim.timerId = null;
+        }
+    }
+    
     function showResults(results) {
         const content = $("resultsContent");
         const timePerQuestion = Math.round(results.totalTime / results.total / 1000);
@@ -3064,7 +3175,7 @@ body{
                     <div class="result-stat">
                         <div class="result-label">Acertos</div>
                         <div class="result-value">${results.correct}/${results.total}</div>
-                        <div class="muted">${results.autoCorrected > 0 ? `(${results.autoCorrected} não respondidas)` : 'Todas respondidas'}</div>
+                        <div class="muted">${results.autoCorrected > 0 ? `(${results.autoCorrected} corrigidas automaticamente)` : 'Todas corrigidas'}</div>
                     </div>
                     
                     <div class="result-stat">
@@ -3115,7 +3226,7 @@ body{
             </div>
         `;
         
-        $("resultsFooter").textContent = `Tempo total: ${formatTime(results.totalTime)} • ${results.autoCorrected > 0 ? `${results.autoCorrected} não respondidas` : 'Todas respondidas'}`;
+        $("resultsFooter").textContent = `Tempo total: ${formatTime(results.totalTime)} • ${results.autoCorrected > 0 ? `${results.autoCorrected} corrigidas automaticamente` : 'Todas corrigidas'}`;
         $("resultsBackdrop").classList.add("show");
         $("resultsBackdrop").setAttribute("aria-hidden", "false");
     }
@@ -3146,17 +3257,10 @@ body{
         }
         
         if (results.autoCorrected > 0) {
-            analysis.push(`⚠️ <b>${results.autoCorrected} questões não respondidas.</b> Tente responder todas na próxima.`);
+            analysis.push(`⚠️ <b>${results.autoCorrected} questões corrigidas automaticamente.</b> Lembre-se de corrigir manualmente para melhor aprendizado.`);
         }
         
         return analysis.map(item => `<div style="margin-bottom: 8px;">${item}</div>`).join('');
-    }
-    
-    function stopTimer() {
-        if (sim.timerId) {
-            clearInterval(sim.timerId);
-            sim.timerId = null;
-        }
     }
     
     /* =========================================================
@@ -3264,7 +3368,6 @@ body{
        Utilitários
     ========================================================= */
     function showToast(message, type = "info", duration = 3000) {
-        // 1) se estiver no quiz e existir qToast, usa ele
         const quizToast = $("qToast");
         if (quizToast) {
             quizToast.className = `toast show ${type}`;
@@ -3275,7 +3378,6 @@ body{
             return quizToast;
         }
         
-        // 2) fallback: toast global (Home / Histórico / Stats)
         const wrap = $("globalToast");
         const inner = $("globalToastInner");
         if (!wrap || !inner) return null;
