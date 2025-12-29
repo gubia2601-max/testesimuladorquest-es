@@ -8119,23 +8119,23 @@
     "answer": "A",
     "explain": "I e II estão corretos (prazo mínimo de 90 dias; se indexada a índice de preços, 12 meses). III é falso (não há prazo máximo definido)."
   },
-  {
-    "id": "Q1995420223081",
-    "module": "Título II – Mercados de bolsa e de balcão",
-    "chapter": "Capítulo III – Mercado de renda fixa",
-    "theme": "Poupança - Formato de rendimento",
-    "level": "Fácil",
-    "q": "”Poupança em 2022 renderá 80% do CDI”. Jornal Shark, 2022. A poupança, aplicação mais popular do nosso país, é sempre tema de jornais e revistas. Com relação ao formato de rendimento dos juros desse produto de investimento, assinale a alternativa correta:",
-    "options": {
-      "A": "Se dá pelo saldo médio das aplicações no período",
-      "B": "Se dá pelo maior saldo das aplicações no período",
-      "C": "É sempre 0,5% ao mês para pessoa física",
-      "D": "Se dá pelo menor saldo das aplicações do período"
-    },
-    "answer": "D",
-    "explain": "O rendimento da caderneta de poupança é calculado com base no menor saldo existente entre a data de aniversário e o dia imediatamente anterior ao próximo aniversário da aplicação.
-Ou seja: saques realizados antes do aniversário reduzem a base de cálculo dos juros, pois o rendimento incide sobre o menor saldo do período."
+{
+  "id": "Q1995420223081",
+  "module": "Título II – Mercados de bolsa e de balcão",
+  "chapter": "Capítulo III – Mercado de renda fixa",
+  "theme": "Poupança – Formato de rendimento",
+  "level": "Fácil",
+  "q": "”Poupança em 2022 renderá 80% do CDI”. Jornal Shark, 2022. A poupança, aplicação mais popular do país, é frequentemente tema de reportagens. Com relação ao formato de cálculo do rendimento desse produto de investimento, assinale a alternativa correta:",
+  "options": {
+    "A": "Se dá pelo saldo médio das aplicações no período",
+    "B": "Se dá pelo maior saldo das aplicações no período",
+    "C": "É sempre de 0,5% ao mês para pessoa física",
+    "D": "Se dá pelo menor saldo das aplicações do período"
   },
+  "answer": "D",
+  "explain": "O rendimento da caderneta de poupança é calculado com base no menor saldo existente entre a data de aniversário da aplicação e o dia imediatamente anterior ao próximo aniversário. Assim, saques realizados antes do aniversário reduzem a base de cálculo dos juros, pois o rendimento incide sobre o menor saldo mantido no período.",
+},
+
   {
     "id": "Q1995420223088",
     "module": "Título II – Mercados de bolsa e de balcão",
