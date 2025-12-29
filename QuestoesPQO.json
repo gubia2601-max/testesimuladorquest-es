@@ -415,22 +415,23 @@
     "module": "Título I – Aspectos institucionais",
     "chapter": "Capítulo I – Sistema Financeiro Nacional"
   },
-  {
-    "id": "Q0027",
-    "theme": "SFN e Participantes do Mercado",
-    "level": "Fácil",
-    "q": "O que é um \"Participante de Mercado\" em um contexto financeiro?",
-    "options": {
-      "A": "Um investidor individual.",
-      "B": "Uma instituição financeira que auxilia na liquidez e funcionamento do mercado.",
-      "C": "Uma organização governamental responsável por regular o mercado financeiro.",
-      "D": "Uma empresa que emite títulos financeiros."
-    },
-    "answer": "B",
-    "explain": "Participante de mercado (no sentido operacional) é quem atua viabilizando negociação/liquidez e a infraestrutura do mercado (corretoras, bancos, dealers etc.).",
-    "module": "Título I – Aspectos institucionais",
-    "chapter": "Capítulo I – Sistema Financeiro Nacional"
+ {
+  "id": "Q024SD5",
+  "theme": "Mercado Financeiro | Estrutura e Participantes",
+  "level": "Fácil",
+  "q": "Em um contexto financeiro, o termo \"Participante de Mercado\" refere-se, de forma geral, a:",
+  "options": {
+    "A": "Um investidor individual que realiza aplicações esporádicas",
+    "B": "Uma instituição financeira que atua no funcionamento, na intermediação e na liquidez do mercado",
+    "C": "Uma organização governamental responsável por regular o mercado financeiro",
+    "D": "Uma empresa emissora de títulos e valores mobiliários"
   },
+  "answer": "B",
+  "explain": "Participantes de mercado são, em geral, instituições autorizadas a atuar nos sistemas de negociação, compensação, liquidação, custódia ou intermediação, contribuindo para o funcionamento ordenado e para a liquidez do mercado financeiro. Investidores, reguladores e emissores possuem papéis distintos.",
+  "module": "Título I – Aspectos institucionais",
+  "chapter": "Capítulo I – Sistema financeiro e participantes"
+},
+
   {
     "id": "Q0028",
     "theme": "SFN e Participantes do Mercado | Infraestrutura do SFN",
@@ -2307,12 +2308,12 @@
     "id": "Q0145",
     "theme": "Compliance | LGPD",
     "level": "Difícil",
-    "q": "Qual pegadinha é comum sobre 'consentimento' na LGPD?",
+    "q": "No contexto da LGPD, um erro conceitual recorrente no mercado financeiro está relacionado ao uso do consentimento como base legal para o tratamento de dados pessoais. Assinale a alternativa que melhor corrige esse equívoco:",
     "options": {
-      "A": "Consentimento é a única base legal possível",
-      "B": "Consentimento pode ser uma base legal, mas não é necessária quando outra base legal adequada se aplica (ex.: obrigação legal/regulatória)",
-      "C": "Consentimento nunca pode ser revogado",
-      "D": "Consentimento dispensa dever de informar o titular"
+      "A": "O consentimento é exigido sempre que houver tratamento de dados pessoais, independentemente da finalidade.",
+      "B": "O consentimento é uma das bases legais possíveis, porém não é necessário quando o tratamento estiver amparado em outra base legal adequada, como obrigação legal ou regulatória.",
+      "C": "Uma vez concedido, o consentimento possui caráter irrevogável durante a vigência do relacionamento com o titular.",
+      "D": "A obtenção do consentimento exime o controlador do dever de transparência e informação ao titular."
     },
     "answer": "B",
     "explain": "Consentimento é só uma das bases. Em muitos cenários (cumprimento de obrigação legal/regulatória, execução de contrato), a instituição pode tratar dados sem depender de consentimento.",
@@ -2335,22 +2336,22 @@
     "module": "Título VIII – Compliance",
     "chapter": "Capítulo II – Proteção de dados pessoais e privacidade"
   },
-  {
-    "id": "Q0147",
-    "theme": "Compliance | PLD/FTP",
-    "level": "Difícil",
-    "q": "Um sinal de alerta operacional citado em listas de PLD é quando há operações entre as mesmas partes com seguidos ganhos/perdas para um dos envolvidos. Por quê?",
-    "options": {
-      "A": "Porque indica estratégia normal de longo prazo",
-      "B": "Porque pode sugerir transferência disfarçada de recursos (gerando ganho para um e perda para outro sem fundamento econômico)",
-      "C": "Porque elimina risco de mercado",
-      "D": "Porque é obrigatório em day trade"
-    },
-    "answer": "B",
-    "explain": "Se um lado ganha sempre e o outro perde sempre sem justificativa econômica, pode ser mecanismo para deslocar dinheiro e 'limpar' origem/destino via mercado.",
-    "module": "Título VIII – Compliance",
-    "chapter": "Capítulo I – PLD/FTP"
+{
+  "id": "Q9748",
+  "theme": "Renda Fixa | Tributação",
+  "level": "Médio",
+  "q": "Para um investidor pessoa física que busca compor sua carteira com aplicações de renda fixa que ofereçam rendimento isento de Imposto de Renda, é correto recomendar:",
+  "options": {
+    "A": "Letra Hipotecária",
+    "B": "Letra de Câmbio",
+    "C": "Letra de Crédito Imobiliário (LCI)",
+    "D": "Recibo de Depósito Bancário"
   },
+  "answer": "C",
+  "explain": "A Letra de Crédito Imobiliário (LCI) possui isenção de Imposto de Renda para pessoas físicas, conforme legislação vigente. Já a Letra Hipotecária, a Letra de Câmbio e o Recibo de Depósito Bancário são tributados pela tabela regressiva do IR.",
+  "module": "Título II – Mercados de renda fixa",
+  "chapter": "Capítulo VIII – Tributação do mercado financeiro"
+},
   {
     "id": "Q0148",
     "theme": "Negociação | Ordens",
@@ -2723,15 +2724,15 @@
     "id": "Q0171",
     "theme": "Estrutura de contas e cadastro | Intermediação",
     "level": "Médio",
-    "q": "Por que o investidor, em regra, acessa o mercado via instituição intermediária?",
+    "q": "No mercado de capitais brasileiro, o acesso do investidor às negociações ocorre, em regra, por meio de instituições intermediárias. Essa estrutura existe principalmente porque:",
     "options": {
-      "A": "Porque a B3 proíbe qualquer operação de pessoa física",
-      "B": "Porque o intermediário executa KYC/controles e assume responsabilidades operacionais e regulatórias",
-      "C": "Porque elimina risco de mercado",
-      "D": "Porque dispensa regras de custódia e registro"
+      "A": "A negociação direta é permitida apenas para investidores institucionais e estrangeiros",
+      "B": "As instituições intermediárias realizam controles como KYC, prevenção à lavagem de dinheiro, além de assumirem responsabilidades operacionais, regulatórias e de custódia das operações",
+      "C": "A intermediação garante rentabilidade mínima ao investidor, independentemente do ativo negociado",
+      "D": "A atuação do intermediário substitui a necessidade de registro das operações nos sistemas de mercado"
     },
     "answer": "B",
-    "explain": "O intermediário é o canal de acesso e controle: cadastro, adequação, PLD, execução e rotinas operacionais exigidas pelo mercado.",
+    "explain": "As instituições intermediárias atuam como gatekeepers do mercado, sendo responsáveis pela execução de controles regulatórios (como KYC, PLD/FT), pela operacionalização das ordens, pelo cumprimento das normas da B3 e da CVM e pela adequada custódia e registro das operações. Essa estrutura assegura a integridade, a rastreabilidade e o funcionamento ordenado do mercado.",
     "module": "Título III – Estrutura de contas e cadastro",
     "chapter": "Capítulo I – Cadastro de investidores residentes"
   },
@@ -3344,21 +3345,23 @@
     "chapter": "Capítulo I – Mercado de renda variável"
   },
   {
-    "id": "Q0210",
-    "theme": "Mercado de renda variável | FIIs",
-    "level": "Médio",
-    "q": "Qual característica costuma ser associada a FIIs na prova (pegadinha de tributação)?",
-    "options": {
-      "A": "Sempre isentos de qualquer imposto",
-      "B": "Podem ter rendimentos distribuídos com tratamento tributário específico, mas ganho de capital na venda pode ser tributado",
-      "C": "Não podem ser negociados em bolsa",
-      "D": "Não possuem risco de mercado por investirem em imóveis"
-    },
-    "answer": "B",
-    "explain": "Distribuição pode ter tratamento diferenciado, mas venda de cotas pode gerar tributação. Além disso, FIIs oscilam e têm risco de mercado.",
-    "module": "Título II – Mercados de bolsa e de balcão",
-    "chapter": "Capítulo I – Mercado de renda variável"
+  {
+  "id": "Q0210",
+  "theme": "Fundos de Investimento | Tributação",
+  "level": "Médio",
+  "q": "Em provas sobre mercado financeiro, uma pegadinha recorrente relacionada à tributação dos Fundos de Investimento Imobiliário (FIIs) está associada ao fato de que:",
+  "options": {
+    "A": "Os FIIs são sempre isentos de qualquer tipo de imposto para a pessoa física",
+    "B": "Os rendimentos distribuídos podem ter tratamento tributário específico, porém o ganho de capital na venda das cotas pode ser tributado",
+    "C": "As cotas de FIIs não podem ser negociadas em mercados organizados",
+    "D": "Os FIIs não apresentam risco de mercado por investirem majoritariamente em imóveis"
   },
+  "answer": "B",
+  "explain": "Na pessoa física, os rendimentos distribuídos por FIIs podem ser isentos de IR, desde que atendidos os requisitos legais. Contudo, o ganho de capital obtido na venda das cotas em bolsa é tributado, em regra, à alíquota de 20%. A confusão entre rendimentos isentos e tributação na alienação das cotas é uma pegadinha frequente em provas.",
+  "module": "Título II – Mercados de capitais",
+  "chapter": "Capítulo V – Fundos de investimento"
+},
+
   {
     "id": "Q0211",
     "theme": "Mercado de derivativos | Conceitos",
@@ -4147,12 +4150,12 @@
     "id": "Q0260",
     "theme": "Cadastro | Atualização cadastral",
     "level": "Médio",
-    "q": "A atualização cadastral é importante porque:",
+    "q": "A atualização cadastral periódica dos clientes, exigida pelas normas de compliance e prevenção à lavagem de dinheiro, tem como principal objetivo:",
     "options": {
-      "A": "Muda a taxa SELIC",
-      "B": "Mantém rastreabilidade e qualidade de KYC, reduzindo fraude e falhas de comunicação",
-      "C": "Elimina risco de mercado",
-      "D": "Garante crédito automático"
+      "A": "Ajustar automaticamente o perfil de risco do investidor conforme o mercado",
+      "B": "Garantir a qualidade do processo de KYC, a rastreabilidade das operações e a mitigação de riscos operacionais e de fraude",
+      "C": "Reduzir a volatilidade das carteiras administradas",
+      "D": "Substituir a necessidade de monitoramento contínuo das operações"
     },
     "answer": "B",
     "explain": "Dados atualizados sustentam PLD/FTP, contato, validações e detecção de inconsistências — sem isso, controles ficam cegos.",
@@ -4719,17 +4722,22 @@
     "module": "Título IV – Gestão de risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara"
   },
-  {
-    "id": "Q0296",
-    "theme": "Risco corporativo | Cultura",
-    "level": "Médio",
-    "q": "Por que 'tom do topo' (tone at the top) é tão enfatizado em controles internos?",
-    "options": {
-      "A": "Porque substitui qualquer procedimento",
-      "B": "Porque a cultura definida pela liderança influencia aderência real a controles e ética no dia a dia",
-      "C": "Porque elimina auditoria",
-      "D": "Porque garante lucro"
-    },
+ {
+  "id": "Q0296",
+  "theme": "Compliance | Controles Internos e Governança",
+  "level": "Médio",
+  "q": "No contexto de governança corporativa e controles internos, o conceito de \"tone at the top\" é frequentemente enfatizado porque:",
+  "options": {
+    "A": "Permite substituir políticas, procedimentos formais e mecanismos de controle",
+    "B": "A cultura e o exemplo estabelecidos pela alta administração influenciam diretamente a efetividade dos controles, a conduta ética e a aderência às normas no dia a dia",
+    "C": "Dispensa a necessidade de auditorias internas e externas",
+    "D": "Assegura automaticamente melhores resultados financeiros à organização"
+  },
+  "answer": "B",
+  "explain": "O \"tone at the top\" reflete o compromisso real da alta administração com ética, conformidade e controles internos. Quando a liderança demonstra, na prática, respeito às regras e aos valores institucionais, isso influencia o comportamento dos colaboradores e aumenta a efetividade dos controles. Sem esse exemplo, políticas formais tendem a ser apenas simbólicas.",
+  "module": "Título VIII – Compliance",
+  "chapter": "Capítulo II – Controles Internos e Governança Corporativa"
+},
     "answer": "B",
     "explain": "Se liderança tolera atalhos, controles viram papel. Um tom forte sustenta comportamento e disciplina, reduzindo risco de fraude e falhas.",
     "module": "Título IV – Gestão de risco",
@@ -7237,22 +7245,22 @@
     "answer": "D",
     "explain": "I é falso (futuro tem ajuste diário). II é verdadeiro. III é verdadeiro (risco de contraparte é mitigado pela câmara). IV é verdadeiro."
   },
-  {
-    "id": "Q1995420213038",
-    "module": "Título II – Mercados de bolsa e de balcão",
-    "chapter": "Capítulo III – Mercado de renda fixa",
-    "theme": "IMA's - Índices",
-    "level": "Médio",
-    "q": "Sobre os IMA’s, assinale a alternativa incorreta: I. IMA-S = Selic II. IMA-B = IPCA III. IDkA = IGP-M IV. IRF-M = Prefixado",
-    "options": {
-      "A": "I",
-      "B": "II",
-      "C": "III",
-      "D": "IV"
-    },
-    "answer": "C",
-    "explain": "I está certo (IMA-S é Selic). II está certo (IMA-B é IPCA). III está errado (IDkA não existe; IGP-M é outro índice). IV está certo (IRF-M é prefixado)."
+ {
+  "id": "Q1995420213038",
+  "theme": "Renda Fixa | Índices ANBIMA (IMA)",
+  "level": "Médio",
+  "q": "Sobre os Índices de Mercado ANBIMA (IMA), assinale a alternativa incorreta:\nI. IMA-S está associado a títulos indexados à taxa Selic.\nII. IMA-B está associado a títulos indexados ao IPCA.\nIII. IDkA está associado a títulos indexados ao IGP-M.\nIV. IRF-M está associado a títulos prefixados.",
+  "options": {
+    "A": "I",
+    "B": "II",
+    "C": "III",
+    "D": "IV"
   },
+  "answer": "C",
+  "explain": "O IMA-S acompanha títulos indexados à taxa Selic, o IMA-B acompanha títulos indexados ao IPCA e o IRF-M acompanha títulos prefixados. O IDkA não é um índice atrelado ao IGP-M; trata-se de uma família de índices baseada na duração (duration-based), utilizada como benchmark para gestão de carteiras. Portanto, a afirmativa III está incorreta.",
+  "module": "Título II – Mercados de renda fixa",
+  "chapter": "Capítulo I – Índices e benchmarks de renda fixa"
+},
   {
     "id": "Q1995420213040",
     "module": "Título II – Mercados de bolsa e de balcão",
@@ -8131,7 +8139,8 @@
       "D": "Se dá pelo menor saldo das aplicações do período"
     },
     "answer": "D",
-    "explain": "A poupança rende com base no menor saldo do período (regra do menor saldo)."
+    "explain": "O rendimento da caderneta de poupança é calculado com base no menor saldo existente entre a data de aniversário e o dia imediatamente anterior ao próximo aniversário da aplicação.
+Ou seja: saques realizados antes do aniversário reduzem a base de cálculo dos juros, pois o rendimento incide sobre o menor saldo do período."
   },
   {
     "id": "Q1995420223088",
@@ -15517,22 +15526,23 @@
     "answer": "D",
     "explain": "O risco de crédito se materializa de duas formas principais: 1) Impontualidade (default técnico ou atraso nos pagamentos), que gera custos e interrupção de fluxo. 2) Perda efetiva do valor devido, que pode ser parcial (recuperação abaixo do valor devido) ou total (recuperação zero). A alternativa D é a mais completa, abrangendo ambas as dimensões."
   },
-  {
-    "id": "Q14076",
-    "module": "Título IV – Gestão de risco",
-    "chapter": "Capítulo I – Gestão de risco na Câmara",
-    "theme": "CORE - Perda Transitória",
-    "level": "Difícil",
-    "q": "Considerando os dados de fluxos de caixa resultantes de uma determinada simulação do encerramento de um portfólio e correspondentes garantias sob cada cenário de risco, serão calculadas as perdas potenciais. Marque a alternativa correta com relação a qual é a nomeclatura dada ao montante adicional de recursos necessários para que possa ser realizado o fluxo de pagamentos associados aos instrumentos nas datas de liquidação esperadas.",
-    "options": {
-      "A": "Perda potencial",
-      "B": "Perda permanente",
-      "C": "Perda agregada",
-      "D": "Perda transitória"
-    },
-    "answer": "D",
-    "explain": "A Perda Transitória, na metodologia CORE, refere-se aos custos de financiamento (como juros) ou descontos necessários para obter liquidez imediata durante o período de encerramento das posições. É o montante adicional necessário para viabilizar os fluxos de caixa nas datas exigidas, diferenciando-se da Perda Permanente, que é a perda inevitável de valor dos ativos no mercado."
+{
+  "id": "Q14076",
+  "theme": "Gestão de Risco | Câmara de Compensação e Liquidação",
+  "level": "Difícil",
+  "q": "Considerando os dados de fluxos de caixa resultantes de uma simulação de encerramento de um portfólio e as garantias correspondentes sob diferentes cenários de risco, são apuradas as perdas potenciais. Nesse contexto, qual é a denominação atribuída ao montante adicional de recursos necessário para viabilizar o cumprimento dos fluxos de pagamentos dos instrumentos nas datas de liquidação esperadas?",
+  "options": {
+    "A": "Perda potencial",
+    "B": "Perda permanente",
+    "C": "Perda agregada",
+    "D": "Perda transitória"
   },
+  "answer": "D",
+  "explain": "A perda transitória corresponde ao montante adicional de recursos necessário para cobrir descasamentos temporários de fluxo de caixa, permitindo que os pagamentos associados aos instrumentos financeiros sejam realizados nas datas de liquidação esperadas. Trata-se de uma necessidade temporária de liquidez, distinta da perda permanente, que representa impacto definitivo no valor econômico.",
+  "module": "Título IV – Gestão de risco",
+  "chapter": "Capítulo II – Risco de liquidez e encerramento de portfólio"
+},
+
   {
     "id": "Q14086",
     "module": "Título IV – Gestão de risco",
@@ -16813,22 +16823,23 @@
     "answer": "C",
     "explain": "A Câmara B3 atua como contraparte central apenas perante os Membros de Compensação (MC), que são os participantes diretamente vinculados a ela. Os MCs, por sua vez, são responsáveis perante seus clientes (PNPs, PLs, comitentes)."
   },
-  {
-    "id": "Q10042",
-    "module": "Título IV – Gestão de risco",
-    "chapter": "Capítulo I – Gestão de risco na Câmara",
-    "theme": "Defaulter Pays",
-    "level": "Difícil",
-    "q": "A componente da estrutura de salvaguardas cujos recursos só podem ser usados em caso de inadimplência do participante contribuinte é chamada de:",
-    "options": {
-      "A": "survivor pays.",
-      "B": "defaulter pays.",
-      "C": "third parties pay.",
-      "D": "modelo integrado."
-    },
-    "answer": "B",
-    "explain": "\"Defaulter Pays\" (o inadimplente paga) refere-se aos recursos específicos de um participante (como suas garantias depositadas) que só serão utilizados para cobrir suas próprias perdas em caso de sua inadimplência. Diferente de \"Survivor Pays\" (os sobreviventes pagam), que envolve um fundo mútuo."
+{
+  "id": "Q10042",
+  "theme": "Gestão de Risco | Estrutura de Salvaguardas",
+  "level": "Difícil",
+  "q": "No contexto da estrutura de salvaguardas de uma câmara de compensação e liquidação, a componente cujos recursos somente podem ser utilizados em caso de inadimplência do próprio participante que os aportou é denominada:",
+  "options": {
+    "A": "Survivor pays",
+    "B": "Defaulter pays",
+    "C": "Third parties pay",
+    "D": "Modelo integrado"
   },
+  "answer": "B",
+  "explain": "O princípio do \"defaulter pays\" estabelece que, em caso de inadimplência, devem ser utilizados prioritariamente os recursos do próprio participante inadimplente (como garantias e contribuições específicas), antes de qualquer mutualização de perdas entre os demais participantes do sistema.",
+  "module": "Título IV – Gestão de risco",
+  "chapter": "Defaulter Pays"
+},
+
   {
     "id": "Q10043",
     "module": "Título IV – Gestão de risco",
@@ -17824,21 +17835,22 @@
     "explain": "Maior volatilidade aumenta a probabilidade de exercício favorável."
   },
   {
-    "id": "QNEW0224",
-    "module": "Título II – Mercados de bolsa e de balcão",
-    "chapter": "Capítulo II – Mercado de derivativos",
-    "theme": "Opções | Prazo",
-    "level": "Médio",
-    "q": "De forma geral, maior prazo de uma opção implica:",
-    "options": {
-      "A": "Menor incerteza",
-      "B": "Maior valor temporal",
-      "C": "Menor volatilidade",
-      "D": "Menor prêmio sempre"
-    },
-    "answer": "B",
-    "explain": "Maior prazo aumenta o valor temporal da opção."
+  "id": "QNEW0224",
+  "theme": "Derivativos | Opções – Prazo e Precificação",
+  "level": "Médio",
+  "q": "De forma geral, o aumento do prazo até o vencimento de uma opção tende a implicar:",
+  "options": {
+    "A": "Menor incerteza quanto ao comportamento do ativo-objeto",
+    "B": "Maior valor temporal incorporado ao prêmio da opção",
+    "C": "Redução da volatilidade implícita do ativo-objeto",
+    "D": "Diminuição obrigatória do prêmio pago pela opção"
   },
+  "answer": "B",
+  "explain": "Quanto maior o prazo até o vencimento, maior é a incerteza sobre o comportamento futuro do ativo-objeto, o que eleva o valor temporal da opção. Esse componente do prêmio reflete a probabilidade adicional de a opção se tornar vantajosa antes do vencimento. Assim, opções com prazos mais longos tendem, em geral, a apresentar maior valor temporal.",
+  "module": "Título II – Mercados de bolsa e de balcão",
+  "chapter": "Opções | Prazo"
+},
+
   {
     "id": "QNEW0225",
     "module": "Título I – Aspectos institucionais",
@@ -17999,22 +18011,23 @@
     "answer": "D",
     "explain": "I - INCORRETA. A descrição se refere à CBLC, que hoje é a Câmara B3 (responsável por ações e renda fixa privada), NÃO à Câmara de Derivativos.\nII - CORRETA. A Câmara de Derivativos (antiga BM&F Clearing) foi criada com a BM&F em 1986 como SLC.\nIII - CORRETA. A Câmara de Câmbio foi criada pela BM&F em 2002, junto com o novo SPB.\nIV - INCORRETA. A Câmara de Ativos foi criada pela BM&F em 2001 (não 2004) para títulos públicos. Hoje suas funções estão integradas."
   },
-  {
-    "id": "Q14201",
-    "module": "Título VII – Central depositária",
-    "chapter": "Capítulo II – Processos operacionais da central depositária da B3",
-    "theme": "Carteira 2601-8 - Garantias",
-    "level": "Difícil",
-    "q": "Com fins a viabilizar os processos operacionais da câmara, as carteiras da central depositária da B3 são utilizadas por participantes e pela própria câmara, a carteira 2601-8:",
-    "options": {
-      "A": "É utilizada para fins de cobertura de termo",
-      "B": "É utilizada para fins de cobertura de opções",
-      "C": "É utilizada para fins de depósitos de garantias de participantes em favor da câmara",
-      "D": "É uma carteira livre"
-    },
-    "answer": "C",
-    "explain": "A carteira 2601-8 é uma carteira específica do sistema de custódia da B3 destinada à constituição de garantias (colateral). Nela, os participantes depositam ativos (ações, títulos, etc.) que ficam bloqueados e indisponíveis para outras operações, servindo como garantia para suas posições junto à Câmara B3."
+{
+  "id": "Q14201",
+  "theme": "Infraestrutura do Mercado | Central Depositária e Garantias",
+  "level": "Difícil",
+  "q": "Com o objetivo de viabilizar os processos operacionais da câmara, determinadas carteiras da central depositária da B3 são utilizadas por participantes e pela própria câmara. Nesse contexto, a carteira 2601-8:",
+  "options": {
+    "A": "É utilizada para fins de cobertura de operações a termo",
+    "B": "É utilizada para fins de cobertura de operações com opções",
+    "C": "É utilizada para fins de depósitos de garantias de participantes em favor da câmara",
+    "D": "É classificada como uma carteira livre, sem finalidade específica"
   },
+  "answer": "C",
+  "explain": "A carteira 2601-8 da central depositária da B3 é destinada ao depósito de garantias prestadas pelos participantes em favor da câmara de compensação e liquidação. Esses ativos ficam vinculados como colateral para cobertura de riscos das operações, não sendo carteiras livres nem específicas para cobertura direta de termo ou opções.",
+  "module": "Título VI – Câmara de compensação e liquidação",
+  "chapter": "Garantias e central depositária"
+},
+
   {
     "id": "Q14194",
     "module": "Título III – Estrutura de contas e cadastro",
@@ -18415,22 +18428,23 @@
     "answer": "A",
     "explain": "O informe de rendimentos para pessoa jurídica é gerado e enviado mensalmente pela B3, contendo informações sobre rendimentos de operações de empréstimo de ativos."
   },
-  {
-    "id": "Q14290",
-    "module": "Título VI – Câmara de compensação e liquidação",
-    "chapter": "Capítulo II – Processos operacionais da Câmara B3",
-    "theme": "Inadimplência - Transferência de Contratos",
-    "level": "Médio",
-    "q": "Em caso de inadimplência ou liquidação extrajudicial do participante de negociação pleno detentor da conta de intermediação, os contratos de empréstimo de ativos que compõem uma intermediação podem, a critério da câmara ou do liquidante, respectivamente, ser transferidos:",
-    "options": {
-      "A": "Ao participante de liquidação",
-      "B": "A um outro participante de negociação pleno",
-      "C": "Ao participante destino",
-      "D": "A um participante carrying"
-    },
-    "answer": "D",
-    "explain": "Em caso de inadimplência, os contratos podem ser transferidos a um participante carrying, que é um participante autorizado a assumir posições de participantes inadimplentes para garantir a continuidade das operações."
+ {
+  "id": "Q14290",
+  "theme": "Câmara de Compensação e Liquidação | Inadimplência",
+  "level": "Médio",
+  "q": "Em caso de inadimplência ou de liquidação extrajudicial do participante de negociação pleno detentor da conta de intermediação, os contratos de empréstimo de ativos que compõem uma intermediação podem, a critério da câmara ou do liquidante, respectivamente, ser transferidos:",
+  "options": {
+    "A": "Ao participante de liquidação",
+    "B": "A um outro participante de negociação pleno",
+    "C": "Ao participante destino",
+    "D": "A um participante carrying"
   },
+  "answer": "B",
+  "explain": "Nas regras da câmara de compensação e liquidação, diante da inadimplência ou da liquidação extrajudicial de um participante de negociação pleno, é possível a transferência dos contratos de empréstimo de ativos para outro participante de negociação pleno. Essa medida busca assegurar a continuidade operacional, mitigar riscos e preservar a estabilidade do sistema de compensação e liquidação.",
+  "module": "Título VI – Câmara de compensação e liquidação",
+  "chapter": "Inadimplência – Transferência de Contratos"
+},
+
   {
     "id": "Q14288",
     "module": "Título VI – Câmara de compensação e liquidação",
