@@ -1116,7 +1116,7 @@ body{
   background: #fff;
 }
 
-/* ===== Login “cara de login” ===== */
+/* ===== Login "cara de login" ===== */
 .login-shell{
   width: min(980px, calc(100% - 24px));
   display:grid;
@@ -1201,6 +1201,209 @@ body{
   .quiz-body{ padding: 16px; }
   .quiz-foot{ padding: 16px; }
 }
+
+/* ===== Wizard com rolagem interna e footer sempre visível ===== */
+#wizardBackdrop .modal{
+  display:flex;
+  flex-direction:column;
+  max-height: 90vh;
+}
+
+#wizardBackdrop .modal-head{
+  flex: 0 0 auto;
+}
+
+#wizardBackdrop .modal-body{
+  flex: 1 1 auto;
+  overflow: auto;
+  max-height: calc(90vh - 160px); /* margem segura p/ head+foot */
+  padding-bottom: 10px;
+}
+
+#wizardBackdrop .modal-foot{
+  flex: 0 0 auto;
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  z-index: 50;
+}
+
+/* ===== Checklist (módulos/capítulos) ===== */
+.checklist{
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background:#fff;
+  padding: 10px;
+  max-height: 220px;
+  overflow: auto;
+}
+
+.chk-item{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  padding: 8px 8px;
+  border-radius: 12px;
+  cursor:pointer;
+}
+
+.chk-item:hover{ background: rgba(37,99,235,.05); }
+.chk-item input{ margin-top: 3px; }
+.chk-item b{ font-size: 13px; }
+.chk-item small{
+  display:block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-weight: 650;
+  font-size: 11px;
+}
+
+/* ===== Layout Quiz + Navegador de Questões (estilo T2) ===== */
+.quiz-layout{
+  display:grid;
+  grid-template-columns: 280px 1fr;
+  gap: 16px;
+  align-items:start;
+}
+
+@media (max-width: 980px){
+  .quiz-layout{ grid-template-columns: 1fr; }
+  .qnav{ order: 2; }
+}
+
+.qnav{
+  position: sticky;
+  top: 84px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-light);
+  overflow:hidden;
+}
+
+.qnav-head{
+  padding: 14px 14px 10px 14px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(37,99,235,.08), rgba(255,255,255,0));
+}
+
+.qnav-title{
+  font-weight: 950;
+  color: var(--brand);
+}
+
+.qnav-meta{
+  margin-top: 6px;
+  color: var(--muted);
+  font-weight: 750;
+  font-size: 12px;
+}
+
+.qnav-grid{
+  padding: 12px;
+  display:grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+  max-height: calc(100vh - 260px);
+  overflow:auto;
+}
+
+.qnav-btn{
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px 0;
+  font-weight: 950;
+  font-size: 12px;
+  cursor:pointer;
+  transition: all .15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qnav-btn:hover{ transform: translateY(-1px); box-shadow: var(--shadow-light); }
+
+.qnav-btn.current{
+  border-color: rgba(37,99,235,.70);
+  box-shadow: 0 0 0 3px rgba(37,99,235,.15);
+}
+
+.qnav-btn.answered{ background: rgba(37,99,235,.06); }
+.qnav-btn.pending{ background: rgba(245,158,11,.10); border-color: rgba(245,158,11,.25); }
+.qnav-btn.correct{ background: var(--ok-light); border-color: rgba(34,197,94,.35); }
+.qnav-btn.wrong{ background: var(--bad-light); border-color: rgba(239,68,68,.30); }
+.qnav-btn.blank{ background: rgba(99,113,137,.05); border-color: rgba(99,113,137,.15); opacity: 0.7; }
+
+.qnav-legend{
+  padding: 12px 14px 14px 14px;
+  border-top: 1px solid var(--border);
+  display:flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.qnav-legend .leg{
+  font-size: 11px;
+  font-weight: 900;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background:#fff;
+}
+
+.qnav-legend .answered{ background: rgba(37,99,235,.06); }
+.qnav-legend .pending{ background: rgba(245,158,11,.10); border-color: rgba(245,158,11,.25); }
+.qnav-legend .correct{ background: var(--ok-light); border-color: rgba(34,197,94,.35); }
+.qnav-legend .wrong{ background: var(--bad-light); border-color: rgba(239,68,68,.30); }
+.qnav-legend .blank{ background: rgba(99,113,137,.05); border-color: rgba(99,113,137,.15); }
+
+/* Melhoria: Checklist com scroll suave */
+.checklist::-webkit-scrollbar {
+  width: 6px;
+}
+.checklist::-webkit-scrollbar-track {
+  background: var(--panel-2);
+  border-radius: 10px;
+}
+.checklist::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 10px;
+}
+.checklist::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
+
+/* Melhoria: Tooltip para questões no mapa */
+.qnav-btn[title] {
+  position: relative;
+}
+.qnav-btn[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+  z-index: 100;
+  margin-bottom: 5px;
+}
+
+/* Melhoria: Indicador de tempo restante crítico */
+.timer-critical {
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
 </style>
 </head>
 <body>
@@ -1257,51 +1460,68 @@ body{
 
   <!-- QUIZ -->
   <section class="view" id="viewQuiz">
-    <div class="quiz-shell">
-      <div class="quiz-top">
-        <div class="left">
-          <div class="q-counter" id="qCounter">1/0</div>
-          <div class="q-mini">
-            <span id="qTimer">00:00</span><span class="sep">•</span>
-            <span id="qCourseName">—</span><span class="sep">•</span>
-            <span id="qMeta">—</span>
-            <span id="qLimitPill" class="kpi-badge" style="display:none;">⏳ 03:00:00</span>
-          </div>
+    <div class="quiz-layout">
+      <aside class="qnav">
+        <div class="qnav-head">
+          <div class="qnav-title">Questões</div>
+          <div class="qnav-meta" id="qnavMeta">—</div>
         </div>
-        <div class="progress"><div id="progressBar"></div></div>
-      </div>
+        <div class="qnav-grid" id="qnavGrid"></div>
+        <div class="qnav-legend">
+          <span class="leg answered">Respondida</span>
+          <span class="leg correct">Acertou</span>
+          <span class="leg wrong">Errou</span>
+          <span class="leg pending">Pendente</span>
+          <span class="leg blank">Branco</span>
+        </div>
+      </aside>
 
-      <div class="quiz-body">
-        <div class="quiz-header">
-          <div class="quiz-header-left">
-            <button class="star-btn" id="btnStar" type="button" title="Marcar para revisão">☆</button>
-            <div class="q-id">
-              <span id="qId">#—</span>
-              <span class="difficulty" id="qDifficulty">—</span>
+      <div class="quiz-shell">
+        <div class="quiz-top">
+          <div class="left">
+            <div class="q-counter" id="qCounter">1/0</div>
+            <div class="q-mini">
+              <span id="qTimer">00:00</span><span class="sep">•</span>
+              <span id="qCourseName">—</span><span class="sep">•</span>
+              <span id="qMeta">—</span>
+              <span id="qLimitPill" class="kpi-badge" style="display:none;">⏳ 03:00:00</span>
             </div>
           </div>
-          <div class="quiz-header-right">
-            <div class="q-mini" id="qStatus"></div>
+          <div class="progress"><div id="progressBar"></div></div>
+        </div>
+
+        <div class="quiz-body">
+          <div class="quiz-header">
+            <div class="quiz-header-left">
+              <button class="star-btn" id="btnStar" type="button" title="Marcar para revisão">☆</button>
+              <div class="q-id">
+                <span id="qId">#—</span>
+                <span class="difficulty" id="qDifficulty">—</span>
+              </div>
+            </div>
+            <div class="quiz-header-right">
+              <div class="q-mini" id="qStatus"></div>
+            </div>
+          </div>
+
+          <p class="q-text" id="qText">—</p>
+          <div class="opts" id="qOptions"></div>
+
+          <div class="explanation-box" id="explanationBox">
+            <h3 class="explanation-title">Explicação</h3>
+            <p class="explanation-content" id="explanationText"></p>
           </div>
         </div>
 
-        <p class="q-text" id="qText">—</p>
-        <div class="opts" id="qOptions"></div>
-
-        <div class="explanation-box" id="explanationBox">
-          <h3 class="explanation-title">Explicação</h3>
-          <p class="explanation-content" id="explanationText"></p>
-        </div>
-      </div>
-
-      <div class="quiz-foot">
-        <div class="navigation-buttons">
-          <button class="btn" id="btnPrev" type="button">← Anterior</button>
-          <button class="btn primary" id="btnCorrect" type="button" disabled>✓ Corrigir</button>
-          <button class="btn" id="btnNext" type="button">Próxima →</button>
-        </div>
-        <div class="finish-button">
-          <button class="btn danger" id="btnFinish" type="button">Finalizar Simulado</button>
+        <div class="quiz-foot">
+          <div class="navigation-buttons">
+            <button class="btn" id="btnPrev" type="button">← Anterior</button>
+            <button class="btn primary" id="btnCorrect" type="button" disabled>✓ Corrigir</button>
+            <button class="btn" id="btnNext" type="button">Próxima →</button>
+          </div>
+          <div class="finish-button">
+            <button class="btn danger" id="btnFinish" type="button">Finalizar Simulado</button>
+          </div>
         </div>
       </div>
     </div>
@@ -1510,14 +1730,14 @@ body{
       <div class="wiz-page" id="wizPage3" style="display:none;">
         <div class="fields">
           <div class="field">
-            <label for="selModule">Módulos (multi)</label>
-            <select id="selModule" multiple class="select-multi"></select>
-            <div class="hint">Dica: Ctrl/⌘ para selecionar múltiplos</div>
+            <label>Módulos</label>
+            <div class="checklist" id="listModule"></div>
+            <div class="hint">Marque um ou mais módulos (sem Ctrl/⌘).</div>
           </div>
           <div class="field">
-            <label for="selChapter">Capítulos (multi)</label>
-            <select id="selChapter" multiple class="select-multi"></select>
-            <div class="hint">Se vazio, considera todos</div>
+            <label>Capítulos</label>
+            <div class="checklist" id="listChapter"></div>
+            <div class="hint">Se nenhum capítulo for marcado, considera todos.</div>
           </div>
           <div class="field">
             <label for="selTheme">Tema</label>
@@ -1568,7 +1788,7 @@ body{
               <input id="chkDistEnable" type="checkbox" />
               Distribuir questões por módulo (opcional)
             </label>
-            <div class="hint">Defina quantidade ou percentual por módulo (substitui “Quantidade” como distribuição)</div>
+            <div class="hint">Defina quantidade ou percentual por módulo (substitui "Quantidade" como distribuição)</div>
           </div>
         </div>
 
@@ -1688,7 +1908,7 @@ body{
   /* =========================================================
      Configuração Inicial
   ========================================================= */
-  const MANUAL_PDF = "./GUIA_POR_DENTRO_DA_B3_2024_final-min%201.pdf"; // espaço codificado
+  const MANUAL_PDF = "./GUIA_POR_DENTRO_DA_B3_2024_final-min%201.pdf";
 
   const courses = [
     {
@@ -1947,12 +2167,11 @@ body{
     db.themes = uniqueSorted(db.all.map(q => q.theme));
     db.levels = uniqueSorted(db.all.map(q => q.level));
 
-    fillSelectMulti($("selModule"), db.modules);
-    fillSelectMulti($("selChapter"), db.chapters);
+    renderChecklist($("listModule"), db.modules);
+    renderChecklist($("listChapter"), db.chapters);
     fillSelectSingle($("selTheme"), db.themes, "Todos os temas");
     fillSelectSingle($("selLevel"), db.levels, "Todas as dificuldades");
 
-    // Rebuild distribuição por módulo
     buildDistUI();
   }
 
@@ -1970,18 +2189,28 @@ body{
     });
   }
 
-  function fillSelectMulti(select, values) {
-    select.innerHTML = "";
-    values.forEach(value => {
-      const option = document.createElement("option");
-      option.value = value;
-      option.textContent = value;
-      select.appendChild(option);
+  function renderChecklist(container, items, getSub = null){
+    if (!container) return;
+    container.innerHTML = "";
+    items.forEach(val => {
+      const row = document.createElement("label");
+      row.className = "chk-item";
+      row.innerHTML = `
+        <input type="checkbox" value="${escapeHtmlAttr(val)}">
+        <div>
+          <b>${escapeHtml(val)}</b>
+          ${getSub ? `<small>${escapeHtml(getSub(val) || "")}</small>` : ``}
+        </div>
+      `;
+      container.appendChild(row);
     });
   }
 
-  function getMultiValues(select) {
-    return Array.from(select.selectedOptions || []).map(o => o.value).filter(Boolean);
+  function getCheckedValues(container){
+    if (!container) return [];
+    return Array.from(container.querySelectorAll('input[type="checkbox"]:checked'))
+      .map(i => i.value)
+      .filter(Boolean);
   }
 
   /* =========================================================
@@ -2025,7 +2254,6 @@ body{
       $("certCount").textContent = `(${filtered.length})`;
 
       grid.innerHTML = filtered.map(course => {
-        // stats globais (simples)
         const history = StatsManager.getHistory().filter(h => h.course === course.id);
         const totalQuestions = history.reduce((a,s)=>a+(s.totalQuestions||0),0);
         const avgAcc = history.length ? Math.round((history.reduce((a,s)=>a+(s.accuracy||0),0)/history.length)*10)/10 : 0;
@@ -2081,7 +2309,6 @@ body{
     $("btnOpenWizard").disabled = false;
     $("btnOpenWizard").textContent = `Configurar ${course.id}`;
 
-    // Carrega banco se necessário
     const loadPromise = (db.all.length === 0 || (selectedCourse && db.courseId !== selectedCourse.id))
       ? loadQuestionsForCourse(course)
       : Promise.resolve();
@@ -2176,8 +2403,8 @@ body{
   function applyWizardFilters() {
     if (!db.all || db.all.length === 0) return { base: [], qty: 0 };
 
-    const modulesSel = getMultiValues($("selModule"));   // multi
-    const chaptersSel = getMultiValues($("selChapter")); // multi
+    const modulesSel = getCheckedValues($("listModule"));
+    const chaptersSel = getCheckedValues($("listChapter"));
     const theme = $("selTheme").value;
     const level = $("selLevel").value;
     const qty = Math.min(200, Math.max(1, parseInt($("selQty").value || "10", 10)));
@@ -2215,7 +2442,6 @@ body{
       });
     }
 
-    // Shuffle helper
     const shuffle = (arr) => {
       for (let i = arr.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -2224,10 +2450,9 @@ body{
       return arr;
     };
 
-    // Distribuição por módulo (opcional)
     if (distEnabled) {
       const distMode = $("distModePct").checked ? "pct" : "qty";
-      const dist = readDistInputs(); // { moduleName: number }
+      const dist = readDistInputs();
 
       const filteredByModule = {};
       questions.forEach(q => {
@@ -2235,24 +2460,18 @@ body{
         filteredByModule[q.module].push(q);
       });
 
-      // Se usuário não selecionou módulos, usamos os módulos presentes no filtro atual
       const moduleList = Object.keys(filteredByModule);
 
-      // Calcula alvos por módulo
       const targets = {};
       if (distMode === "pct") {
-        // percentuais (0-100)
         let totalPct = moduleList.reduce((acc,m)=>acc+(Number(dist[m])||0),0);
-        // se totalPct=0, cai para padrão "sem distribuição"
         if (totalPct > 0) {
           moduleList.forEach(m => {
             const pct = Math.max(0, Number(dist[m]) || 0);
             targets[m] = Math.floor((pct / 100) * qty);
           });
-          // Ajuste de arredondamento: completa faltantes pelo maior “resto” (simples)
           let currentSum = Object.values(targets).reduce((a,n)=>a+n,0);
           if (currentSum < qty) {
-            // ordena por maior pct
             const sorted = moduleList.slice().sort((a,b)=>(Number(dist[b])||0)-(Number(dist[a])||0));
             let k = 0;
             while (currentSum < qty && sorted.length) {
@@ -2274,7 +2493,6 @@ body{
         moduleList.forEach(m => { targets[m] = Math.max(0, Math.floor(Number(dist[m]) || 0)); });
       }
 
-      // Se targets zerado (ninguém preencheu), volta para comportamento normal
       const sumTargets = Object.values(targets).reduce((a,n)=>a+n,0);
       if (sumTargets > 0) {
         let picked = [];
@@ -2284,7 +2502,6 @@ body{
           picked = picked.concat(pool.slice(0, take));
         });
 
-        // Se faltou (targets > pool), completa com o que sobrou global até qty
         if (picked.length < qty) {
           const pickedIds = new Set(picked.map(q => q.id));
           const remaining = shuffle(questions.filter(q => !pickedIds.has(q.id)));
@@ -2296,7 +2513,6 @@ body{
       }
     }
 
-    // Sem distribuição: shuffle e corta
     questions = shuffle(questions).slice(0, qty);
 
     return { base: questions, qty, noRepeat, modulesSel, chaptersSel, theme, level, s: $("searchText").value.trim(), official, distEnabled: false };
@@ -2355,10 +2571,8 @@ body{
       tbody.appendChild(tr);
     });
 
-    // listeners
     $$("#distRows .dist-input").forEach(inp => {
       inp.addEventListener("input", () => {
-        // limpa não-numéricos
         const v = String(inp.value || "").replace(/[^\d.]/g, "");
         inp.value = v;
         updateDistSumBadge();
@@ -2432,7 +2646,7 @@ body{
     questionStartTime: null,
     excludedOptions: {},
     officialDuration: false,
-    durationLimitMs: 3 * 60 * 60 * 1000 // 3h
+    durationLimitMs: 3 * 60 * 60 * 1000
   };
 
   function startSimulado(config) {
@@ -2483,12 +2697,15 @@ body{
         if (remaining <= 60 * 1000 && remaining > 0) {
           $("qTimer").style.color = "var(--bad)";
           $("qTimer").style.fontWeight = "900";
+          $("qTimer").classList.add("timer-critical");
+        } else {
+          $("qTimer").classList.remove("timer-critical");
         }
 
         if (remaining <= 0) {
           stopTimer();
           showToast("⏱️ Tempo limite (3h) atingido. Encerrando simulado...", "bad", 3500);
-          finishSimulado(true); // encerramento por tempo
+          finishSimulado(true);
         }
       }
     }, 200);
@@ -2545,11 +2762,77 @@ body{
 
     renderOptions(current);
 
-    // reset timer visual (só muda quando oficial)
     if (!sim.officialDuration) {
       $("qTimer").style.color = "";
       $("qTimer").style.fontWeight = "";
+      $("qTimer").classList.remove("timer-critical");
     }
+
+    renderQNav();
+  }
+
+  function renderQNav(){
+    const grid = $("qnavGrid");
+    const meta = $("qnavMeta");
+    if (!grid || !meta) return;
+
+    const total = sim.queue.length;
+
+    let answered = 0;
+    let corrected = 0;
+    let correct = 0;
+    let wrong = 0;
+    let blank = 0;
+
+    grid.innerHTML = "";
+
+    for (let i = 0; i < total; i++){
+      const q = sim.queue[i];
+      const a = sim.answers[q.id];
+
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "qnav-btn";
+      btn.textContent = String(i + 1);
+      btn.title = `Questão ${i + 1}: ${q.module} - ${q.theme}`;
+
+      if (i === sim.idx) btn.classList.add("current");
+
+      if (a?.selected) { 
+        answered++; 
+        btn.classList.add("answered"); 
+      } else if (a?.corrected) {
+        blank++;
+        btn.classList.add("blank");
+        btn.title += " (em branco)";
+      }
+      
+      if (a?.corrected) {
+        corrected++;
+        if (a.correct) { 
+          correct++; 
+          btn.classList.add("correct"); 
+          btn.title += " ✓ Correta";
+        } else { 
+          wrong++; 
+          btn.classList.add("wrong"); 
+          btn.title += " ✗ Errada";
+        }
+      } else if (a?.selected) {
+        btn.classList.add("pending");
+        btn.title += " ⌛ Pendente";
+      }
+
+      btn.addEventListener("click", () => {
+        sim.idx = i;
+        renderQuiz();
+      });
+
+      grid.appendChild(btn);
+    }
+
+    meta.textContent =
+      `Total: ${total} • Respondidas: ${answered} • Corrigidas: ${corrected} • ✅ ${correct} / ❌ ${wrong} / ⬜ ${blank}`;
   }
 
   function updateStarButton(questionId) {
@@ -2643,6 +2926,7 @@ body{
 
     $("btnCorrect").disabled = false;
     updateQuestionStatus(sim.answers[currentQuestion.id]);
+    renderQNav();
   }
 
   function toggleExcludeOption(letter) {
@@ -2684,6 +2968,7 @@ body{
     updateQuestionStatus(sim.answers[current.id]);
     showExplanation(current, isCorrect);
     renderOptions(current);
+    renderQNav();
 
     SessionManager.saveSession({
       queue: sim.queue.map(q => q.id),
@@ -2734,43 +3019,38 @@ body{
   }
 
   function finishSimulado(endedByTime = false) {
-    // salva questão atual se necessário
     const current = sim.queue[sim.idx];
     if (current && sim.selected && !sim.corrected && !sim.answers[current.id]) {
       sim.answers[current.id] = { selected: sim.selected, correct: false, corrected: false, timeSpent: Date.now() - sim.questionStartTime };
     }
 
-    // Se não foi encerrado por tempo, exige resposta em todas (como você queria antes)
-    if (!endedByTime) {
-      const unanswered = sim.queue.filter(q => !sim.answers[q.id]?.selected);
-      if (unanswered.length > 0) {
-        const unansweredList = unanswered.map(q => `${sim.queue.indexOf(q) + 1}`).join(', ');
-        showToast(
-          `❌ ${unanswered.length} questão(ões) sem resposta: ${unansweredList}\n\nResponda todas antes de finalizar.`,
-          "bad",
-          5000
-        );
-        const firstUnanswered = sim.queue.findIndex(q => !sim.answers[q.id]?.selected);
-        if (firstUnanswered >= 0) { sim.idx = firstUnanswered; renderQuiz(); }
-        return;
-      }
-    }
-
-    // Corrige automaticamente o que ficou sem correção (ou tudo, no encerramento por tempo)
     const uncorrected = sim.queue.filter(q => !sim.answers[q.id]?.corrected);
+
+    sim.queue.forEach(q => {
+      if (!sim.answers[q.id]) {
+        sim.answers[q.id] = { selected: null, correct: false, corrected: false, timeSpent: 0 };
+      }
+    });
+
     uncorrected.forEach(q => {
       const rec = sim.answers[q.id];
-      if (rec && rec.selected) {
-        rec.correct = rec.selected === q.answer;
+
+      if (!rec.selected) {
+        rec.correct = false;
         rec.corrected = true;
-        StatsManager.updateQuestionStats(q.id, rec.correct, rec.timeSpent || 0);
+        return;
       }
+
+      rec.correct = rec.selected === q.answer;
+      rec.corrected = true;
+      StatsManager.updateQuestionStats(q.id, rec.correct, rec.timeSpent || 0);
     });
 
     stopTimer();
 
     const total = sim.queue.length;
     const correct = Object.values(sim.answers).filter(a => a.correct).length;
+    const blank = Object.values(sim.answers).filter(a => !a.selected).length;
     const accuracy = total > 0 ? (correct / total) * 100 : 0;
     const totalTime = Date.now() - sim.startedAt;
 
@@ -2778,6 +3058,7 @@ body{
       course: selectedCourse.id,
       totalQuestions: total,
       correctAnswers: correct,
+      blankAnswers: blank,
       accuracy: Math.round(accuracy * 10) / 10,
       timeSpent: totalTime,
       date: new Date().toISOString(),
@@ -2789,7 +3070,7 @@ body{
     SessionManager.clearSession();
 
     showResults({
-      total, correct, accuracy,
+      total, correct, blank, accuracy,
       totalTime, answers: sim.answers,
       questions: sim.queue,
       autoCorrected: uncorrected.length,
@@ -2810,7 +3091,7 @@ body{
           <div style="background:#fff; border:1px solid var(--border); border-radius:14px; padding:14px; text-align:center;">
             <div class="muted" style="font-weight:900; text-transform:uppercase; letter-spacing:.6px; font-size:11px;">Taxa de acerto</div>
             <div style="font-size:34px; font-weight:950; color:${results.accuracy>=70?'var(--ok)':results.accuracy>=50?'var(--warn)':'var(--bad)'}">${Math.round(results.accuracy)}%</div>
-            <div class="muted">${results.correct}/${results.total} acertos</div>
+            <div class="muted">${results.correct}/${results.total} acertos • ${results.blank} em branco</div>
           </div>
           <div style="background:#fff; border:1px solid var(--border); border-radius:14px; padding:14px; text-align:center;">
             <div class="muted" style="font-weight:900; text-transform:uppercase; letter-spacing:.6px; font-size:11px;">Tempo total</div>
@@ -2933,7 +3214,6 @@ body{
       return;
     }
 
-    // wrong tab (simples)
     container.innerHTML = `
       <div class="manual-wrap" style="padding:18px;">
         <h3 style="color: var(--brand); margin: 0 0 8px 0;">Erros para revisar</h3>
@@ -3023,7 +3303,6 @@ body{
     showToast("✅ Logout realizado", "ok");
   });
 
-  // Navegação
   $$('.nav a').forEach(a => {
     a.addEventListener('click', (e) => {
       e.preventDefault();
@@ -3032,7 +3311,6 @@ body{
     });
   });
 
-  // Tabs do histórico
   $$('.tab').forEach(tab => {
     tab.addEventListener('click', () => {
       $$('.tab').forEach(t => t.classList.remove('active'));
@@ -3041,14 +3319,12 @@ body{
     });
   });
 
-  // Busca
   let searchTimeout;
   $("searchCourses").addEventListener("input", () => {
     clearTimeout(searchTimeout);
     searchTimeout = setTimeout(renderCourses, 250);
   });
 
-  // Wizard
   $("btnOpenWizard").addEventListener("click", openWizard);
   $("btnCloseWizard").addEventListener("click", closeWizard);
   $("wizardBackdrop").addEventListener("click", (e) => {
@@ -3076,7 +3352,6 @@ body{
     wizRender();
   });
 
-  // Modos do wizard (modalidade)
   $$('.mode[data-mode]').forEach(mode => {
     mode.addEventListener('click', () => {
       $$('.mode[data-mode]').forEach(m => m.classList.remove('selected'));
@@ -3089,7 +3364,6 @@ body{
       }
       if (wizMode === 'exam') {
         $("selQty").value = "60";
-        // não força officialDuration; deixa opcional como você pediu
       }
 
       updateFilterInfo();
@@ -3097,7 +3371,6 @@ body{
     });
   });
 
-  // Estratégia
   $$('.mode[data-study]').forEach(mode => {
     mode.addEventListener('click', () => {
       $$('.mode[data-study]').forEach(m => m.classList.remove('selected'));
@@ -3108,7 +3381,6 @@ body{
     });
   });
 
-  // Atualizar filtros
   ['selTheme','selLevel','selQty','chkNoRepeat','chkOfficialDuration','chkDistEnable'].forEach(id => {
     $(id).addEventListener('change', () => {
       updateDistUIState();
@@ -3117,19 +3389,16 @@ body{
     });
   });
 
-  // Multi selects (module/chapter)
-  ['selModule','selChapter'].forEach(id => {
-    $(id).addEventListener('change', () => {
+  ["listModule","listChapter"].forEach(id => {
+    $(id).addEventListener("change", () => {
       updateFilterInfo();
       updateConfirmText();
     });
   });
 
-  // Dist mode radios
   $("distModeQty").addEventListener("change", () => { updateDistSumBadge(); updateFilterInfo(); updateConfirmText(); });
   $("distModePct").addEventListener("change", () => { updateDistSumBadge(); updateFilterInfo(); updateConfirmText(); });
 
-  // Search text debounce
   function debounce(func, wait) {
     let t;
     return (...args) => {
@@ -3142,14 +3411,12 @@ body{
     updateConfirmText();
   }, 250));
 
-  // Quiz
   $("btnCorrect").addEventListener("click", correctAnswer);
   $("btnNext").addEventListener("click", nextQuestion);
   $("btnPrev").addEventListener("click", prevQuestion);
   $("btnStar").addEventListener("click", toggleStar);
   $("btnFinish").addEventListener("click", () => finishSimulado(false));
 
-  // Resultados
   $("btnCloseResults").addEventListener("click", () => {
     $("resultsBackdrop").classList.remove("show");
     $("resultsBackdrop").setAttribute("aria-hidden", "true");
@@ -3161,7 +3428,6 @@ body{
     openWizard();
   });
 
-  // Export
   $("btnExportCSV").addEventListener("click", () => exportData('csv'));
   $("btnExportJSON").addEventListener("click", () => exportData('json'));
 
@@ -3171,21 +3437,16 @@ body{
   async function init() {
     AuthManager.requireLogin();
 
-    // Ajusta manual links
     loadManuals();
 
-    // Seleciona PQO por padrão (pode trocar)
     selectedCourse = courses[0];
     try { await loadQuestionsForCourse(selectedCourse); }
     catch(e){}
 
-    // habilita botão e renderiza cursos
     $("btnOpenWizard").disabled = false;
     $("btnOpenWizard").textContent = `Configurar ${selectedCourse.id}`;
 
     renderCourses();
-
-    // auto abrir wizard quando clicar no card já está implementado no selectCourse()
   }
 
   window.showView = showView;
