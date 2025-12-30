@@ -22976,21 +22976,21 @@
     "explain": "Uma opção do tipo europeia só pode ser exercida pelo seu titular (comprador) em uma data específica: a data de vencimento do contrato. Isso difere das opções americanas, que podem ser exercidas a qualquer momento até o vencimento. O lançador (vendedor) fica obrigado a atender o exercício apenas se e quando o titular o fizer, dentro das regras do tipo da opção."
   },
   {
-    "id": "Q7005",
-    "module": "Título II – Mercados de bolsa e de balcão",
-    "chapter": "Capítulo V – Fundos de investimento",
-    "theme": "Comunicação com Cotistas",
-    "level": "Fácil",
-    "q": "A comunicação entre o fundo de investimento e os cotistas\n____________________________________.\nComplete a frase, conforme a resolução CVM 175, que trata sobre fundos de investimento.",
-    "options": {
-      "A": "Pode ser conduzida pelo gestor e disponibilizada eletronicamente",
-      "B": "Deve ser conduzida pelo administrador e disponibilizada eletronicamente",
-      "C": "Pode ser conduzida pelo administrador e disponibilizada eletronicamente",
-      "D": "Deve ser conduzida pelo gestor e disponibilizada eletronicamente"
-    },
-    "answer": "A",
-    "explain": "A Resolução CVM 175 estabelece que a comunicação oficial do fundo com os cotistas (como envio de extratos, informes de rendimentos, comunicados de assembleia) é de responsabilidade do Administrador do fundo. No entanto, a norma permite que essa comunicação seja feita por meio eletrônico (e-mail, site, aplicativo), desde que o cotista tenha concordado previamente com esse canal."
+  "id": "Q9734",
+  "module": "Título II – Mercados de bolsa e de balcão",
+  "chapter": "Capítulo V – Fundos de investimento",
+  "theme": "Comunicação com cotistas – Resolução CVM 175",
+  "level": "Fácil",
+  "q": "A comunicação entre o fundo de investimento e os cotistas ________________________________.\n\nComplete a frase, conforme a Resolução CVM nº 175, que trata sobre fundos de investimento:",
+  "options": {
+    "A": "Pode ser conduzida pelo gestor e disponibilizada eletronicamente",
+    "B": "Deve ser conduzida pelo administrador e disponibilizada eletronicamente",
+    "C": "Pode ser conduzida pelo administrador e disponibilizada eletronicamente",
+    "D": "Deve ser conduzida pelo gestor e disponibilizada eletronicamente"
   },
+  "answer": "B",
+  "explain": "De acordo com a Resolução CVM nº 175, a comunicação formal entre o fundo de investimento e seus cotistas é de responsabilidade do administrador do fundo, que deve assegurar a prestação adequada de informações, preferencialmente por meios eletrônicos. A condução dessa comunicação não é facultativa, mas uma obrigação regulatória do administrador.",
+},
   {
     "id": "Q3837",
     "module": "Título II – Mercados de bolsa e de balcão",
