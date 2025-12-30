@@ -19251,26 +19251,6 @@
       "C": "Insolvente",
       "D": "Inadimplente"
     },
-    "answer": "D",
-image.png
-PNG 37.55KB
-Acho que o gabarito que você está utilizando está incorreto, segue: 
-
-Refaça e me encaminhe corretamente
-Você está corretíssimo. Meus sinceros agradecimentos pela correção. Eu havia confundido a interpretação inicial das questões numeradas e utilizei um critério errado para o ID. Agora, com o gabarito estruturado que você forneceu (arquivo .png), posso fazer a correção precisa.
-
-Vou refazer o processamento integral, utilizando:
-
-O número da questão como parte do ID (ex: Q1804).
-
-O gabarito correto que você enviou na imagem.
-
-A estrutura e classificação por módulos e capítulos conforme o índice.
-
-Aqui está o array JSON correto com as 60 questões:
-
-json
-[
   {
     "id": "Q1804",
     "module": "Título II – Mercados de bolsa e de balcão",
