@@ -1040,22 +1040,22 @@
     "module": "Título V – Negociação",
     "chapter": "Capítulo I – Mercados organizados"
   },
-  {
-    "id": "Q0066",
-    "theme": "Negociação | Mercado de Câmbio",
-    "level": "Fácil",
-    "q": "Quais são os principais participantes do mercado de câmbio?",
-    "options": {
-      "A": "Somente bancos.",
-      "B": "Apenas o governo.",
-      "C": "Bancos, empresas, investidores e governos.",
-      "D": "Somente casas de câmbio."
-    },
-    "answer": "C",
-    "explain": "Câmbio envolve vários agentes (demanda e oferta de moedas): bancos intermediando, empresas import/export, investidores e setor público.",
-    "module": "Título II – Mercados de bolsa e de balcão",
-    "chapter": "Capítulo IV – Mercado de câmbio"
+ {
+  "id": "Q199544305005",
+  "theme": "Mercado de câmbio – Participantes",
+  "level": "Médio",
+  "q": "No que se refere ao mercado de câmbio brasileiro, assinale a alternativa que apresenta corretamente os seus principais participantes:",
+  "options": {
+    "A": "Banco Central do Brasil, instituições autorizadas a operar em câmbio, clientes e correspondentes cambiais.",
+    "B": "Conselho Monetário Nacional, bolsas de valores, investidores institucionais e câmaras de compensação.",
+    "C": "Banco Central do Brasil, bolsas de mercadorias, corretoras internacionais e investidores estrangeiros.",
+    "D": "Instituições financeiras privadas, empresas exportadoras e bolsas de valores, exclusivamente."
   },
+  "answer": "A",
+  "explain": "O mercado de câmbio brasileiro tem como principais participantes o Banco Central do Brasil, responsável pela regulação e fiscalização; as instituições autorizadas a operar em câmbio, que realizam a intermediação das operações; os clientes, pessoas físicas ou jurídicas; e os correspondentes cambiais, que atuam por conta e ordem das instituições autorizadas, especialmente em operações de menor valor.",
+  "module": "Título II – Mercados de bolsa e de balcão",
+  "chapter": "Capítulo IV – Mercado de câmbio"
+},
   {
     "id": "Q0067",
     "theme": "Negociação | Túneis de Negociação",
@@ -4946,21 +4946,21 @@
     "explain": "Derivativos derivam valor de um subjacente e são usados para hedge; a formação de preço está ligada sobretudo a expectativas futuras, e o subjacente não é “exclusivamente abstrato”."
   },
   {
-    "id": "Q0009",
-    "module": "Título I – Aspectos institucionais",
-    "chapter": "Capítulo I – Sistema Financeiro Nacional",
-    "theme": "CMN | Funções",
-    "level": "Médio",
-    "q": "Acerca do Conselho Monetário Nacional (CMN): I. Órgão normativo que fixa diretrizes das políticas monetária, creditícia e cambial. II. Estimula investimentos no mercado acionário. III. Coíbe abusos e fraudes com títulos/valores mobiliários. IV. Divulga estudos para guiar derivativos. Quais estão corretas?",
-    "options": {
-      "A": "Apenas I e II",
-      "B": "Apenas III e IV",
-      "C": "Apenas I, II e III",
-      "D": "Apenas II, III e IV"
-    },
-    "answer": "C",
-    "explain": "O CMN define diretrizes macro (monetária/creditícia/cambial) e pode orientar o desenvolvimento do mercado; já a repressão a fraudes com valores mobiliários é atribuição típica da CVM."
+  "id": "Q199544305002",
+  "theme": "Conselho Monetário Nacional (CMN) – Competências",
+  "level": "Médio",
+  "q": "Acerca do Conselho Monetário Nacional (CMN), analise as afirmativas a seguir:\n\nI. Trata-se de órgão normativo responsável por fixar as diretrizes das políticas monetária, creditícia e cambial.\n\nII. Tem como uma de suas atribuições estimular investimentos no mercado acionário.\n\nIII. Atua na definição de diretrizes voltadas à prevenção de abusos e fraudes no mercado de títulos e valores mobiliários.\n\nIV. É responsável pela divulgação de estudos e análises destinados a orientar a negociação de derivativos.\n\nEstá correto o que se afirma em:",
+  "options": {
+    "A": "Apenas I e II.",
+    "B": "Apenas III e IV.",
+    "C": "Apenas I, II e III.",
+    "D": "Apenas II, III e IV."
   },
+  "answer": "C",
+  "explain": "O CMN é o órgão normativo máximo do Sistema Financeiro Nacional, responsável por estabelecer diretrizes das políticas monetária, creditícia e cambial (I). Também possui competência para criar condições ao desenvolvimento do mercado financeiro e de capitais, incluindo o estímulo à poupança e aos investimentos (II), bem como definir diretrizes voltadas à prevenção de abusos e fraudes no mercado de títulos e valores mobiliários (III). A divulgação de estudos para orientar a negociação de derivativos não constitui atribuição do CMN (IV incorreta).",
+  "module": "Título I – Aspectos institucionais",
+  "chapter": "Capítulo I – Sistema Financeiro Nacional"
+},
   {
     "id": "Q0010",
     "module": "Título I – Aspectos institucionais",
@@ -5767,22 +5767,21 @@
     "explain": "Cooperativas de crédito são instituições financeiras e dependem de autorização/supervisão do Bacen."
   },
   {
-    "id": "Q0060",
-    "module": "Título I – Aspectos institucionais",
-    "chapter": "Capítulo I – Sistema Financeiro Nacional",
-    "theme": "Banco Múltiplo | Carteiras",
-    "level": "Médio",
-    "q": "Um banco múltiplo privado, para ser constituído, pode ter a carteira comercial e qual mais?",
-    "options": {
-      "A": "Crédito e Desenvolvimento (privado)",
-      "B": "Câmbio e Crédito",
-      "C": "Câmbio e Financiamento Imobiliário",
-      "D": "Crédito e Financiamento Imobiliário"
-    },
-    "answer": "A",
-    "explain": "Banco múltiplo combina carteiras; a carteira de desenvolvimento pode compor a estrutura, desde que atenda às exigências regulatórias."
+  "id": "Q199544305003",
+  "theme": "Banco Múltiplo – Constituição e carteiras",
+  "level": "Médio",
+  "q": "Um banco múltiplo privado, para ser constituído, deve possuir, no mínimo, duas carteiras, sendo obrigatoriamente uma delas a carteira comercial ou a carteira de investimento.\n\nNesse contexto, além da carteira comercial, um banco múltiplo pode possuir, entre outras, a carteira de:",
+  "options": {
+    "A": "Investimento.",
+    "B": "Distribuição de valores mobiliários.",
+    "C": "Arrendamento mercantil operacional.",
+    "D": "Capitalização."
   },
-
+  "answer": "A",
+  "explain": "O banco múltiplo é uma instituição financeira constituída com, no mínimo, duas carteiras, sendo obrigatoriamente uma delas a carteira comercial ou a carteira de investimento. Assim, além da carteira comercial, o banco múltiplo pode possuir a carteira de investimento, entre outras carteiras autorizadas, conforme a regulamentação do Sistema Financeiro Nacional.",
+  "module": "Título I – Aspectos institucionais",
+  "chapter": "Capítulo I – Sistema Financeiro Nacional"
+},
   {
     "id": "Q0061",
     "module": "Título I – Aspectos institucionais",
@@ -15695,21 +15694,22 @@
     "explain": "Front Running é a prática antiética em que um operador (geralmente um corretor ou gestor) executa uma operação para sua própria conta ou para uma conta relacionada com base no conhecimento antecipado de uma grande ordem de um cliente que impactará o mercado. O operador \"frenteia\" a ordem do cliente, comprando/vendendo antes para se beneficiar da mudança de preço que a própria ordem do cliente causará."
   },
   {
-    "id": "Q22275",
-    "module": "Título IV – Gestão de risco",
-    "chapter": "Capítulo II – Risco corporativo e controles internos",
-    "theme": "Três Linhas de Defesa",
-    "level": "Médio",
-    "q": "Sobre o modelo de Três Linhas de Defesa, avalie as afirmativas:\n\n1 - A gestão operacional é a primeira linha natural de defesa porque os controles são desenvolvidos como sistemas e processos sob sua gerência.\n\n2 - Em contrapartida, por ser a área diretamente envolvida no processo, é a que tem maior nível de independência em relação às atividades de controle.\n\nAmbas as afirmativas são verdadeiras.\nA afirmativa 1 é verdadeira, enquanto a 2 é falsa.\nAmbas as afirmativas são falsas.\nA afirmativa 1 é falsa, enquanto a 2 é verdadeira.",
-    "options": {
-      "A": "Ambas as afirmativas são verdadeiras.",
-      "B": "A afirmativa 1 é verdadeira, enquanto a 2 é falsa.",
-      "C": "Ambas as afirmativas são falsas.",
-      "D": "A afirmativa 1 é falsa, enquanto a 2 é verdadeira."
-    },
-    "answer": "B",
-    "explain": "Afirmativa 1: VERDADEIRA. No modelo, a primeira linha de defesa é composta pela gestão operacional, que é responsável por implementar e manter controles internos nos processos sob sua responsabilidade.\nAfirmativa 2: FALSA. Justamente por ser a área diretamente envolvida na execução, a primeira linha NÃO tem alto nível de independência. A independência é uma característica das linhas subsequentes, especialmente da segunda linha (funções de compliance e gestão de riscos) e da terceira linha (auditoria interna), que devem atuar de forma independente para avaliar a eficácia dos controles."
+  "id": "Q199544305006",
+  "theme": "Modelo das Três Linhas de Defesa",
+  "level": "Médio",
+  "q": "Sobre o modelo das Três Linhas de Defesa, avalie as afirmativas a seguir:\n\nI. A gestão operacional é considerada a primeira linha natural de defesa, uma vez que os controles são desenvolvidos e executados por meio de sistemas e processos sob sua responsabilidade.\n\nII. Por estar diretamente envolvida na execução dos processos, a gestão operacional é a linha que possui maior nível de independência em relação às atividades de controle.\n\nEstá correto o que se afirma em:",
+  "options": {
+    "A": "Apenas I.",
+    "B": "Apenas II.",
+    "C": "I e II.",
+    "D": "Nenhuma das afirmativas."
   },
+  "answer": "A",
+  "explain": "No modelo das Três Linhas de Defesa, a gestão operacional constitui a primeira linha, sendo responsável pela execução dos processos e pela implementação dos controles internos (I correta). Entretanto, por estar diretamente envolvida nas atividades operacionais, essa linha não possui independência em relação aos controles, característica atribuída principalmente à terceira linha (auditoria interna), tornando a afirmativa II incorreta.",
+  "module": "Título IV – Gestão de risco",
+  "chapter": "Capítulo I – Controles internos e gestão de riscos"
+},
+
   {
     "id": "Q14108",
     "module": "Título IV – Gestão de risco",
@@ -20834,7 +20834,7 @@
       "C": "Front running",
       "D": "Insider trading"
     },
-    "answer": "D",
+    "answer": "C",
     "explain": "**Front Running** (ou negociação à frente) ocorre quando um intermediário (ou alguém com acesso a informação sobre uma grande ordem pendente de um cliente) executa uma operação para sua própria conta **antes** de executar a ordem do cliente, buscando se beneficiar da movimentação de preço que a própria ordem grande do cliente causará no mercado. É uma violação de dever fiduciário."
   },
   {
@@ -23100,5 +23100,806 @@
   },
   "answer": "B",
   "explain": "A matriz de risco cruza, de forma estruturada, a probabilidade de ocorrência e o impacto dos riscos, permitindo avaliá-los e priorizá-los. Ela não se limita a perdas históricas, nem substitui controles ou auditorias, tampouco é um KPI."
-  }
+  },
+  {
+  "id": "QIII001",
+  "theme": "Estrutura de contas",
+  "level": "Fácil",
+  "q": "No âmbito do mercado financeiro, a conta de custódia tem como principal finalidade:",
+  "options": {
+    "A": "Registrar apenas os recursos financeiros do investidor.",
+    "B": "Controlar a posição de ativos de titularidade do investidor.",
+    "C": "Permitir exclusivamente a negociação de derivativos.",
+    "D": "Substituir a conta corrente bancária."
+  },
+  "answer": "B",
+  "explain": "A conta de custódia é destinada ao controle e registro dos ativos financeiros pertencentes ao investidor, mantendo a segregação patrimonial.",
+  "module": "Título III – Estrutura de contas e cadastro",
+  "chapter": "Capítulo I – Estrutura de contas"
+},
+{
+  "id": "QIII002",
+  "theme": "Cadastro de clientes",
+  "level": "Fácil",
+  "q": "O cadastro de clientes tem como objetivo principal:",
+  "options": {
+    "A": "Apenas atender exigências comerciais das instituições.",
+    "B": "Viabilizar a identificação, qualificação e adequação do cliente.",
+    "C": "Eliminar riscos de mercado.",
+    "D": "Substituir os controles de compliance."
+  },
+  "answer": "B",
+  "explain": "O cadastro permite identificar e qualificar o cliente, assegurando o cumprimento de exigências regulatórias, de suitability e de prevenção à lavagem de dinheiro.",
+  "module": "Título III – Estrutura de contas e cadastro",
+  "chapter": "Capítulo I – Cadastro de investidores"
+},
+{
+  "id": "QIII003",
+  "theme": "Titularidade",
+  "level": "Fácil",
+  "q": "A correta identificação da titularidade das contas é essencial para:",
+  "options": {
+    "A": "Aumentar a rentabilidade dos investimentos.",
+    "B": "Garantir a segregação patrimonial e a segurança jurídica.",
+    "C": "Evitar a cobrança de tributos.",
+    "D": "Eliminar a necessidade de liquidação financeira."
+  },
+  "answer": "B",
+  "explain": "A identificação da titularidade assegura a segregação patrimonial e a segurança jurídica das posições mantidas em nome dos investidores.",
+  "module": "Título III – Estrutura de contas e cadastro",
+  "chapter": "Capítulo I – Estrutura de contas"
+},
+{
+  "id": "QIII004",
+  "theme": "Conta individual e coletiva",
+  "level": "Médio",
+  "q": "A conta coletiva caracteriza-se por:",
+  "options": {
+    "A": "Registrar ativos de um único investidor.",
+    "B": "Misturar recursos próprios do participante com os de clientes.",
+    "C": "Agrupar ativos de diversos investidores sob responsabilidade de um intermediário.",
+    "D": "Ser exclusiva para investidores não residentes."
+  },
+  "answer": "C",
+  "explain": "A conta coletiva reúne ativos de diversos investidores, sendo o intermediário responsável pela correta identificação e segregação interna das posições.",
+  "module": "Título III – Estrutura de contas e cadastro",
+  "chapter": "Capítulo I – Estrutura de contas"
+},
+{
+  "id": "QIII005",
+  "theme": "Conta individual",
+  "level": "Médio",
+  "q": "Na conta individual de custódia:",
+  "options": {
+    "A": "Os ativos pertencem ao intermediário.",
+    "B": "Os ativos são registrados diretamente em nome do investidor.",
+    "C": "Não há necessidade de identificação do titular.",
+    "D": "É vedada a negociação em bolsa."
+  },
+  "answer": "B",
+  "explain": "Na conta individual, os ativos são registrados diretamente em nome do investidor, garantindo maior transparência e segregação patrimonial.",
+  "module": "Título III – Estrutura de contas e cadastro",
+  "chapter": "Capítulo I – Estrutura de contas"
+},
+{
+  "id": "QIII006",
+  "theme": "Investidor não residente",
+  "level": "Médio",
+  "q": "O cadastro de investidor não residente deve observar, além das regras gerais:",
+  "options": {
+    "A": "A dispensa de controles de PLD/FTP.",
+    "B": "Procedimentos específicos e regulamentação própria.",
+    "C": "A inexistência de representante legal no País.",
+    "D": "A proibição de operar em mercados organizados."
+  },
+  "answer": "B",
+  "explain": "O investidor não residente está sujeito a procedimentos específicos de cadastro e regulamentação própria, sem prejuízo das regras gerais.",
+  "module": "Título III – Estrutura de contas e cadastro",
+  "chapter": "Capítulo II – Cadastro de investidores não residentes"
+},
+{
+  "id": "QIII007",
+  "theme": "Atualização cadastral",
+  "level": "Médio",
+  "q": "A atualização cadastral dos clientes deve ocorrer:",
+  "options": {
+    "A": "Apenas no momento da abertura da conta.",
+    "B": "Somente quando solicitado pelo regulador.",
+    "C": "Periodicamente ou sempre que houver alteração relevante.",
+    "D": "Exclusivamente em caso de encerramento da conta."
+  },
+  "answer": "C",
+  "explain": "A atualização cadastral deve ser periódica e sempre que houver alterações relevantes nas informações do cliente, conforme exigências regulatórias.",
+  "module": "Título III – Estrutura de contas e cadastro",
+  "chapter": "Capítulo I – Cadastro de investidores"
+},
+{
+  "id": "QIII008",
+  "theme": "Segregação patrimonial",
+  "level": "Difícil",
+  "q": "A segregação patrimonial tem como objetivo principal:",
+  "options": {
+    "A": "Aumentar o volume de negócios.",
+    "B": "Misturar recursos de clientes e da instituição.",
+    "C": "Proteger os ativos dos investidores contra riscos do intermediário.",
+    "D": "Eliminar a necessidade de controles internos."
+  },
+  "answer": "C",
+  "explain": "A segregação patrimonial protege os ativos dos investidores contra riscos decorrentes da atividade ou insolvência do intermediário.",
+  "module": "Título III – Estrutura de contas e cadastro",
+  "chapter": "Capítulo I – Estrutura de contas"
+},
+{
+  "id": "QIII009",
+  "theme": "Responsabilidade do participante",
+  "level": "Difícil",
+  "q": "No caso de contas coletivas, a correta identificação das posições individuais é responsabilidade:",
+  "options": {
+    "A": "Exclusiva da central depositária.",
+    "B": "Do investidor.",
+    "C": "Do participante intermediário.",
+    "D": "Do Banco Central."
+  },
+  "answer": "C",
+  "explain": "Nas contas coletivas, cabe ao participante intermediário manter controles internos que assegurem a correta identificação das posições individuais dos investidores.",
+  "module": "Título III – Estrutura de contas e cadastro",
+  "chapter": "Capítulo I – Estrutura de contas"
+},
+{
+  "id": "QIII010",
+  "theme": "Conformidade cadastral",
+  "level": "Difícil",
+  "q": "Falhas no cadastro e na estrutura de contas podem resultar, principalmente:",
+  "options": {
+    "A": "Apenas em prejuízos operacionais internos.",
+    "B": "Em riscos legais, operacionais e regulatórios.",
+    "C": "Exclusivamente em riscos de mercado.",
+    "D": "Na suspensão automática do mercado."
+  },
+  "answer": "B",
+  "explain": "Inconsistências cadastrais e estruturais podem gerar riscos legais, operacionais e regulatórios para as instituições e para o mercado.",
+  "module": "Título III – Estrutura de contas e cadastro",
+  "chapter": "Capítulo I – Estrutura de contas"
+},
+{
+  "id": "QIV001",
+  "theme": "Gestão de riscos – Conceitos básicos",
+  "level": "Fácil",
+  "q": "A gestão de riscos tem como objetivo principal:",
+  "options": {
+    "A": "Eliminar completamente todos os riscos existentes.",
+    "B": "Identificar, avaliar e controlar os riscos assumidos pela instituição.",
+    "C": "Aumentar a exposição ao risco para maximizar retornos.",
+    "D": "Substituir os controles internos."
+  },
+  "answer": "B",
+  "explain": "A gestão de riscos visa identificar, avaliar, monitorar e controlar os riscos, mantendo-os em níveis compatíveis com a capacidade e os objetivos da instituição.",
+  "module": "Título IV – Gestão de risco",
+  "chapter": "Capítulo I – Fundamentos da gestão de riscos"
+},
+{
+  "id": "QIV002",
+  "theme": "Tipos de risco",
+  "level": "Fácil",
+  "q": "O risco de mercado está associado, principalmente:",
+  "options": {
+    "A": "À inadimplência de contrapartes.",
+    "B": "À variação adversa de preços, taxas ou índices de mercado.",
+    "C": "A falhas em sistemas e processos.",
+    "D": "A descumprimento de normas legais."
+  },
+  "answer": "B",
+  "explain": "O risco de mercado decorre de oscilações adversas em preços de ativos, taxas de juros, câmbio ou outros fatores de mercado.",
+  "module": "Título IV – Gestão de risco",
+  "chapter": "Capítulo I – Tipos de risco"
+},
+{
+  "id": "QIV003",
+  "theme": "Risco de crédito",
+  "level": "Fácil",
+  "q": "O risco de crédito refere-se à possibilidade de:",
+  "options": {
+    "A": "Oscilações de preços de mercado.",
+    "B": "Perdas decorrentes de falhas operacionais.",
+    "C": "A contraparte não cumprir suas obrigações financeiras.",
+    "D": "Descumprimento de normas regulatórias."
+  },
+  "answer": "C",
+  "explain": "O risco de crédito está relacionado à possibilidade de a contraparte não honrar suas obrigações financeiras nos prazos acordados.",
+  "module": "Título IV – Gestão de risco",
+  "chapter": "Capítulo I – Tipos de risco"
+},
+{
+  "id": "QIV004",
+  "theme": "Risco operacional",
+  "level": "Médio",
+  "q": "O risco operacional pode ser definido como o risco de perdas resultantes de:",
+  "options": {
+    "A": "Oscilações adversas de preços de ativos.",
+    "B": "Falhas em processos internos, sistemas, pessoas ou eventos externos.",
+    "C": "Inadimplência de clientes.",
+    "D": "Mudanças na política monetária."
+  },
+  "answer": "B",
+  "explain": "O risco operacional decorre de falhas em processos, sistemas, pessoas ou de eventos externos, incluindo riscos legais.",
+  "module": "Título IV – Gestão de risco",
+  "chapter": "Capítulo I – Tipos de risco"
+},
+{
+  "id": "QIV005",
+  "theme": "Apetite ao risco",
+  "level": "Médio",
+  "q": "O apetite ao risco de uma instituição representa:",
+  "options": {
+    "A": "O nível máximo de risco imposto pelo regulador.",
+    "B": "A quantidade de risco que a instituição está disposta a assumir para atingir seus objetivos.",
+    "C": "O risco efetivamente observado nas operações.",
+    "D": "A eliminação de riscos operacionais."
+  },
+  "answer": "B",
+  "explain": "O apetite ao risco define o nível de risco que a instituição aceita assumir, alinhado à sua estratégia e capacidade financeira.",
+  "module": "Título IV – Gestão de risco",
+  "chapter": "Capítulo I – Fundamentos da gestão de riscos"
+},
+{
+  "id": "QIV006",
+  "theme": "Controles internos",
+  "level": "Médio",
+  "q": "Os controles internos têm como finalidade principal:",
+  "options": {
+    "A": "Eliminar completamente os riscos de mercado.",
+    "B": "Assegurar a confiabilidade das informações, a conformidade e a eficiência operacional.",
+    "C": "Substituir a auditoria interna.",
+    "D": "Garantir retorno financeiro aos investidores."
+  },
+  "answer": "B",
+  "explain": "Os controles internos visam assegurar confiabilidade das informações, conformidade com normas e eficiência das operações.",
+  "module": "Título IV – Gestão de risco",
+  "chapter": "Capítulo I – Controles internos"
+},
+{
+  "id": "QIV007",
+  "theme": "Modelo das Três Linhas de Defesa",
+  "level": "Médio",
+  "q": "No modelo das Três Linhas de Defesa, a segunda linha é responsável, principalmente:",
+  "options": {
+    "A": "Pela execução direta das operações.",
+    "B": "Pela definição de políticas, monitoramento e suporte à gestão de riscos.",
+    "C": "Pela auditoria independente dos processos.",
+    "D": "Pela liquidação das operações."
+  },
+  "answer": "B",
+  "explain": "A segunda linha de defesa atua na definição de políticas, monitoramento e suporte à gestão de riscos e controles, sem executar as operações.",
+  "module": "Título IV – Gestão de risco",
+  "chapter": "Capítulo I – Governança e controles"
+},
+{
+  "id": "QIV008",
+  "theme": "Risco sistêmico",
+  "level": "Difícil",
+  "q": "O risco sistêmico caracteriza-se pela possibilidade de:",
+  "options": {
+    "A": "Perdas isoladas em uma única operação.",
+    "B": "Falhas operacionais pontuais sem impacto externo.",
+    "C": "Propagação de problemas de uma instituição para todo o sistema financeiro.",
+    "D": "Oscilações normais de mercado."
+  },
+  "answer": "C",
+  "explain": "O risco sistêmico refere-se à possibilidade de que problemas em uma instituição ou mercado se propaguem, afetando todo o sistema financeiro.",
+  "module": "Título IV – Gestão de risco",
+  "chapter": "Capítulo I – Tipos de risco"
+},
+{
+  "id": "QIV009",
+  "theme": "Mitigação de riscos",
+  "level": "Difícil",
+  "q": "A diversificação de ativos é uma técnica utilizada, principalmente, para mitigar:",
+  "options": {
+    "A": "Risco operacional.",
+    "B": "Risco legal.",
+    "C": "Risco de mercado.",
+    "D": "Risco regulatório."
+  },
+  "answer": "C",
+  "explain": "A diversificação reduz a exposição a movimentos adversos de mercado, mitigando principalmente o risco de mercado.",
+  "module": "Título IV – Gestão de risco",
+  "chapter": "Capítulo I – Fundamentos da gestão de riscos"
+},
+{
+  "id": "QIV010",
+  "theme": "Governança de riscos",
+  "level": "Difícil",
+  "q": "Uma estrutura eficaz de governança de riscos pressupõe:",
+  "options": {
+    "A": "Centralização total das decisões operacionais.",
+    "B": "Ausência de segregação de funções.",
+    "C": "Definição clara de papéis, responsabilidades e fluxos de reporte.",
+    "D": "Eliminação da auditoria interna."
+  },
+  "answer": "C",
+  "explain": "A governança de riscos exige papéis e responsabilidades bem definidos, segregação de funções e fluxos adequados de reporte.",
+  "module": "Título IV – Gestão de risco",
+  "chapter": "Capítulo I – Governança e controles"
+},
+{
+  "id": "QV001",
+  "theme": "Negociação – Conceitos básicos",
+  "level": "Fácil",
+  "q": "No contexto dos mercados organizados, a negociação consiste, principalmente:",
+  "options": {
+    "A": "Na liquidação financeira das operações.",
+    "B": "No encontro de ofertas de compra e venda de ativos.",
+    "C": "No registro contábil das operações.",
+    "D": "Na custódia dos ativos negociados."
+  },
+  "answer": "B",
+  "explain": "A negociação refere-se ao processo de encontro entre ofertas de compra e venda, resultando na formação de preços e na realização das operações.",
+  "module": "Título V – Negociação",
+  "chapter": "Capítulo I – Conceitos gerais de negociação"
+},
+{
+  "id": "QV002",
+  "theme": "Tipos de ordem",
+  "level": "Fácil",
+  "q": "A ordem a mercado caracteriza-se por:",
+  "options": {
+    "A": "Execução ao preço especificado pelo investidor.",
+    "B": "Execução imediata ao melhor preço disponível no mercado.",
+    "C": "Execução apenas no encerramento do pregão.",
+    "D": "Validade restrita ao leilão de abertura."
+  },
+  "answer": "B",
+  "explain": "A ordem a mercado é executada imediatamente ao melhor preço disponível no momento de sua inserção no sistema de negociação.",
+  "module": "Título V – Negociação",
+  "chapter": "Capítulo I – Tipos de ordens"
+},
+{
+  "id": "QV003",
+  "theme": "Prioridade de execução",
+  "level": "Fácil",
+  "q": "Nos sistemas de negociação direcionados por ordens, a prioridade de execução é determinada, em regra, por:",
+  "options": {
+    "A": "Volume financeiro e intermediário.",
+    "B": "Tempo e preço.",
+    "C": "Tipo de investidor.",
+    "D": "Origem da ordem."
+  },
+  "answer": "B",
+  "explain": "A prioridade de execução observa, em regra, o melhor preço e, em seguida, a ordem cronológica de inserção (tempo).",
+  "module": "Título V – Negociação",
+  "chapter": "Capítulo I – Formação de preços"
+},
+{
+  "id": "QV004",
+  "theme": "Ordem limitada",
+  "level": "Médio",
+  "q": "A ordem limitada diferencia-se da ordem a mercado porque:",
+  "options": {
+    "A": "Não pode ser cancelada.",
+    "B": "É executada exclusivamente em leilões.",
+    "C": "Estabelece um preço máximo ou mínimo para execução.",
+    "D": "Dispensa a existência de contraparte."
+  },
+  "answer": "C",
+  "explain": "Na ordem limitada, o investidor define o preço máximo de compra ou mínimo de venda para execução da operação.",
+  "module": "Título V – Negociação",
+  "chapter": "Capítulo I – Tipos de ordens"
+},
+{
+  "id": "QV005",
+  "theme": "Validade das ordens",
+  "level": "Médio",
+  "q": "Uma ordem válida somente para o dia de negociação em que foi inserida é denominada:",
+  "options": {
+    "A": "Ordem válida até cancelar.",
+    "B": "Ordem válida até data determinada.",
+    "C": "Ordem do dia.",
+    "D": "Ordem stop."
+  },
+  "answer": "C",
+  "explain": "A ordem do dia é válida apenas durante o pregão em que foi inserida, sendo automaticamente cancelada ao seu término.",
+  "module": "Título V – Negociação",
+  "chapter": "Capítulo I – Tipos de ordens"
+},
+{
+  "id": "QV006",
+  "theme": "Leilões",
+  "level": "Médio",
+  "q": "Os leilões de negociação têm como principal objetivo:",
+  "options": {
+    "A": "Eliminar a volatilidade dos preços.",
+    "B": "Formar preços em situações específicas de mercado.",
+    "C": "Substituir a negociação contínua.",
+    "D": "Garantir a liquidez de todos os ativos."
+  },
+  "answer": "B",
+  "explain": "Os leilões são utilizados para a formação de preços em momentos específicos, como abertura, fechamento ou situações de oscilação acentuada.",
+  "module": "Título V – Negociação",
+  "chapter": "Capítulo II – Leilões de negociação"
+},
+{
+  "id": "QV007",
+  "theme": "Interrupção de negociação",
+  "level": "Médio",
+  "q": "A interrupção temporária da negociação de um ativo pode ocorrer, entre outros motivos, em razão de:",
+  "options": {
+    "A": "Ausência de investidores interessados.",
+    "B": "Oscilações excessivas de preços.",
+    "C": "Decisão unilateral do investidor.",
+    "D": "Encerramento da custódia."
+  },
+  "answer": "B",
+  "explain": "Oscilações excessivas de preços podem ensejar a interrupção temporária da negociação, geralmente acompanhada de leilão para reavaliação do preço.",
+  "module": "Título V – Negociação",
+  "chapter": "Capítulo II – Leilões de negociação"
+},
+{
+  "id": "QV008",
+  "theme": "Negociação eletrônica",
+  "level": "Difícil",
+  "q": "Nos sistemas eletrônicos de negociação, a transparência é assegurada, principalmente:",
+  "options": {
+    "A": "Pela divulgação das posições individuais dos investidores.",
+    "B": "Pelo acesso às informações de ofertas e negócios realizados.",
+    "C": "Pela eliminação da intermediação.",
+    "D": "Pela inexistência de regras operacionais."
+  },
+  "answer": "B",
+  "explain": "A transparência decorre da divulgação das ofertas e dos negócios realizados, permitindo acompanhamento do mercado pelos participantes.",
+  "module": "Título V – Negociação",
+  "chapter": "Capítulo I – Conceitos gerais de negociação"
+},
+{
+  "id": "QV009",
+  "theme": "Cancelamento de ordens",
+  "level": "Difícil",
+  "q": "O cancelamento de uma ordem de negociação:",
+  "options": {
+    "A": "Não é permitido após sua inserção.",
+    "B": "Pode ocorrer a qualquer momento antes de sua execução.",
+    "C": "Depende de autorização da câmara de compensação.",
+    "D": "Somente ocorre ao final do pregão."
+  },
+  "answer": "B",
+  "explain": "As ordens podem ser canceladas pelo participante antes de sua execução, respeitadas as regras do sistema de negociação.",
+  "module": "Título V – Negociação",
+  "chapter": "Capítulo I – Tipos de ordens"
+},
+{
+  "id": "QV010",
+  "theme": "Integridade do mercado",
+  "level": "Difícil",
+  "q": "As regras de negociação visam, entre outros objetivos:",
+  "options": {
+    "A": "Assegurar a integridade, a equidade e o funcionamento ordenado do mercado.",
+    "B": "Garantir retorno mínimo aos investidores.",
+    "C": "Eliminar a concorrência entre participantes.",
+    "D": "Impedir a oscilação de preços."
+  },
+  "answer": "A",
+  "explain": "As regras de negociação buscam assegurar a integridade, a equidade e o funcionamento ordenado e transparente do mercado.",
+  "module": "Título V – Negociação",
+  "chapter": "Capítulo I – Conceitos gerais de negociação"
+},
+{
+  "id": "QVI001",
+  "theme": "Pós-negociação",
+  "level": "Fácil",
+  "q": "A câmara de compensação e liquidação tem como função principal:",
+  "options": {
+    "A": "Realizar a negociação de ativos.",
+    "B": "Registrar o cadastro de investidores.",
+    "C": "Garantir a compensação e a liquidação das operações realizadas.",
+    "D": "Formar os preços dos ativos negociados."
+  },
+  "answer": "C",
+  "explain": "A câmara de compensação e liquidação atua na pós-negociação, sendo responsável pela compensação das obrigações e pela liquidação financeira e/ou física das operações.",
+  "module": "Título VI – Câmara de compensação e liquidação",
+  "chapter": "Capítulo I – Conceitos gerais"
+},
+{
+  "id": "QVI002",
+  "theme": "Compensação",
+  "level": "Fácil",
+  "q": "A compensação de operações consiste, basicamente:",
+  "options": {
+    "A": "Na formação do preço de negociação.",
+    "B": "Na apuração das obrigações de compra e venda das partes.",
+    "C": "No registro dos ativos em custódia.",
+    "D": "Na execução de ordens de negociação."
+  },
+  "answer": "B",
+  "explain": "A compensação corresponde ao processo de apuração das obrigações de compra e venda assumidas pelas partes após a negociação.",
+  "module": "Título VI – Câmara de compensação e liquidação",
+  "chapter": "Capítulo I – Conceitos gerais"
+},
+{
+  "id": "QVI003",
+  "theme": "Liquidação",
+  "level": "Fácil",
+  "q": "A liquidação financeira de uma operação ocorre quando:",
+  "options": {
+    "A": "As ordens são inseridas no sistema.",
+    "B": "Os ativos são negociados em leilão.",
+    "C": "Há a transferência dos recursos financeiros entre as partes.",
+    "D": "Os ativos são registrados na central depositária."
+  },
+  "answer": "C",
+  "explain": "A liquidação financeira ocorre com a efetiva transferência dos recursos financeiros entre comprador e vendedor, conforme as obrigações apuradas.",
+  "module": "Título VI – Câmara de compensação e liquidação",
+  "chapter": "Capítulo I – Conceitos gerais"
+},
+{
+  "id": "QVI004",
+  "theme": "Contraparte central",
+  "level": "Médio",
+  "q": "A atuação da contraparte central (CCP) tem como principal efeito:",
+  "options": {
+    "A": "Eliminar a necessidade de garantias.",
+    "B": "Substituir as partes originais, assumindo o risco de crédito das operações.",
+    "C": "Impedir a negociação de derivativos.",
+    "D": "Centralizar a custódia dos ativos."
+  },
+  "answer": "B",
+  "explain": "A contraparte central intermedeia as operações por meio da novação, tornando-se compradora do vendedor e vendedora do comprador, assumindo o risco de crédito.",
+  "module": "Título VI – Câmara de compensação e liquidação",
+  "chapter": "Capítulo II – Contraparte central"
+},
+{
+  "id": "QVI005",
+  "theme": "Novação",
+  "level": "Médio",
+  "q": "No contexto das câmaras de compensação, a novação significa:",
+  "options": {
+    "A": "O cancelamento das operações negociadas.",
+    "B": "A substituição das obrigações originais por novas obrigações com a CCP.",
+    "C": "A liquidação imediata das operações.",
+    "D": "O registro dos ativos na central depositária."
+  },
+  "answer": "B",
+  "explain": "A novação ocorre quando a contraparte central substitui as partes originais, assumindo as obrigações decorrentes da operação.",
+  "module": "Título VI – Câmara de compensação e liquidação",
+  "chapter": "Capítulo II – Contraparte central"
+},
+{
+  "id": "QVI006",
+  "theme": "Gerenciamento de riscos",
+  "level": "Médio",
+  "q": "Entre os mecanismos utilizados pelas câmaras de compensação para gerenciamento de riscos está:",
+  "options": {
+    "A": "A eliminação da volatilidade dos mercados.",
+    "B": "A exigência de garantias e chamadas de margem.",
+    "C": "A dispensa de controles operacionais.",
+    "D": "A inexistência de limites operacionais."
+  },
+  "answer": "B",
+  "explain": "As câmaras utilizam garantias, chamadas de margem e outros mecanismos para mitigar riscos de crédito e liquidação.",
+  "module": "Título VI – Câmara de compensação e liquidação",
+  "chapter": "Capítulo III – Gerenciamento de riscos"
+},
+{
+  "id": "QVI007",
+  "theme": "Inadimplência",
+  "level": "Médio",
+  "q": "A inadimplência de um participante em uma câmara de compensação pode gerar:",
+  "options": {
+    "A": "A suspensão imediata de todo o mercado.",
+    "B": "Risco sistêmico, caso não seja adequadamente gerenciada.",
+    "C": "A anulação automática de todas as operações.",
+    "D": "A transferência do risco exclusivamente aos investidores."
+  },
+  "answer": "B",
+  "explain": "A inadimplência pode gerar risco sistêmico se não for adequadamente gerenciada por mecanismos como garantias, fundos de liquidação e planos de contingência.",
+  "module": "Título VI – Câmara de compensação e liquidação",
+  "chapter": "Capítulo III – Gerenciamento de riscos"
+},
+{
+  "id": "QVI008",
+  "theme": "Liquidação bruta em tempo real",
+  "level": "Difícil",
+  "q": "A liquidação bruta em tempo real (LBTR) caracteriza-se por:",
+  "options": {
+    "A": "Liquidação pelo valor líquido ao final do dia.",
+    "B": "Liquidação individual e imediata das obrigações.",
+    "C": "Compensação multilateral das operações.",
+    "D": "Ausência de garantias financeiras."
+  },
+  "answer": "B",
+  "explain": "Na liquidação bruta em tempo real, as obrigações são liquidadas individualmente e de forma imediata, reduzindo riscos de crédito.",
+  "module": "Título VI – Câmara de compensação e liquidação",
+  "chapter": "Capítulo I – Conceitos gerais"
+},
+{
+  "id": "QVI009",
+  "theme": "Compensação multilateral",
+  "level": "Difícil",
+  "q": "A compensação multilateral permite, principalmente:",
+  "options": {
+    "A": "A liquidação individual de cada operação.",
+    "B": "A redução do número e do valor das obrigações a liquidar.",
+    "C": "A eliminação do risco de mercado.",
+    "D": "A negociação direta entre investidores."
+  },
+  "answer": "B",
+  "explain": "A compensação multilateral reduz o número e o valor das obrigações a liquidar, aumentando a eficiência do processo de liquidação.",
+  "module": "Título VI – Câmara de compensação e liquidação",
+  "chapter": "Capítulo I – Conceitos gerais"
+},
+{
+  "id": "QVI010",
+  "theme": "Eficiência da pós-negociação",
+  "level": "Difícil",
+  "q": "A eficiência dos processos de compensação e liquidação contribui para:",
+  "options": {
+    "A": "A eliminação total dos riscos financeiros.",
+    "B": "A redução de riscos e o fortalecimento da confiança no mercado.",
+    "C": "A dispensa de supervisão regulatória.",
+    "D": "A substituição da negociação eletrônica."
+  },
+  "answer": "B",
+  "explain": "Processos eficientes de compensação e liquidação reduzem riscos e fortalecem a confiança e a estabilidade do mercado financeiro.",
+  "module": "Título VI – Câmara de compensação e liquidação",
+  "chapter": "Capítulo I – Conceitos gerais"
+},
+{
+  "id": "QVII001",
+  "theme": "Central depositária – Conceito",
+  "level": "Fácil",
+  "q": "A central depositária tem como função principal:",
+  "options": {
+    "A": "Executar ordens de compra e venda de ativos.",
+    "B": "Registrar, custodiar e controlar a titularidade dos ativos.",
+    "C": "Realizar a compensação financeira das operações.",
+    "D": "Fiscalizar as instituições financeiras."
+  },
+  "answer": "B",
+  "explain": "A central depositária é responsável pelo registro, custódia e controle da titularidade dos ativos financeiros, assegurando a correta identificação dos proprietários.",
+  "module": "Título VII – Central depositária",
+  "chapter": "Capítulo I – Conceitos gerais"
+},
+{
+  "id": "QVII002",
+  "theme": "Custódia",
+  "level": "Fácil",
+  "q": "A custódia exercida pela central depositária refere-se:",
+  "options": {
+    "A": "À guarda física de documentos em papel.",
+    "B": "Ao controle eletrônico dos ativos e direitos dos investidores.",
+    "C": "À negociação de ativos no mercado primário.",
+    "D": "À liquidação financeira das operações."
+  },
+  "answer": "B",
+  "explain": "A custódia moderna é realizada de forma eletrônica, com controle dos ativos e direitos dos investidores registrados na central depositária.",
+  "module": "Título VII – Central depositária",
+  "chapter": "Capítulo I – Conceitos gerais"
+},
+{
+  "id": "QVII003",
+  "theme": "Registro de ativos",
+  "level": "Fácil",
+  "q": "O registro de ativos na central depositária tem como objetivo:",
+  "options": {
+    "A": "Formar preços de negociação.",
+    "B": "Assegurar a existência, a titularidade e os direitos sobre os ativos.",
+    "C": "Garantir rentabilidade mínima.",
+    "D": "Eliminar riscos de mercado."
+  },
+  "answer": "B",
+  "explain": "O registro assegura a existência do ativo, sua titularidade e os direitos associados, como proventos e eventos corporativos.",
+  "module": "Título VII – Central depositária",
+  "chapter": "Capítulo I – Conceitos gerais"
+},
+{
+  "id": "QVII004",
+  "theme": "Segregação patrimonial",
+  "level": "Médio",
+  "q": "A atuação da central depositária contribui para a segregação patrimonial ao:",
+  "options": {
+    "A": "Misturar ativos de clientes e do intermediário.",
+    "B": "Registrar ativos em contas individualizadas ou coletivas segregadas.",
+    "C": "Eliminar a necessidade de controle interno.",
+    "D": "Substituir a gestão de riscos."
+  },
+  "answer": "B",
+  "explain": "A central depositária registra os ativos de forma segregada, protegendo o patrimônio dos investidores contra riscos do intermediário.",
+  "module": "Título VII – Central depositária",
+  "chapter": "Capítulo I – Estrutura de contas"
+},
+{
+  "id": "QVII005",
+  "theme": "Eventos corporativos",
+  "level": "Médio",
+  "q": "No âmbito da central depositária, eventos corporativos referem-se:",
+  "options": {
+    "A": "À negociação diária dos ativos.",
+    "B": "À liquidação financeira das operações.",
+    "C": "A fatos que alteram direitos e características dos ativos.",
+    "D": "Ao cadastro de novos investidores."
+  },
+  "answer": "C",
+  "explain": "Eventos corporativos são fatos que impactam os direitos ou as características dos ativos, como dividendos, bonificações, grupamentos e desdobramentos.",
+  "module": "Título VII – Central depositária",
+  "chapter": "Capítulo II – Eventos corporativos"
+},
+{
+  "id": "QVII006",
+  "theme": "Transferência de ativos",
+  "level": "Médio",
+  "q": "A transferência de ativos entre contas de custódia ocorre, geralmente:",
+  "options": {
+    "A": "Sem registro na central depositária.",
+    "B": "Por meio de procedimentos controlados e registrados.",
+    "C": "Apenas no encerramento do pregão.",
+    "D": "Sem a necessidade de autorização."
+  },
+  "answer": "B",
+  "explain": "As transferências de ativos são realizadas por procedimentos formais, registrados na central depositária, garantindo rastreabilidade e segurança.",
+  "module": "Título VII – Central depositária",
+  "chapter": "Capítulo I – Estrutura de contas"
+},
+{
+  "id": "QVII007",
+  "theme": "Responsabilidades",
+  "level": "Médio",
+  "q": "Compete à central depositária, entre outras atribuições:",
+  "options": {
+    "A": "Executar ordens de negociação.",
+    "B": "Garantir o cumprimento das obrigações financeiras.",
+    "C": "Manter registros atualizados das posições e titularidades.",
+    "D": "Definir políticas monetárias."
+  },
+  "answer": "C",
+  "explain": "Cabe à central depositária manter registros atualizados das posições e da titularidade dos ativos custodiados.",
+  "module": "Título VII – Central depositária",
+  "chapter": "Capítulo I – Conceitos gerais"
+},
+{
+  "id": "QVII008",
+  "theme": "Risco operacional",
+  "level": "Difícil",
+  "q": "Falhas nos sistemas da central depositária podem gerar, principalmente:",
+  "options": {
+    "A": "Apenas riscos de mercado.",
+    "B": "Riscos operacionais com impacto sistêmico.",
+    "C": "Exclusivamente riscos de crédito.",
+    "D": "Benefícios aos investidores."
+  },
+  "answer": "B",
+  "explain": "Falhas na central depositária podem gerar riscos operacionais relevantes, com potencial impacto sistêmico, dada sua função crítica no mercado.",
+  "module": "Título VII – Central depositária",
+  "chapter": "Capítulo I – Conceitos gerais"
+},
+{
+  "id": "QVII009",
+  "theme": "Infraestrutura de mercado",
+  "level": "Difícil",
+  "q": "As centrais depositárias são consideradas infraestruturas essenciais porque:",
+  "options": {
+    "A": "Atuam diretamente na formulação de políticas públicas.",
+    "B": "São responsáveis pela negociação dos ativos.",
+    "C": "Garantem a segurança jurídica e operacional da custódia.",
+    "D": "Eliminam todos os riscos financeiros."
+  },
+  "answer": "C",
+  "explain": "As centrais depositárias garantem segurança jurídica e operacional ao registro e à custódia dos ativos, sendo infraestruturas críticas do mercado financeiro.",
+  "module": "Título VII – Central depositária",
+  "chapter": "Capítulo I – Conceitos gerais"
+},
+{
+  "id": "QVII010",
+  "theme": "Confiança no mercado",
+  "level": "Difícil",
+  "q": "A atuação eficiente da central depositária contribui diretamente para:",
+  "options": {
+    "A": "A eliminação da volatilidade dos mercados.",
+    "B": "O aumento da confiança e da estabilidade do mercado financeiro.",
+    "C": "A dispensa de intermediários.",
+    "D": "A fixação administrativa de preços."
+  },
+  "answer": "B",
+  "explain": "Uma central depositária eficiente fortalece a confiança dos participantes e contribui para a estabilidade e o bom funcionamento do mercado financeiro.",
+  "module": "Título VII – Central depositária",
+  "chapter": "Capítulo I – Conceitos gerais"
+},
 ]
+
