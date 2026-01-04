@@ -28,7 +28,7 @@
     },
     "answer": "C",
     "explain": "O framework se estrutura em 5 componentes (ambiente de controle, avaliação de riscos, atividades de controle, informação/comunicação e monitoramento).",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo II – Risco corporativo e controles internos"
   },
   {
@@ -60,7 +60,7 @@
     },
     "answer": "C",
     "explain": "Auditoria interna avalia se processos e controles estão funcionando e se a organização está aderente a políticas e normas; ela não “toca” a gestão do negócio (estratégia/orçamento).",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo II – Risco corporativo e controles internos"
   },
   {
@@ -76,7 +76,7 @@
     },
     "answer": "A",
     "explain": "É uma função independente que revisa controles, processos e riscos (não é área comercial, nem regulador, nem um documento).",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo II – Risco corporativo e controles internos"
   },
   {
@@ -204,7 +204,7 @@
     },
     "answer": "C",
     "explain": "O COSO existe para fortalecer controles internos e gestão de riscos, melhorando confiabilidade, conformidade e eficiência.",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo II – Risco corporativo e controles internos"
   },
   {
@@ -220,7 +220,7 @@
     },
     "answer": "B",
     "explain": "A lógica é: 1ª linha (negócio), 2ª linha (riscos/compliance) e 3ª linha (auditoria interna). Entre as opções, a que melhor representa o modelo é a B.",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo II – Risco corporativo e controles internos"
   },
   {
@@ -252,7 +252,7 @@
     },
     "answer": "A",
     "explain": "Sem identificar riscos corretamente, você não consegue avaliar, responder ou monitorar; por isso a identificação é o passo base do gerenciamento.",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo II – Risco corporativo e controles internos"
   },
   {
@@ -844,7 +844,7 @@
     },
     "answer": "C",
     "explain": "A execução é mais rápida e padronizada, reduzindo fricção operacional e melhorando liquidez.",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara"
   },
   {
@@ -2012,7 +2012,7 @@
     },
     "answer": "A",
     "explain": "A maior pressão de caixa ocorre quando grandes devedores não pagam. Por isso, o cenário estressa justamente quem tem maiores saldos multilaterais a pagar.",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara"
   },
   {
@@ -2108,7 +2108,7 @@
     },
     "answer": "B",
     "explain": "O balcão organizado reduz opacidade do OTC “puro” ao trazer padronização, registro e um mínimo de governança e transparência.",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo II – Risco corporativo e controles internos"
   },
   {
@@ -2780,7 +2780,7 @@
     },
     "answer": "B",
     "explain": "Marcação a mercado atualiza o valor do ativo conforme condições atuais (preços, juros, spreads), tornando risco e resultado mais realistas.",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara"
   },
   {
@@ -3052,7 +3052,7 @@
     },
     "answer": "B",
     "explain": "Garantia real melhora recuperação em caso de default. Com risco menor, o mercado pode aceitar retorno menor (preço maior), mantendo ainda risco de mercado e liquidez.",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara"
   },
   {
@@ -3068,7 +3068,7 @@
     },
     "answer": "B",
     "explain": "Mais visibilidade de ofertas e negócios melhora descoberta de preço e reduz assimetria informacional, o que tende a aumentar confiança e liquidez.",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara"
   },
   {
@@ -3100,7 +3100,7 @@
     },
     "answer": "B",
     "explain": "Risco operacional envolve falhas de processos, pessoas e sistemas (indisponibilidade, erro de execução, falha de controle), diferente de risco de mercado macro.",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara"
   },
   {
@@ -3644,7 +3644,7 @@
     },
     "answer": "B",
     "explain": "Ele mede o que ainda sobra de risco depois de considerar garantias: se as garantias não cobrem cenários, surge déficit (residual).",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara"
   },
   {
@@ -3676,7 +3676,7 @@
     },
     "answer": "C",
     "explain": "O framework de controles internos do COSO é estruturado em 5 componentes (Ambiente, Riscos, Controle, Informação/Comunicação e Monitoramento).",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo II – Risco corporativo e controles internos"
   },
   {
@@ -3804,7 +3804,7 @@
     },
     "answer": "B",
     "explain": "Limitada controla preço (pode não executar). A mercado controla execução (pode executar pior, especialmente em baixa liquidez).",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara"
   },
   {
@@ -4044,7 +4044,7 @@
     },
     "answer": "B",
     "explain": "Formador de mercado sustenta liquidez ao ofertar bid/ask, facilitando entrada/saída e contribuindo para formação de preço.",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara"
   },
   {
@@ -4220,7 +4220,7 @@
     },
     "answer": "B",
     "explain": "O plano aloca recursos de auditoria onde o risco é maior, definindo o que será auditado, quando e com qual profundidade.",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo II – Risco corporativo e controles internos"
   },
   {
@@ -4364,7 +4364,7 @@
     },
     "answer": "B",
     "explain": "PJ exige clareza de quem pode movimentar, quem decide e quem se beneficia. Sem isso, aumenta risco legal e de PLD.",
-    "module": "Título III – Estrutura de contas e cadastro e cadastro",
+    "module": "Título III – Estrutura de contas e cadastro",
     "chapter": "Capítulo I – Cadastro de investidores residentes"
   },
   {
@@ -4716,7 +4716,7 @@
     },
     "answer": "B",
     "explain": "Se o mercado anda contra e o colchão de garantia fica insuficiente, o sistema exige aporte para manter a posição e proteger a contraparte/CCP.",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara"
   },
   {
@@ -4732,7 +4732,7 @@
     },
     "answer": "B",
     "explain": "O \"tone at the top\" reflete o compromisso real da alta administração com ética, conformidade e controles internos. Quando a liderança demonstra, na prática, respeito às regras e aos valores institucionais, isso influencia o comportamento dos colaboradores e aumenta a efetividade dos controles. Sem esse exemplo, políticas formais tendem a ser apenas simbólicas.",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo II – Risco corporativo e controles internos"
   },
   {
@@ -5649,7 +5649,7 @@
   },
   {
     "id": "Q0053_2",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Depósito compulsório | Competência",
     "level": "Fácil",
@@ -5729,7 +5729,7 @@
   },
   {
     "id": "Q0058_2",
-    "module": "Título III – Estrutura de contas e cadastro e cadastro",
+    "module": "Título III – Estrutura de contas e cadastro",
     "chapter": "Capítulo I – Cadastro de investidores residentes",
     "theme": "SPB | Sistemas integrantes",
     "level": "Médio",
@@ -5937,7 +5937,7 @@
   },
   {
     "id": "Q0071_2",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo II – Risco corporativo e controles internos",
     "theme": "Cooperativa de crédito | Constituição",
     "level": "Fácil",
@@ -7537,7 +7537,7 @@
   },
   {
     "id": "Q1995420213081",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Small Caps - Riscos",
     "level": "Médio",
@@ -8305,7 +8305,7 @@
   },
   {
     "id": "Q1995420223115",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Título sem risco de crédito e indexado a preços",
     "level": "Fácil",
@@ -8417,7 +8417,7 @@
   },
   {
     "id": "Q199544102",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Risco Operacional",
     "level": "Médio",
@@ -8433,7 +8433,7 @@
   },
   {
     "id": "Q1995440103",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Tipos de Risco",
     "level": "Médio",
@@ -8465,7 +8465,7 @@
   },
   {
     "id": "Q199544105",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Value At Risk (VAR)",
     "level": "Médio",
@@ -8497,7 +8497,7 @@
   },
   {
     "id": "Q199544107",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Risco de Liquidez",
     "level": "Fácil",
@@ -8545,7 +8545,7 @@
   },
   {
     "id": "Q199544110",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Risco de Crédito",
     "level": "Fácil",
@@ -8577,7 +8577,7 @@
   },
   {
     "id": "Q199544112",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Risco Não Sistemático",
     "level": "Médio",
@@ -8609,7 +8609,7 @@
   },
   {
     "id": "Q199544114",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Liquidez",
     "level": "Fácil",
@@ -8625,7 +8625,7 @@
   },
   {
     "id": "Q199544115",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Risco de Liquidez - Caracterização",
     "level": "Fácil",
@@ -8657,7 +8657,7 @@
   },
   {
     "id": "Q199544118",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Rating e Rentabilidade",
     "level": "Médio",
@@ -8673,7 +8673,7 @@
   },
   {
     "id": "Q199544119",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Risco de Mercado vs Liquidez",
     "level": "Médio",
@@ -8689,7 +8689,7 @@
   },
   {
     "id": "Q199544120",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Risco de Liquidez vs Mercado",
     "level": "Médio",
@@ -8753,7 +8753,7 @@
   },
   {
     "id": "Q199544124",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Risco de Mercado - Características",
     "level": "Médio",
@@ -10113,7 +10113,7 @@
   },
   {
     "id": "Q199544271",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Risco de liquidez em LTN",
     "level": "Médio",
@@ -11441,7 +11441,7 @@
   },
   {
     "id": "Q199543101",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Risco de Liquidez",
     "level": "Médio",
@@ -15205,7 +15205,7 @@
   },
   {
     "id": "Q14078",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Risco de Crédito - Composição",
     "level": "Fácil",
@@ -15301,7 +15301,7 @@
   },
   {
     "id": "Q14075",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "CORE - Perda Potencial",
     "level": "Difícil",
@@ -15493,7 +15493,7 @@
   },
   {
     "id": "Q14082",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Risco de Crédito - Materialização",
     "level": "Médio",
@@ -16773,7 +16773,7 @@
   },
   {
     "id": "Q10040",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Risco de Mercado - Operação Não Liquidada",
     "level": "Médio",
@@ -17157,7 +17157,7 @@
   },
   {
     "id": "Q10064",
-    "module": "Título III – Estrutura de contas e cadastro e cadastro",
+    "module": "Título III – Estrutura de contas e cadastro",
     "chapter": "Capítulo I – Cadastro de investidores residentes",
     "theme": "PEP (Pessoa Exposta Politicamente)",
     "level": "Médio",
@@ -21541,7 +21541,7 @@
   },
   {
     "id": "Q7216",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo II – Risco corporativo e controles internos",
     "theme": "Auditoria Interna",
     "level": "Fácil",
@@ -23072,7 +23072,7 @@
     },
     "answer": "B",
     "explain": "A identificação da titularidade assegura a segregação patrimonial e a segurança jurídica das posições mantidas em nome dos investidores.",
-    "module": "Título III – Estrutura de contas e cadastro e cadastro",
+    "module": "Título III – Estrutura de contas e cadastro",
     "chapter": "Capítulo I – Estrutura de contas"
   },
   {
@@ -23120,7 +23120,7 @@
     },
     "answer": "B",
     "explain": "O investidor não residente está sujeito a procedimentos específicos de cadastro e regulamentação própria, sem prejuízo das regras gerais.",
-    "module": "Título III – Estrutura de contas e cadastro e cadastro",
+    "module": "Título III – Estrutura de contas e cadastro",
     "chapter": "Capítulo I – Cadastro de investidores residentes"
   },
   {
@@ -23168,7 +23168,7 @@
     },
     "answer": "C",
     "explain": "Nas contas coletivas, cabe ao participante intermediário manter controles internos que assegurem a correta identificação das posições individuais dos investidores.",
-    "module": "Título III – Estrutura de contas e cadastro e cadastro",
+    "module": "Título III – Estrutura de contas e cadastro",
     "chapter": "Capítulo I – Estrutura de contas"
   },
   {
@@ -23184,7 +23184,7 @@
     },
     "answer": "B",
     "explain": "Inconsistências cadastrais e estruturais podem gerar riscos legais, operacionais e regulatórios para as instituições e para o mercado.",
-    "module": "Título III – Estrutura de contas e cadastro e cadastro",
+    "module": "Título III – Estrutura de contas e cadastro",
     "chapter": "Capítulo I – Cadastro de investidores residentes"
   },
   {
@@ -23200,7 +23200,7 @@
     },
     "answer": "B",
     "explain": "A gestão de riscos visa identificar, avaliar, monitorar e controlar os riscos, mantendo-os em níveis compatíveis com a capacidade e os objetivos da instituição.",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Fundamentos da gestão de riscos"
   },
   {
@@ -23248,7 +23248,7 @@
     },
     "answer": "B",
     "explain": "O risco operacional decorre de falhas em processos, sistemas, pessoas ou de eventos externos, incluindo riscos legais.",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Tipos de risco"
   },
   {
@@ -23344,7 +23344,7 @@
     },
     "answer": "C",
     "explain": "A governança de riscos exige papéis e responsabilidades bem definidos, segregação de funções e fluxos adequados de reporte.",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo II – Risco corporativo e controles internos"
   },
   {
@@ -24135,7 +24135,7 @@
   },
   {
     "id": "Q46521",
-    "module": "Título III – Estrutura de contas e cadastro e cadastro",
+    "module": "Título III – Estrutura de contas e cadastro",
     "chapter": "Capítulo I – Cadastro de investidores residentes",
     "theme": "Dados da conta",
     "level": "Fácil",
@@ -24237,7 +24237,7 @@
   },
   {
     "id": "Q64905",
-    "module": "Título III – Estrutura de contas e cadastro e cadastro",
+    "module": "Título III – Estrutura de contas e cadastro",
     "chapter": "Capítulo I – Cadastro de investidores residentes",
     "theme": "Dados da entidade e da conta",
     "level": "Médio",
@@ -24798,7 +24798,7 @@
   },
   {
     "id": "Q40112",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Risco de liquidez",
     "level": "Médio",
@@ -25716,7 +25716,7 @@
   },
   {
     "id": "Q73010",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo II – Risco corporativo e controles internos",
     "theme": "Governança corporativa",
     "level": "Difícil",
@@ -27127,7 +27127,7 @@
   },
   {
     "id": "QCAMB3_0033",
-    "module": "Título IV – Gestão de risco",
+    "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
     "theme": "Conteúdo do manual",
     "level": "Fácil",
@@ -27518,7 +27518,7 @@
   },
   {
     "id": "QEA_B3_0006",
-    "module": "Título III – Estrutura de contas e cadastro e cadastro",
+    "module": "Título III – Estrutura de contas e cadastro",
     "chapter": "Status de Conta",
     "theme": "Suspensa Parcial",
     "level": "Médio",
@@ -28164,7 +28164,7 @@
   },
   {
     "id": "QCD_B3_0019",
-    "module": "Título III – Estrutura de contas e cadastro e cadastro",
+    "module": "Título III – Estrutura de contas e cadastro",
     "chapter": "Capítulo I – Cadastro de investidores residentes",
     "theme": "Escolha do agente e cadastro",
     "level": "Fácil",
