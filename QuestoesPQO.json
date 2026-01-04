@@ -8288,21 +8288,21 @@
     "explain": "Exportador recebe em dólar, então quer proteger-se da queda do dólar. Swap ativo em CDI e passivo em dólar: recebe CDI, paga variação do dólar, hedge perfeito. Comprar PUT de dólar: direito de vender dólar a preço fixo, também protege contra queda. Call de dólar protege contra alta, não é adequado."
   },
   {
-    "id": "Q1995420223112",
-    "module": "Título II – Mercados de bolsa e de balcão",
-    "chapter": "Capítulo I – Mercado de renda variável",
-    "theme": "Tag Along - Segmentos",
-    "level": "Médio",
-    "q": "“Tag Along é um mecanismo de proteção a acionistas minoritários de uma companhia, que garante a eles o direito de deixarem uma sociedade, caso o controle da companhia seja adquirido por um investidor que até então não fazia parte da mesma.” Com relação à essa definição analise as afirmações abaixo: I. No nível 2 o Tag Along é de 100% para todas as ações II. No Novo Mercado o Tag Along é de 100% para “ON” e “PN” III. No nível 1 o Tag Along é de 80% para as ações “ON” Está correto o que se afirma em:",
-    "options": {
-      "A": "I e III",
-      "B": "II e III",
-      "C": "I e II",
-      "D": "Apenas II"
-    },
-    "answer": "C",
-    "explain": "I: Nível 2: 100% para ON, 80% para PN. II: Novo Mercado: 100% para todas. III: Nível 1: 80% para ON, 0% para PN."
+  "id": "Q1995420223112",
+  "module": "Título II – Mercados de bolsa e de balcão",
+  "chapter": "Capítulo I – Mercado de renda variável",
+  "theme": "Tag Along - Segmentos de Listagem",
+  "level": "Médio",
+  "q": "O Tag Along é um mecanismo de proteção aos acionistas minoritários, que lhes assegura o direito de vender suas ações em caso de alienação do controle da companhia, nas mesmas condições (ou em condições mínimas estabelecidas) oferecidas ao acionista controlador.\n\nCom base nas regras de Tag Along previstas para os segmentos de listagem da B3, analise as afirmações a seguir:\n\nI. No segmento Nível 2, o Tag Along é de 100% para todas as ações.\n\nII. No Novo Mercado, o Tag Along é de 100% para as ações emitidas pela companhia.\n\nIII. No segmento Nível 1, o Tag Along é de 80% para as ações ordinárias (ON).\n\nEstá correto o que se afirma em:",
+  "options": {
+    "A": "I e III",
+    "B": "II e III",
+    "C": "I e II",
+    "D": "Apenas II"
   },
+  "answer": "C",
+  "explain": "A afirmativa I está correta, pois no Nível 2 o Tag Along é de 100% para ações ordinárias (ON) e de, no mínimo, 80% para ações preferenciais (PN), garantindo proteção ampliada aos minoritários.\n\nA afirmativa II está correta, pois no Novo Mercado somente são permitidas ações ordinárias (ON), e o Tag Along é de 100% para essas ações.\n\nA afirmativa III está incorreta, pois no Nível 1 o Tag Along mínimo de 80% aplica-se apenas às ações ordinárias, não sendo exigência adicional além do previsto na legislação.",
+},
   {
     "id": "Q1995420223115",
     "module": "Título IV – Gestão de Risco",
@@ -26859,7 +26859,7 @@
     "chapter": "Capítulo III – A B3 no mercado financeiro e de capitais",
     "theme": "Exceção à isenção",
     "level": "Médio",
-    "q": "O Bacen, na qualidade de participante da Título VI – Câmara de compensação e liquidação, está isento de todos os seguintes, EXCETO:",
+    "q": "O Bacen, na qualidade de participante da Câmara de compensação e liquidação, está isento de todos os seguintes, EXCETO:",
     "options": {
       "A": "Supervisão da BSM.",
       "B": "Depósito de garantias.",
@@ -27352,7 +27352,7 @@
     "chapter": "Capítulo II – Infraestrutura do mercado",
     "theme": "Novação e interposição",
     "level": "Médio",
-    "q": "O conceito de \"contraparte central\" assumido pela Título VI – Câmara de compensação e liquidação significa que, após a compensação:",
+    "q": "O conceito de \"contraparte central\" assumido pela Câmara de compensação e liquidação significa que, após a compensação:",
     "options": {
       "A": "Os participantes liquidam diretamente entre si.",
       "B": "A Câmara interpõe-se entre os Membros de Compensação, tornando-se compradora para todo vendedor e vendedora para todo comprador.",
