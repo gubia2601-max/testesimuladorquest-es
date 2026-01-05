@@ -18001,7 +18001,7 @@
     "D": "III."
   },
   "answer": "C",
-  "explain": "A afirmativa I está correta, pois a rejeição do direcionamento pelo agente de custódia indicado impede a continuidade da oferta, que permanece suspensa até regularização.\n\nA afirmativa II está correta, uma vez que, na ausência de direcionamento explícito no registro da oferta, a câmara consulta a existência de custodiante opcional previamente vinculado à conta do comitente.\n\nA afirmativa III também está correta, pois, inexistindo custodiante opcional, o sistema adota como padrão o agente de custódia do próprio Participante de Negociação Pleno ou do Participante de Liquidação responsável pelo registro da oferta.",
+  "explain": "A afirmativa I está correta, pois a rejeição do direcionamento pelo agente de custódia indicado impede a continuidade da oferta, que permanece suspensa até regularização.\n\nA afirmativa II está correta, uma vez que, na ausência de direcionamento explícito no registro da oferta, a câmara consulta a existência de custodiante opcional previamente vinculado à conta do comitente.\n\nA afirmativa III também está correta, pois, inexistindo custodiante opcional, o sistema adota como padrão o agente de custódia do próprio Participante de Negociação Pleno ou do Participante de Liquidação responsável pelo registro da oferta."
 },
   {
     "id": "Q14191",
