@@ -32,6 +32,134 @@
     "chapter": "Capítulo II – Risco corporativo e controles internos"
   },
    {
+    "id": "Q_CAM_016",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Risco sistêmico",
+    "level": "Médio",
+    "q": "A centralização do risco pelas câmaras de compensação e liquidação tem como principal consequência:",
+    "options": {
+      "A": "Eliminar totalmente o risco de inadimplência no mercado.",
+      "B": "Transferir o risco integralmente aos comitentes.",
+      "C": "Reduzir o risco sistêmico por meio da contenção da inadimplência.",
+      "D": "Substituir a necessidade de garantias individuais."
+    },
+    "answer": "C",
+    "explain": "A centralização do risco pelas câmaras visa reduzir o risco sistêmico, evitando que a inadimplência de um participante se propague para os demais. Ela não elimina o risco nem dispensa o uso de garantias.",
+  },
+  {
+    "id": "Q_CAM_017",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Salvaguardas",
+    "level": "Médio",
+    "q": "No contexto das câmaras de compensação e liquidação, as salvaguardas têm como principal objetivo:",
+    "options": {
+      "A": "Garantir rentabilidade aos participantes.",
+      "B": "Assegurar a liquidação das obrigações mesmo em cenários de inadimplência.",
+      "C": "Substituir a exigência de margem de garantia.",
+      "D": "Reduzir custos operacionais da câmara."
+    },
+    "answer": "B",
+    "explain": "As salvaguardas constituem o conjunto de mecanismos destinados a permitir a liquidação das obrigações dos participantes, inclusive em situações de inadimplência, preservando a estabilidade do sistema.",
+  },
+  {
+    "id": "Q_CAM_018",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Defaulters pay",
+    "level": "Difícil",
+    "q": "O mecanismo conhecido como defaulters pay caracteriza-se por:",
+    "options": {
+      "A": "Garantias exigidas de todos os participantes, independentemente do risco.",
+      "B": "Recursos aportados pela câmara para cobrir perdas de mercado.",
+      "C": "Recursos utilizados apenas em caso de inadimplência do participante contribuinte.",
+      "D": "Saldo mínimo exigido para operação intradiária."
+    },
+    "answer": "C",
+    "explain": "Defaulters pay corresponde a recursos que só são utilizados em caso de inadimplência do próprio participante que os aportou, respeitando o princípio de que o inadimplente deve arcar com suas perdas.",
+  },
+  {
+    "id": "Q_CAM_019",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Contraparte central",
+    "level": "Difícil",
+    "q": "Ao assumir a posição de contraparte central perante os membros de compensação, a câmara:",
+    "options": {
+      "A": "Assume responsabilidade por todas as obrigações de todos os participantes.",
+      "B": "Elimina a necessidade de controle de risco intradiário.",
+      "C": "Interpõe-se entre compradores e vendedores para fins de liquidação.",
+      "D": "Atua apenas como registradora das operações."
+    },
+    "answer": "C",
+    "explain": "A câmara atua como contraparte central ao se interpor entre compradores e vendedores, garantindo a liquidação das operações aceitas, exclusivamente perante os membros de compensação.",
+  },
+  {
+    "id": "Q_CAM_020",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Limite de concentração",
+    "level": "Difícil",
+    "q": "O principal objetivo dos limites de concentração de posição em aberto é:",
+    "options": {
+      "A": "Restringir a atuação de investidores institucionais.",
+      "B": "Evitar manipulação de preços e mitigar riscos de crédito.",
+      "C": "Aumentar a arrecadação de multas pela B3.",
+      "D": "Reduzir a liquidez dos mercados."
+    },
+    "answer": "B",
+    "explain": "Os limites de concentração visam proteger a integridade do mercado, mitigando riscos de crédito e distorções no processo de formação de preços, além de reduzir potenciais impactos sistêmicos.",
+  },
+  {
+    "id": "Q_CAM_021",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Risco intradiário",
+    "level": "Difícil",
+    "q": "O monitoramento de risco intradiário permite à câmara:",
+    "options": {
+      "A": "Convocar participantes para depósito de garantias a qualquer momento.",
+      "B": "Recalcular o risco apenas no fechamento do mercado.",
+      "C": "Eliminar o risco de liquidez dos participantes.",
+      "D": "Substituir os testes de estresse."
+    },
+    "answer": "A",
+    "explain": "O monitoramento de risco intradiário permite identificar aumentos relevantes de exposição e convocar participantes para reforço de garantias a qualquer momento do dia.",
+  },
+  {
+    "id": "Q_CAM_022",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "CORE – close-out",
+    "level": "Difícil",
+    "q": "No contexto da metodologia CORE, o principal desafio enfrentado pela câmara após a inadimplência é:",
+    "options": {
+      "A": "A inexistência de ativos para liquidação.",
+      "B": "O risco de perda durante o encerramento do portfólio inadimplente.",
+      "C": "A impossibilidade de aplicar deságios.",
+      "D": "A ausência de limites de risco."
+    },
+    "answer": "B",
+    "explain": "Após a inadimplência, a câmara enfrenta o risco de perda potencial durante o processo de encerramento do portfólio, além de riscos implícitos de mercado e liquidez.",
+  },
+  {
+    "id": "Q_CAM_023",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Fundo de liquidação",
+    "level": "Médio",
+    "q": "O fundo de liquidação tem como finalidade principal:",
+    "options": {
+      "A": "Cobrir custos operacionais da câmara.",
+      "B": "Garantir liquidez aos comitentes.",
+      "C": "Atuar como salvaguarda em situações extremas de inadimplência.",
+      "D": "Substituir a margem de garantia dos participantes."
+    },
+    "answer": "C",
+    "explain": "O fundo de liquidação é uma salvaguarda destinada a absorver perdas em cenários extremos de inadimplência, contribuindo para a estabilidade do sistema de compensação e liquidação.",
+  },
+   {
     "id": "Q_CAM_001DAS2",
     "module": "Título IV – Gestão de risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
