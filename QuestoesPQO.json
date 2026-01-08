@@ -31,6 +31,134 @@
     "module": "Título IV – Gestão de Risco",
     "chapter": "Capítulo II – Risco corporativo e controles internos"
   },
+   {
+    "id": "Q_CAM_001DAS2",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Risco de crédito e risco de liquidez",
+    "level": "Médio",
+    "q": "Uma câmara de compensação e liquidação, em última instância, está exposta a dois principais riscos: o risco de crédito e o risco de liquidez.\n\nI – O risco de crédito se refere ao risco de uma parte, na transação, não ser capaz de cumprir integralmente com suas obrigações no prazo devido ou em qualquer momento futuro;\n\nII – O risco de liquidez é o risco de uma parte não ser capaz de cumprir com suas obrigações no prazo devido, mas ter a perspectiva de cumpri-la em um momento futuro.\n\nSobre os dois conceitos, é possível afirmar que:",
+    "options": {
+      "A": "A afirmação I é correta e a afirmação II é incorreta.",
+      "B": "As afirmações I e II são incorretas.",
+      "C": "A afirmação I é incorreta e a afirmação II é correta.",
+      "D": "As afirmações I e II são corretas."
+    },
+    "answer": "D",
+    "explain": "Ambas as afirmações estão corretas. O risco de crédito envolve a possibilidade de não cumprimento das obrigações tanto no presente quanto no futuro. Já o risco de liquidez ocorre quando há incapacidade de cumprir obrigações no prazo devido, mas ainda existe a perspectiva de cumprimento em momento futuro.",
+  },
+  {
+    "id": "Q_CAM_002DADA",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Função das câmaras de compensação",
+    "level": "Médio",
+    "q": "Diante das funções essenciais das câmaras de compensação e liquidação, qual afirmativa melhor descreve o papel crucial dessas instituições no contexto do mercado financeiro?",
+    "options": {
+      "A": "As câmaras têm como principal missão promover a adimplência para manter a competitividade no mercado.",
+      "B": "A função principal das câmaras é centralizar as operações, simplificando os processos do mercado financeiro.",
+      "C": "O papel crucial das câmaras é administrar o risco sistêmico, prevenindo a propagação da inadimplência para outras instituições.",
+      "D": "A concentração do risco nas câmaras não influencia a estabilidade do sistema financeiro, tornando-a uma condição secundária."
+    },
+    "answer": "C",
+    "explain": "Uma das funções primordiais das câmaras de compensação e liquidação é administrar o risco sistêmico, evitando que a inadimplência de um ou mais participantes gere efeitos em cadeia no sistema financeiro.",
+  },
+  {
+    "id": "Q_CAM_003DA14",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Administração e concentração de riscos",
+    "level": "Difícil",
+    "q": "Analise as asserções sobre o papel das câmaras de compensação e liquidação no mercado financeiro:\n\nI - As câmaras têm como principal função centralizar a administração do risco inerente às transações.\n\nII - Ao administrarem riscos, as câmaras geram benefícios ao mercado, mas concentram o risco de todo o sistema.\n\nAssinale a alternativa correta:",
+    "options": {
+      "A": "Ambas as asserções são verdadeiras, e a II justifica a I.",
+      "B": "Ambas as asserções são verdadeiras, e a II não justifica a I.",
+      "C": "A asserção I é verdadeira, e a II é falsa.",
+      "D": "A asserção II é verdadeira, e a I é falsa."
+    },
+    "answer": "A",
+    "explain": "Ambas as asserções são verdadeiras. A centralização da administração do risco pelas câmaras é essencial justamente porque elas concentram o risco do sistema, o que torna seu funcionamento crítico para a estabilidade financeira.",
+  },
+  {
+    "id": "Q_CAM_00DASSDA3",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Modalidades registradas na Câmara B3",
+    "level": "Médio",
+    "q": "A Câmara B3 realiza o registro, a aceitação, a compensação, a liquidação e o gerenciamento do risco de contraparte de várias modalidades de operações. Contudo, é correto afirmar que NÃO se trata de uma modalidade registrada e compensada na Câmara B3:",
+    "options": {
+      "A": "Minicontrato de dólares americanos.",
+      "B": "Mercado à vista de ouro.",
+      "C": "Vida Gerador de Benefício Livre (VGBL).",
+      "D": "Debêntures de infraestrutura."
+    },
+    "answer": "C",
+    "explain": "A Câmara B3 atua em derivativos, renda variável, renda fixa privada, ouro à vista e empréstimo de ativos. Ela não atua em planos de previdência complementar aberta, como o VGBL.",
+  },
+  {
+    "id": "Q_CAM_DASD3A",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Cadeia de responsabilidades",
+    "level": "Médio",
+    "q": "Na câmara de compensação e liquidação, há um preceito de responsabilidade fundamental. Ele estabelece que:",
+    "options": {
+      "A": "O participante é responsável por aqueles aos quais oferece acesso à câmara.",
+      "B": "A B3 é contraparte central perante todos os participantes.",
+      "C": "Não há compensação sem participante de negociação.",
+      "D": "Não há liquidação sem participante de liquidação."
+    },
+    "answer": "A",
+    "explain": "Na cadeia de responsabilidades, cada participante responde por aqueles a quem concede acesso à câmara, formando uma sequência que culmina na responsabilidade perante a própria câmara.",
+  },
+  {
+    "id": "Q_CAM_DAS1A2",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Contraparte central",
+    "level": "Médio",
+    "q": "A B3 assume a posição de contraparte central para fins de liquidação das obrigações resultantes das operações aceitas para compensação e liquidação:",
+    "options": {
+      "A": "Em relação a todos os participantes.",
+      "B": "Em relação aos participantes de liquidação.",
+      "C": "Exclusivamente em relação aos comitentes.",
+      "D": "Exclusivamente em relação aos membros de compensação."
+    },
+    "answer": "D",
+    "explain": "A B3 atua como contraparte central apenas perante os membros de compensação. Para os demais participantes, não assume responsabilidade por inadimplências.",
+  },
+  {
+    "id": "Q_CAM_DAD145",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Membro de compensação",
+    "level": "Médio",
+    "q": "Participante responsável por liquidar as obrigações assumidas perante os participantes de negociação plenos e os participantes de liquidação contratantes de seus serviços:",
+    "options": {
+      "A": "Comitente.",
+      "B": "Câmara.",
+      "C": "Participante de liquidação.",
+      "D": "Membro de compensação."
+    },
+    "answer": "D",
+    "explain": "O membro de compensação responde pelas operações dos participantes de negociação plenos e dos participantes de liquidação, conforme a cadeia de responsabilidades da câmara.",
+  },
+  {
+    "id": "Q_CAM_0DA1S5",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Fundo de liquidação",
+    "level": "Médio",
+    "q": "São contribuidores do fundo de liquidação referente às operações realizadas na câmara, para salvaguardas destinadas à contenção do risco de mercado:",
+    "options": {
+      "A": "Os participantes de liquidação e os membros de compensação.",
+      "B": "Os membros de compensação e a B3.",
+      "C": "Os participantes de negociação e os participantes de negociação plenos.",
+      "D": "Todos os participantes da câmara."
+    },
+    "answer": "B",
+    "explain": "Para as salvaguardas voltadas ao risco de mercado, contribuem para o fundo de liquidação os membros de compensação e a própria B3.",
+  },
   {
     "id": "Q0003_1",
     "theme": "Risco corporativo e Controles Internos | Risco Corporativo",
