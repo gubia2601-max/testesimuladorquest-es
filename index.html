@@ -1788,7 +1788,7 @@ button, input, select, textarea{ font-family:inherit; }
   const LS_SESS = "sim_sess_v5";
   const LS_BOOK = "sim_book_v5";
   const LS_STATS = "sim_stats_v5";
-  const LS_EXCLUDED = "sim_excluded_v2";
+  const LS_EXCLUDED = "sim_excluded_v3"; // Alterada para v3
 
   // =========================================================
   // ESTRUTURA OFICIAL DA PROVA - PQO
@@ -1982,24 +1982,61 @@ button, input, select, textarea{ font-family:inherit; }
   }
 
   // =========================================================
-  // EXCLUSIONS
+  // EXCLUSIONS (MODIFICADO PARA ISOLAR POR SESSÃO)
   // =========================================================
   class ExclusionManager {
-    static getExclusions() {
-      try { return JSON.parse(localStorage.getItem(LS_EXCLUDED) || "{}"); }
-      catch { return {}; }
+    static getExclusions(sessionId = '') {
+      try {
+        const all = JSON.parse(localStorage.getItem(LS_EXCLUDED) || "{}");
+        // Se não houver sessionId, retorna vazio (evita "vazamento")
+        return sessionId ? (all[sessionId] || {}) : {};
+      } catch {
+        return {};
+      }
     }
-    static toggleExclusion(questionId, optionLetter) {
-      const ex = ExclusionManager.getExclusions();
-      if (!ex[questionId]) ex[questionId] = [];
-      const idx = ex[questionId].indexOf(optionLetter);
-      if (idx === -1) ex[questionId].push(optionLetter);
-      else ex[questionId].splice(idx,1);
-      localStorage.setItem(LS_EXCLUDED, JSON.stringify(ex));
+
+    static toggleExclusion(sessionId, questionId, optionLetter) {
+      const all = JSON.parse(localStorage.getItem(LS_EXCLUDED) || "{}");
+      if (!all[sessionId]) all[sessionId] = {};
+      if (!all[sessionId][questionId]) all[sessionId][questionId] = [];
+
+      const idx = all[sessionId][questionId].indexOf(optionLetter);
+      if (idx === -1) {
+        all[sessionId][questionId].push(optionLetter);
+      } else {
+        all[sessionId][questionId].splice(idx, 1);
+      }
+
+      localStorage.setItem(LS_EXCLUDED, JSON.stringify(all));
       return idx === -1;
     }
-    static getExcludedOptions(questionId) {
-      return ExclusionManager.getExclusions()[questionId] || [];
+
+    static getExcludedOptions(sessionId, questionId) {
+      const all = JSON.parse(localStorage.getItem(LS_EXCLUDED) || "{}");
+      return (all[sessionId] && all[sessionId][questionId]) || [];
+    }
+
+    static clearSessionExclusions(sessionId) {
+      const all = JSON.parse(localStorage.getItem(LS_EXCLUDED) || "{}");
+      delete all[sessionId];
+      localStorage.setItem(LS_EXCLUDED, JSON.stringify(all));
+    }
+
+    static cleanupOldSessions(maxAgeHours = 24) {
+      const all = JSON.parse(localStorage.getItem(LS_EXCLUDED) || "{}");
+      const now = Date.now();
+      const maxAge = maxAgeHours * 60 * 60 * 1000;
+      let changed = false;
+      
+      Object.keys(all).forEach(sessionId => {
+        // Se a sessionId é um timestamp, podemos verificar se é antigo
+        // Mas para simplificar, vamos manter apenas sessões ativas
+        // Nesta implementação, não vamos limpar automaticamente
+      });
+      
+      if (changed) {
+        localStorage.setItem(LS_EXCLUDED, JSON.stringify(all));
+      }
     }
   }
 
@@ -2187,7 +2224,7 @@ button, input, select, textarea{ font-family:inherit; }
               <div class="mini-item">
                 <div>
                   <b>⏱️ Tempo</b>
-                  <small>Ative “duração oficial” para treinar prova.</small>
+                  <small>Ative "duração oficial" para treinar prova.</small>
                 </div>
                 <div class="chip">Prova</div>
               </div>
@@ -2394,7 +2431,7 @@ button, input, select, textarea{ font-family:inherit; }
     const chaps = f.chapters.size ? `${f.chapters.size} capítulo(s)` : "todos os capítulos";
     const theme = f.theme==="ALL" ? "todos os temas" : `tema: ${f.theme}`;
     const level = f.level==="ALL" ? "todas as dificuldades" : `dificuldade: ${f.level}`;
-    const search = f.search ? `busca: “${f.search}”` : "sem busca por texto";
+    const search = f.search ? `busca: "${f.search}"` : "sem busca por texto";
     const dist = f.distEnable ? `distribuição: ON (${f.distMode})` : "distribuição: OFF";
 
     $("filterInfo").innerHTML = `🧩 Filtros atuais: <b>${escapeHtml(theme)}</b> • <b>${escapeHtml(level)}</b> • <b>${escapeHtml(mods)}</b> • <b>${escapeHtml(chaps)}</b> • <b>${escapeHtml(search)}</b> • <b>${escapeHtml(dist)}</b>`;
@@ -2572,7 +2609,7 @@ button, input, select, textarea{ font-family:inherit; }
   }
 
   // =========================================================
-  // QUIZ ENGINE
+  // QUIZ ENGINE (MODIFICADO PARA USAR SESSION ID)
   // =========================================================
   const quiz = {
     active: false,
@@ -2587,6 +2624,7 @@ button, input, select, textarea{ font-family:inherit; }
     elapsedMs: 0,
     limitMs: 0,
     reviewMode: "all",  // all | wrong
+    sessionId: "",      // ID único para esta sessão
   };
 
   function formatMs(ms){
@@ -2795,8 +2833,14 @@ button, input, select, textarea{ font-family:inherit; }
     quiz.startedAt = Date.now();
     quiz.qStartedAt = Date.now();
     quiz.elapsedMs = 0;
+    
+    // GERAR UM ID ÚNICO PARA ESTA SESSÃO
+    quiz.sessionId = Date.now().toString(36) + Math.random().toString(36).slice(2);
 
     quiz.limitMs = $("chkOfficialDuration").checked ? 3*60*60*1000 : 0;
+
+    // LIMPAR EXCLUSÕES DE SESSÕES ANTIGAS (opcional)
+    // ExclusionManager.clearSessionExclusions(quiz.sessionId);
 
     SessionManager.saveSession({
       courseId: quiz.course.id,
@@ -2805,7 +2849,8 @@ button, input, select, textarea{ font-family:inherit; }
       questions: quiz.questions.map(q=>q.id),
       answers: quiz.answers,
       idx: quiz.idx,
-      limitMs: quiz.limitMs
+      limitMs: quiz.limitMs,
+      sessionId: quiz.sessionId // Salvar também na sessão
     });
 
     closeWizard();
@@ -2837,6 +2882,7 @@ button, input, select, textarea{ font-family:inherit; }
     quiz.startedAt = s.startedAt || Date.now();
     quiz.qStartedAt = Date.now();
     quiz.limitMs = Number(s.limitMs||0);
+    quiz.sessionId = s.sessionId || Date.now().toString(36) + Math.random().toString(36).slice(2);
 
     showToast("📌 Sessão recuperada (últimas 24h).","info", 2800);
     showView("quiz");
@@ -2948,7 +2994,8 @@ button, input, select, textarea{ font-family:inherit; }
     $("explanationBox").classList.remove("show");
 
     // options
-    const excluded = ExclusionManager.getExcludedOptions(q.id);
+    // ALTERADO: Agora usa sessionId para isolar exclusões
+    const excluded = ExclusionManager.getExcludedOptions(quiz.sessionId, q.id);
     const groupName = `opt_${q.id}`;
     const chosen = a?.chosen || "";
 
@@ -3003,7 +3050,8 @@ button, input, select, textarea{ font-family:inherit; }
       questions: quiz.questions.map(q=>q.id),
       answers: quiz.answers,
       idx: quiz.idx,
-      limitMs: quiz.limitMs
+      limitMs: quiz.limitMs,
+      sessionId: quiz.sessionId
     });
 
     $("btnCorrect").disabled = !letter;
@@ -3036,7 +3084,8 @@ button, input, select, textarea{ font-family:inherit; }
       questions: quiz.questions.map(q=>q.id),
       answers: quiz.answers,
       idx: quiz.idx,
-      limitMs: quiz.limitMs
+      limitMs: quiz.limitMs,
+      sessionId: quiz.sessionId
     });
 
     showToast(a.correct ? "✅ Correto!" : "❌ Incorreto!", a.correct ? "ok" : "bad", 1200);
@@ -3053,7 +3102,8 @@ button, input, select, textarea{ font-family:inherit; }
       questions: quiz.questions.map(q=>q.id),
       answers: quiz.answers,
       idx: quiz.idx,
-      limitMs: quiz.limitMs
+      limitMs: quiz.limitMs,
+      sessionId: quiz.sessionId
     });
     renderQuestion();
   }
@@ -3123,64 +3173,64 @@ button, input, select, textarea{ font-family:inherit; }
 
       <div class="review-buttons">
         <div class="toast show info" style="display:block;">
-          💡 Dica: clique em “Revisar Erros” para reforçar rapidamente.
+          💡 Dica: clique em "Revisar Erros" para reforçar rapidamente.
         </div>
       </div>
     `;
   }
 
   function autoCorrectAllOnFinish({ updateStats = true } = {}){
-  const now = Date.now();
+    const now = Date.now();
 
-  quiz.questions.forEach((q) => {
-    let a = quiz.answers[q.id];
+    quiz.questions.forEach((q) => {
+      let a = quiz.answers[q.id];
 
-    // se nunca respondeu nada, cria estrutura
-    if (!a) {
-      a = { chosen: "", corrected: false, correct: null, timeSpentMs: 0 };
-    }
-
-    // se já estava corrigida, não mexe
-    if (a.corrected) {
-      quiz.answers[q.id] = a;
-      return;
-    }
-
-    // se escolheu alternativa, corrige
-    if (a.chosen) {
-      a.corrected = true;
-      a.correct = (a.chosen === q.answer);
-
-      // NÃO temos como saber tempo real aqui; mantemos 0
-      a.timeSpentMs = a.timeSpentMs || 0;
-
-      // opcional: registra tentativa no stats (sem tempo)
-      if (updateStats) {
-        StatsManager.updateQuestionStats(q.id, a.correct, 0);
+      // se nunca respondeu nada, cria estrutura
+      if (!a) {
+        a = { chosen: "", corrected: false, correct: null, timeSpentMs: 0 };
       }
-    } else {
-      // não respondeu -> conta como errada para resultado final
-      a.corrected = true;
-      a.correct = false;
-      a.timeSpentMs = a.timeSpentMs || 0;
-      // aqui eu recomendo NÃO registrar stats, pq não houve tentativa real
-    }
 
-    quiz.answers[q.id] = a;
-  });
+      // se já estava corrigida, não mexe
+      if (a.corrected) {
+        quiz.answers[q.id] = a;
+        return;
+      }
 
-  // persiste sessão (se ainda existir)
-  SessionManager.saveSession({
-    courseId: quiz.course.id,
-    courseName: quiz.course.name,
-    startedAt: quiz.startedAt,
-    questions: quiz.questions.map(q => q.id),
-    answers: quiz.answers,
-    idx: quiz.idx,
-    limitMs: quiz.limitMs
-  });
-}
+      // se escolheu alternativa, corrige
+      if (a.chosen) {
+        a.corrected = true;
+        a.correct = (a.chosen === q.answer);
 
+        // NÃO temos como saber tempo real aqui; mantemos 0
+        a.timeSpentMs = a.timeSpentMs || 0;
+
+        // opcional: registra tentativa no stats (sem tempo)
+        if (updateStats) {
+          StatsManager.updateQuestionStats(q.id, a.correct, 0);
+        }
+      } else {
+        // não respondeu -> conta como errada para resultado final
+        a.corrected = true;
+        a.correct = false;
+        a.timeSpentMs = a.timeSpentMs || 0;
+        // aqui eu recomendo NÃO registrar stats, pq não houve tentativa real
+      }
+
+      quiz.answers[q.id] = a;
+    });
+
+    // persiste sessão (se ainda existir)
+    SessionManager.saveSession({
+      courseId: quiz.course.id,
+      courseName: quiz.course.name,
+      startedAt: quiz.startedAt,
+      questions: quiz.questions.map(q => q.id),
+      answers: quiz.answers,
+      idx: quiz.idx,
+      limitMs: quiz.limitMs,
+      sessionId: quiz.sessionId
+    });
+  }
 
   function finishQuiz(auto=false){
     if (!quiz.active) return;
@@ -3208,11 +3258,15 @@ button, input, select, textarea{ font-family:inherit; }
       durationMs: Date.now() - quiz.startedAt,
       questions: quiz.questions.map(q=>q.id),
       answers: quiz.answers,
-      completedAt: Date.now()
+      completedAt: Date.now(),
+      sessionId: quiz.sessionId // Incluir sessionId no histórico
     };
 
     StatsManager.addSession(session);
     SessionManager.clearSession();
+    
+    // LIMPAR EXCLUSÕES DESTA SESSÃO (opcional, se quiser limpar após finalizar)
+    // ExclusionManager.clearSessionExclusions(quiz.sessionId);
 
     quiz.active = false;
 
@@ -3684,12 +3738,12 @@ button, input, select, textarea{ font-family:inherit; }
       const opt = e.target.closest(".opt");
       if (!opt) return;
 
-      // exclude
+      // exclude - ALTERADO: Agora usa sessionId
       if (e.target.closest(".exclude-btn")){
         const q = quiz.questions[quiz.idx];
         if (!q) return;
         const letter = opt.getAttribute("data-letter");
-        const nowExcluded = ExclusionManager.toggleExclusion(q.id, letter);
+        const nowExcluded = ExclusionManager.toggleExclusion(quiz.sessionId, q.id, letter);
         renderQuestion();
         showToast(nowExcluded ? "Alternativa eliminada." : "Alternativa reativada.", nowExcluded ? "bad" : "ok", 1200);
         return;
@@ -3731,6 +3785,7 @@ button, input, select, textarea{ font-family:inherit; }
       quiz.questions = (last.questions||[]).map(id=>qMap.get(id)).filter(Boolean);
       quiz.answers = last.answers || {};
       quiz.idx = 0;
+      quiz.sessionId = last.sessionId || Date.now().toString(36) + Math.random().toString(36).slice(2);
       showView("quiz");
       setActiveNav("navQuiz");
       buildQNav();
@@ -3746,6 +3801,7 @@ button, input, select, textarea{ font-family:inherit; }
       quiz.questions = Array.from(wrongIds).map(id=>qMap.get(id)).filter(Boolean);
       quiz.answers = last.answers || {};
       quiz.idx = 0;
+      quiz.sessionId = last.sessionId || Date.now().toString(36) + Math.random().toString(36).slice(2);
       showView("quiz");
       setActiveNav("navQuiz");
       buildQNav();
@@ -3773,6 +3829,7 @@ button, input, select, textarea{ font-family:inherit; }
         quiz.questions = (sess.questions||[]).map(qid=>qMap.get(qid)).filter(Boolean);
         quiz.answers = sess.answers || {};
         quiz.idx = 0;
+        quiz.sessionId = sess.sessionId || Date.now().toString(36) + Math.random().toString(36).slice(2);
 
         showView("quiz");
         setActiveNav("navQuiz");
@@ -3792,6 +3849,7 @@ button, input, select, textarea{ font-family:inherit; }
         quiz.questions = pickRandom(list, Math.min(30, list.length));
         quiz.answers = {};
         quiz.idx = 0;
+        quiz.sessionId = Date.now().toString(36) + Math.random().toString(36).slice(2);
         showView("quiz");
         setActiveNav("navQuiz");
         buildQNav();
@@ -3811,6 +3869,7 @@ button, input, select, textarea{ font-family:inherit; }
         quiz.questions = pickRandom(list, Math.min(30, list.length));
         quiz.answers = {};
         quiz.idx = 0;
+        quiz.sessionId = Date.now().toString(36) + Math.random().toString(36).slice(2);
         showView("quiz");
         setActiveNav("navQuiz");
         buildQNav();
@@ -3852,4 +3911,3 @@ button, input, select, textarea{ font-family:inherit; }
 </script>
 </body>
 </html>
-
