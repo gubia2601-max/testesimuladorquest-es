@@ -3129,10 +3129,65 @@ button, input, select, textarea{ font-family:inherit; }
     `;
   }
 
+  function autoCorrectAllOnFinish({ updateStats = true } = {}){
+  const now = Date.now();
+
+  quiz.questions.forEach((q) => {
+    let a = quiz.answers[q.id];
+
+    // se nunca respondeu nada, cria estrutura
+    if (!a) {
+      a = { chosen: "", corrected: false, correct: null, timeSpentMs: 0 };
+    }
+
+    // se já estava corrigida, não mexe
+    if (a.corrected) {
+      quiz.answers[q.id] = a;
+      return;
+    }
+
+    // se escolheu alternativa, corrige
+    if (a.chosen) {
+      a.corrected = true;
+      a.correct = (a.chosen === q.answer);
+
+      // NÃO temos como saber tempo real aqui; mantemos 0
+      a.timeSpentMs = a.timeSpentMs || 0;
+
+      // opcional: registra tentativa no stats (sem tempo)
+      if (updateStats) {
+        StatsManager.updateQuestionStats(q.id, a.correct, 0);
+      }
+    } else {
+      // não respondeu -> conta como errada para resultado final
+      a.corrected = true;
+      a.correct = false;
+      a.timeSpentMs = a.timeSpentMs || 0;
+      // aqui eu recomendo NÃO registrar stats, pq não houve tentativa real
+    }
+
+    quiz.answers[q.id] = a;
+  });
+
+  // persiste sessão (se ainda existir)
+  SessionManager.saveSession({
+    courseId: quiz.course.id,
+    courseName: quiz.course.name,
+    startedAt: quiz.startedAt,
+    questions: quiz.questions.map(q => q.id),
+    answers: quiz.answers,
+    idx: quiz.idx,
+    limitMs: quiz.limitMs
+  });
+}
+
+
   function finishQuiz(auto=false){
     if (!quiz.active) return;
 
     stopTimers();
+
+    autoCorrectAllOnFinish({ updateStats: true });
 
     const total = quiz.questions.length;
     const vals = Object.values(quiz.answers);
@@ -3797,3 +3852,4 @@ button, input, select, textarea{ font-family:inherit; }
 </script>
 </body>
 </html>
+
