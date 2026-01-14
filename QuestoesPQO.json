@@ -48,6 +48,678 @@
     "explain": "A centralização do risco pelas câmaras visa reduzir o risco sistêmico, evitando que a inadimplência de um participante se propague para os demais. Ela não elimina o risco nem dispensa o uso de garantias.",
   },
   {
+    "id": "QTRLD001",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo II – Risco corporativo e controles internos",
+    "theme": "Modelo das Três Linhas de Defesa",
+    "level": "Médio",
+    "q": "Um dos modelos mais eficazes para o gerenciamento de riscos e controle é o das três linhas de defesa. Esse modelo é aplicável a qualquer organização, independentemente de seu tamanho e complexidade.\n\nSobre esse modelo, é possível afirmar que:",
+    "options": {
+      "A": "A primeira linha de defesa é desempenhada pela área de auditoria interna.",
+      "B": "A terceira linha de defesa corresponde à gestão operacional.",
+      "C": "A depender do tipo e perfil de risco, uma quarta linha de defesa, com a direção da organização, poderá ser aberta.",
+      "D": "A segunda linha de defesa é desempenhada pela área de governança/controles internos da organização."
+    },
+    "answer": "D",
+    "explain": "O modelo das três linhas de defesa estabelece uma segregação clara de responsabilidades no gerenciamento de riscos e controles internos. A primeira linha corresponde à gestão operacional, ou seja, aos próprios gestores e colaboradores responsáveis pela execução dos processos e pelo controle dos riscos no dia a dia. A segunda linha é exercida pelas áreas de governança, riscos, compliance e controles internos, cuja função é definir políticas, monitorar riscos e avaliar se os controles adotados pela primeira linha são adequados e eficazes. A terceira linha é desempenhada pela auditoria interna, que atua de forma independente avaliando todo o sistema de controles internos e a atuação das duas primeiras linhas. Assim, a alternativa D é a correta. As alternativas A e B estão incorretas porque invertem as funções das linhas de defesa, e a alternativa C está errada porque o modelo clássico não prevê uma quarta linha de defesa formal."
+  },
+  {
+    "id": "QCOSO001",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo II – Risco corporativo e controles internos",
+    "theme": "COSO - Categorias de Objetivos",
+    "level": "Médio",
+    "q": "O COSO (Committee of Sponsoring Organizations of the Treadway Commission) é uma entidade privada independente dedicada à melhoria dos relatórios financeiros com base em ética, efetividade dos controles internos e governança corporativa.\n\nÉ possível afirmar que as três categorias de objetivos que formam o cubo do COSO são:",
+    "options": {
+      "A": "Controle, comunicação e operações.",
+      "B": "Operações, comunicação e conformidade.",
+      "C": "Comunicação, monitoramento e conformidade.",
+      "D": "Informação, comunicação e controle."
+    },
+    "answer": "B",
+    "explain": "O cubo do COSO é estruturado a partir de três categorias de objetivos: Operações, relacionadas à eficiência e eficácia das atividades da organização; Comunicação (Reporting), voltadas à confiabilidade e tempestividade das informações e relatórios financeiros e não financeiros; e Conformidade (Compliance), que diz respeito ao cumprimento das leis, normas e regulamentos aplicáveis. As demais alternativas apresentam combinações que não correspondem às categorias formais do COSO.",
+  },
+  {
+    "id": "QRCRD002",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo II – Risco corporativo e controles internos",
+    "theme": "Risco de Crédito - Conceito",
+    "level": "Fácil",
+    "q": "Observe as afirmações abaixo. A seu respeito, é possível afirmar que o risco de crédito se concretiza quando:\n\nI - Há falha da contraparte em cumprir suas obrigações contratuais;\n\nII - Somente quando existir perda total do crédito, devido à falta de pagamento do emissor do título;\n\nIII - O devedor eleva a taxa de juros.\n\nA alternativa com o maior número de afirmações corretas encontra-se em:",
+    "options": {
+      "A": "I.",
+      "B": "I e III.",
+      "C": "II e III.",
+      "D": "I, II e III."
+    },
+    "answer": "A",
+    "explain": "O risco de crédito se caracteriza pela possibilidade de a contraparte não cumprir, total ou parcialmente, suas obrigações contratuais, o que torna a afirmação I correta. Não é necessário que haja perda total para que o risco se concretize, tornando a afirmação II incorreta. A elevação da taxa de juros não é uma decisão do devedor após a contratação da dívida, o que invalida a afirmação III.",
+  },
+  {
+    "id": "RROP003",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo II – Risco corporativo e controles internos",
+    "theme": "Risco Operacional",
+    "level": "Fácil",
+    "q": "João comprou ações de uma determinada empresa. Contudo, foi divulgada a informação de que a empresa cometeu um erro na sua fase de produção e realizou a entrega de produtos com vício de qualidade.\n\nAo adquirir tais ações, o investidor estará exposto ao:",
+    "options": {
+      "A": "Risco de mercado.",
+      "B": "Risco de crédito.",
+      "C": "Risco de liquidez.",
+      "D": "Risco operacional."
+    },
+    "answer": "D",
+    "explain": "O risco operacional refere-se à possibilidade de perdas decorrentes de falhas em processos internos, sistemas, pessoas ou eventos externos, incluindo erros de produção e falhas de controle, como no caso descrito. O risco de crédito está ligado ao inadimplemento de obrigações financeiras, o risco de mercado decorre de oscilações de preços e o risco de liquidez diz respeito à dificuldade de negociar ativos.",
+  },
+  {
+    "id": "RRMK004",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo II – Risco corporativo e controles internos",
+    "theme": "Risco de Mercado",
+    "level": "Fácil",
+    "q": "Determinado investidor comprou ações, mas notou que tais papéis vêm perdendo valor de mercado em decorrência das oscilações dos preços diante das mudanças no cenário econômico que afetam as instituições.\n\nEsse risco pode ser caracterizado como:",
+    "options": {
+      "A": "Risco de crédito.",
+      "B": "Risco de liquidez.",
+      "C": "Risco de mercado.",
+      "D": "Risco operacional."
+    },
+    "answer": "C",
+    "explain": "O risco de mercado está associado às variações adversas nos preços dos ativos decorrentes de mudanças em fatores econômicos, como taxas de juros, câmbio e índices de mercado. As demais alternativas tratam de riscos relacionados a inadimplência, liquidez ou falhas operacionais, que não correspondem ao cenário descrito.",
+  },
+  {
+    "id": "RROP005",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo II – Risco corporativo e controles internos",
+    "theme": "Risco Operacional - Risco Legal",
+    "level": "Médio",
+    "q": "Uma instituição financeira, por omissão, não cumpriu a Resolução CMN 4.945/2021, que determina que as instituições financeiras e demais instituições autorizadas a funcionar pelo Banco Central do Brasil devem estabelecer a PRSAC e implementar ações com vistas à sua efetividade.\n\nNesse caso, é possível afirmar que houve a concretização do:",
+    "options": {
+      "A": "Risco de mercado.",
+      "B": "Risco estratégico.",
+      "C": "Risco operacional.",
+      "D": "Risco regulamentar."
+    },
+    "answer": "C",
+    "explain": "O descumprimento de normas e regulamentações caracteriza o risco operacional em sua vertente legal, pois decorre de falhas internas no cumprimento de obrigações legais. O risco regulamentar está associado a mudanças nas regras, e não à sua inobservância, enquanto os riscos de mercado e estratégico não se aplicam ao caso.",
+  },
+  {
+    "id": "RGR006",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo II – Risco corporativo e controles internos",
+    "theme": "Política de Gerenciamento de Riscos",
+    "level": "Fácil",
+    "q": "A política de gerenciamento de riscos, que consta na Resolução 4.557/2017 do Banco Central do Brasil, deve ser aprovada e revisada pela diretoria das instituições e pelo conselho de administração, se houver.\n\nEssa aprovação e revisão deve ocorrer:",
+    "options": {
+      "A": "No mínimo, anualmente.",
+      "B": "A cada dois anos.",
+      "C": "A cada semestre.",
+      "D": "A cada cinco anos."
+    },
+    "answer": "A",
+    "explain": "De acordo com a Resolução Bacen nº 4.557/2017, a política de gerenciamento de riscos deve ser aprovada e revisada, no mínimo, anualmente pela diretoria e pelo conselho de administração, quando existente, garantindo sua atualização e aderência à realidade da instituição.",
+  },
+  {
+    "id": "AUD007",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo II – Risco corporativo e controles internos",
+    "theme": "Auditoria Interna - Avaliação Independente",
+    "level": "Fácil",
+    "q": "Para promover a avaliação independente das atividades desenvolvidas pelas áreas da instituição, de forma que a administração possa aferir a adequação dos controles internos, ela deverá utilizar:",
+    "options": {
+      "A": "Normas internas.",
+      "B": "Compliance.",
+      "C": "Auditoria interna.",
+      "D": "Sistemas de controles internos."
+    },
+    "answer": "C",
+    "explain": "A auditoria interna tem a função de realizar avaliações independentes e objetivas sobre a adequação dos controles internos, a efetividade do gerenciamento de riscos e dos processos de governança. Compliance e sistemas de controles internos atuam de forma contínua, mas não possuem independência equivalente à auditoria interna.",
+  },
+  {
+    "id": "QMRP001",
+    "module": "Título VI – Câmara de compensação e liquidação",
+    "chapter": "Capítulo II – Processos operacionais da Câmara B3",
+    "theme": "MRP - Abrangência de Ressarcimento",
+    "level": "Médio",
+    "q": "Em uma operação com ações ocorrida no mercado de balcão, uma falha operacional não executou de maneira fiel a ordem dos registros, fazendo com que uma das partes pleiteasse o ressarcimento de prejuízos.\n\nNesse caso, o MRP poderá realizar o ressarcimento à parte reclamante no valor de até:",
+    "options": {
+      "A": "R$ 200.000,00.",
+      "B": "R$ 70.000,00.",
+      "C": "R$ 0,00.",
+      "D": "R$ 120.000,00."
+    },
+    "answer": "C",
+    "explain": "O Mecanismo de Ressarcimento de Prejuízos (MRP) aplica-se exclusivamente às operações realizadas em mercados organizados de bolsa. Operações realizadas no mercado de balcão organizado não estão cobertas pelo MRP, independentemente da natureza da falha operacional. Dessa forma, não há valor a ser ressarcido, tornando correta a alternativa C.",
+  },
+  {
+    "id": "QOPIL002",
+    "module": "Título VIII – Compliance",
+    "chapter": "Capítulo IV – Operações ilícitas",
+    "theme": "Front Running",
+    "level": "Médio",
+    "q": "Determinado operador de mesa de uma corretora possui ações da empresa Kaijin e está interessado em vendê-las. Em um determinado dia, ele recebeu uma ordem muito volumosa de um cliente para vender as ações da empresa Kaijin. Sabendo que tal movimentação iria derrubar o preço das ações, o operador resolveu vender primeiro as suas ações antes de enviar as ordens do cliente.\n\nAssinale a alternativa que representa o crime cometido pelo operador.",
+    "options": {
+      "A": "Front running.",
+      "B": "Spoofing.",
+      "C": "Layering.",
+      "D": "Manipulação de benchmark."
+    },
+    "answer": "A",
+    "explain": "O front running ocorre quando um intermediário financeiro utiliza informação relevante sobre ordens de clientes ainda não executadas para realizar operações em benefício próprio antes da execução dessas ordens. Ao antecipar-se à ordem volumosa do cliente, o operador se beneficiou da informação privilegiada, caracterizando front running. As demais alternativas referem-se a outras práticas ilícitas distintas.",
+  },
+  {
+    "id": "QINS003",
+    "module": "Título VIII – Compliance",
+    "chapter": "Capítulo IV – Operações ilícitas",
+    "theme": "Insider Trading x Repasse de Informação",
+    "level": "Médio",
+    "q": "Insider trading e o repasse de informação privilegiada são classificados como crimes contra o mercado financeiro do tipo \"uso indevido de informação privilegiada\". Nesse sentido, assinale a alternativa que representa a diferença entre os dois crimes.",
+    "options": {
+      "A": "Insider trading envolve o uso de informação privilegiada para obter lucro, enquanto o repasse de informação privilegiada é a transmissão dessa informação para terceiros.",
+      "B": "O insider trading é uma prática ilegal, enquanto o repasse de informação privilegiada é uma prática permitida em algumas situações.",
+      "C": "O insider trading envolve a manipulação de dados financeiros, enquanto o repasse de informação privilegiada envolve a manipulação de benchmark.",
+      "D": "O insider trading envolve a manipulação de benchmark, enquanto o repasse de informação privilegiada envolve a manipulação de dados financeiros."
+    },
+    "answer": "A",
+    "explain": "O insider trading caracteriza-se pelo uso direto de informação relevante ainda não divulgada ao mercado para obtenção de vantagem econômica. Já o repasse de informação privilegiada ocorre quando essa informação é transmitida a terceiros, que podem utilizá-la para obter lucro. Ambas são práticas ilícitas, diferenciando-se pela forma de utilização da informação.",
+  },
+  {
+    "id": "QBSM004",
+    "module": "Título I – Aspectos institucionais",
+    "chapter": "Capítulo II – Infraestrutura do mercado",
+    "theme": "BSM - Supervisão de Mercado",
+    "level": "Médio",
+    "q": "Em dia em que o número de negócios demonstrou movimentos acima da média, observaram-se, no book de ofertas da ação YYZZ3, ofertas dispostas em várias camadas de preços, tanto do lado das compras quanto do lado de vendas. Mesmo que essa situação não apresente qualquer vedação, ela deverá ser verificada:",
+    "options": {
+      "A": "Pela CVM.",
+      "B": "Pela B3.",
+      "C": "Pela BSM.",
+      "D": "Pelo Banco Central."
+    },
+    "answer": "C",
+    "explain": "A BSM Supervisão de Mercados é responsável pelo monitoramento contínuo e integral das operações realizadas nos mercados administrados pela B3, com o objetivo de identificar práticas abusivas, manipulação de preços ou condições artificiais de negociação. Por isso, mesmo operações aparentemente regulares devem ser verificadas pela BSM.",
+  },
+  {
+    "id": "QMRP005",
+    "module": "Título VI – Câmara de compensação e liquidação",
+    "chapter": "Capítulo II – Processos operacionais da Câmara B3",
+    "theme": "MRP - Características",
+    "level": "Difícil",
+    "q": "Sobre o MRP, julgue F para falsa e V para verdadeira:\n\n( ) O MRP funciona de maneira parecida à do Fundo Garantidor de Créditos. Contudo, no MRP, quem faz contribuições mensais para manter valores que cobrirão os prejuízos dos clientes são as empresas listadas em bolsa.\n\n( ) O investidor poderá pleitear o ressarcimento do seu prejuízo, independentemente de qualquer medida judicial ou extrajudicial, no prazo de dezoito meses, a contar da data de ocorrência da ação.\n\n( ) O processo para cada ocorrência de ressarcimento não pode exceder 100 dias úteis entre o pedido e a decisão sobre sua procedência.\n\n( ) O MRP da B3 (administrado pela BSM) cobre até R$ 250 mil por ocorrência.",
+    "options": {
+      "A": "F, V, V, F",
+      "B": "V, F, F, V",
+      "C": "F, V, V, V",
+      "D": "V, V, V, V"
+    },
+    "answer": "A",
+    "explain": "As contribuições ao MRP são realizadas pelas corretoras e distribuidoras de valores mobiliários, e não pelas empresas listadas, tornando a primeira afirmação falsa. O prazo de até 18 meses para pleitear ressarcimento é correto, assim como o prazo máximo de 100 dias úteis para decisão. O limite de ressarcimento do MRP é de R$ 120 mil por ocorrência, e não R$ 250 mil, tornando a última afirmação falsa.",
+  },
+  {
+    "id": "QMRP006",
+    "module": "Título VI – Câmara de compensação e liquidação",
+    "chapter": "Capítulo II – Processos operacionais da Câmara B3",
+    "theme": "MRP - Recurso",
+    "level": "Médio",
+    "q": "Um investidor alega que uma de suas ordens, ao seguir para o book de ofertas de um determinado ativo, não apresentou as características por ele definidas, acarretando prejuízo. Como determina a regulação, ele impetrou pedido de ressarcimento junto ao MRP, que foi negado.\n\nNesse caso, o investidor:",
+    "options": {
+      "A": "Deverá realizar uma reclamação junto à B3 e à SMI.",
+      "B": "Deverá impetrar recurso junto ao Conselho de Supervisão da BSM.",
+      "C": "Deverá realizar uma reclamação junto à CVM.",
+      "D": "Não terá acesso a outra instância, dada a decisão definitiva do MRP."
+    },
+    "answer": "B",
+    "explain": "As decisões do MRP podem ser objeto de recurso ao Conselho de Supervisão da BSM, que possui competência para julgar recursos apresentados por investidores contra decisões do diretor de autorregulação relacionadas ao mecanismo de ressarcimento de prejuízos.",
+  },
+  {
+    "id": "QMRP007",
+    "module": "Título VI – Câmara de compensação e liquidação",
+    "chapter": "Capítulo II – Processos operacionais da Câmara B3",
+    "theme": "MRP - Liquidação Extrajudicial",
+    "level": "Médio",
+    "q": "Um investidor mantinha uma reserva para oportunidades de R$ 250 mil como saldo de sua conta de investimentos na corretora YYZZ. Ocorre que, subitamente, aconteceu a decretação de liquidação extrajudicial da corretora pelo Banco Central do Brasil, quando a instituição foi descontinuada.\n\nNesse caso:",
+    "options": {
+      "A": "O investidor não terá direito a qualquer ressarcimento.",
+      "B": "O investidor terá direito ao valor máximo de ressarcimento determinado pelo MRP.",
+      "C": "O investidor terá direito ao ressarcimento de R$ 250 mil.",
+      "D": "O investidor terá o valor de R$ 250 mil transferido para outra instituição."
+    },
+    "answer": "B",
+    "explain": "O MRP assegura o ressarcimento dos recursos mantidos em conta corrente no participante em caso de intervenção ou liquidação extrajudicial, observado o limite máximo de ressarcimento previsto em seu regulamento. Assim, valores que excedam esse limite não são integralmente cobertos.",
+  },
+   {
+    "id": "QMRP008",
+    "module": "Título VI – Câmara de compensação e liquidação",
+    "chapter": "Capítulo II – Processos operacionais da Câmara B3",
+    "theme": "MRP - Limite de Ressarcimento",
+    "level": "Fácil",
+    "q": "O Mecanismo de Ressarcimento de Prejuízos (MRP) da B3 possui um limite máximo de ressarcimento por ocorrência. Esse limite é de:",
+    "options": {
+      "A": "R$ 70.000,00.",
+      "B": "R$ 100.000,00.",
+      "C": "R$ 200.000,00.",
+      "D": "R$ 250.000,00."
+    },
+    "answer": "C",
+    "explain": "O MRP, administrado pela BSM, garante o ressarcimento de prejuízos até o limite máximo de R$ 200.000,00 por ocorrência, conforme regulamento vigente. Valores superiores a esse montante não são cobertos pelo mecanismo.",
+  },
+  {
+    "id": "QMRP009",
+    "module": "Título VI – Câmara de compensação e liquidação",
+    "chapter": "Capítulo II – Processos operacionais da Câmara B3",
+    "theme": "MRP - Prazo para Reclamação",
+    "level": "Médio",
+    "q": "De acordo com o regulamento do MRP, o investidor poderá pleitear o ressarcimento de prejuízos no prazo máximo de:",
+    "options": {
+      "A": "90 dias, contados da data da operação.",
+      "B": "6 meses, contados da ciência do prejuízo.",
+      "C": "12 meses, contados da liquidação financeira.",
+      "D": "18 meses, contados da data de ocorrência do fato."
+    },
+    "answer": "D",
+    "explain": "O regulamento do MRP estabelece que o investidor tem até 18 meses, contados da data de ocorrência do fato que gerou o prejuízo, para apresentar sua reclamação, independentemente da adoção de medidas judiciais ou extrajudiciais.",
+  },
+  {
+    "id": "QMRP010",
+    "module": "Título VI – Câmara de compensação e liquidação",
+    "chapter": "Capítulo II – Processos operacionais da Câmara B3",
+    "theme": "MRP - Situações Cobertas",
+    "level": "Difícil",
+    "q": "Entre as situações abaixo, assinale aquela que está coberta pelo Mecanismo de Ressarcimento de Prejuízos (MRP):",
+    "options": {
+      "A": "Oscilações de preço decorrentes de mudanças macroeconômicas.",
+      "B": "Prejuízos decorrentes de decisão de investimento malsucedida do investidor.",
+      "C": "Inexecução ou execução infiel de ordens em mercado organizado de bolsa.",
+      "D": "Perdas em operações realizadas no mercado de balcão não organizado."
+    },
+    "answer": "C",
+    "explain": "O MRP cobre prejuízos causados por inexecução ou execução infiel de ordens realizadas em mercados organizados de bolsa. Oscilações de mercado, decisões de investimento e operações fora desse ambiente não são cobertas.",
+  },
+  {
+    "id": "QILIC011",
+    "module": "Título VIII – Compliance",
+    "chapter": "Capítulo IV – Operações ilícitas",
+    "theme": "Spoofing",
+    "level": "Médio",
+    "q": "A prática conhecida como spoofing caracteriza-se, principalmente, por:",
+    "options": {
+      "A": "Uso de informação privilegiada antes de sua divulgação ao mercado.",
+      "B": "Inserção de ordens falsas com a intenção de cancelá-las antes da execução.",
+      "C": "Antecipação de ordens de clientes para obtenção de ganho próprio.",
+      "D": "Manipulação de índices de referência do mercado financeiro."
+    },
+    "answer": "B",
+    "explain": "O spoofing consiste na inserção de ordens falsas ou sem intenção de execução, com o objetivo de induzir outros participantes ao erro quanto à oferta e demanda do ativo, sendo canceladas antes de sua efetiva negociação.",
+  },
+  {
+    "id": "QILIC012",
+    "module": "Título VIII – Compliance",
+    "chapter": "Capítulo IV – Operações ilícitas",
+    "theme": "Layering",
+    "level": "Médio",
+    "q": "O layering, prática considerada ilícita no mercado de capitais, diferencia-se do spoofing porque:",
+    "options": {
+      "A": "Utiliza exclusivamente informação privilegiada.",
+      "B": "Consiste em executar ordens reais antes das ordens falsas.",
+      "C": "Envolve a colocação de múltiplas camadas de ordens em diferentes níveis de preço.",
+      "D": "É permitido quando não gera prejuízo financeiro."
+    },
+    "answer": "C",
+    "explain": "No layering, o agente insere diversas camadas de ordens em diferentes níveis de preço para criar uma falsa percepção de profundidade do mercado. Diferentemente do spoofing simples, há maior complexidade e múltiplos níveis de ordens.",
+  },
+  {
+    "id": "QILIC013",
+    "module": "Título VIII – Compliance",
+    "chapter": "Capítulo IV – Operações ilícitas",
+    "theme": "Insider Trading",
+    "level": "Difícil",
+    "q": "Configura insider trading quando:",
+    "options": {
+      "A": "Um investidor opera com base em rumores de mercado.",
+      "B": "Um agente utiliza informação relevante ainda não divulgada para negociar valores mobiliários.",
+      "C": "Um intermediário deixa de executar uma ordem por falha sistêmica.",
+      "D": "Um participante influencia preços por meio de grande volume financeiro."
+    },
+    "answer": "B",
+    "explain": "O insider trading ocorre quando alguém, de posse de informação relevante e ainda não pública, utiliza essa informação para negociar valores mobiliários, obtendo vantagem indevida em relação aos demais participantes do mercado.",
+  },
+  {
+    "id": "QBSM014",
+    "module": "Título I – Aspectos institucionais",
+    "chapter": "Capítulo II – Infraestrutura do mercado",
+    "theme": "BSM - Função",
+    "level": "Fácil",
+    "q": "A principal função da BSM Supervisão de Mercados é:",
+    "options": {
+      "A": "Regulamentar o mercado de capitais brasileiro.",
+      "B": "Executar a liquidação financeira das operações.",
+      "C": "Supervisionar e monitorar as operações realizadas nos mercados da B3.",
+      "D": "Autorizar o funcionamento de instituições financeiras."
+    },
+    "answer": "C",
+    "explain": "A BSM é responsável pela supervisão, monitoramento e fiscalização das operações realizadas nos mercados administrados pela B3, com foco na integridade do mercado e na prevenção de práticas abusivas.",
+  },
+  {
+    "id": "QBSM015",
+    "module": "Título I – Aspectos institucionais",
+    "chapter": "Capítulo II – Infraestrutura do mercado",
+    "theme": "BSM - Natureza Jurídica",
+    "level": "Médio",
+    "q": "Em relação à BSM Supervisão de Mercados, é correto afirmar que:",
+    "options": {
+      "A": "Integra o Banco Central do Brasil.",
+      "B": "É uma autarquia federal vinculada à CVM.",
+      "C": "Integra o grupo B3, com autonomia administrativa, financeira e orçamentária.",
+      "D": "É um órgão internacional de autorregulação."
+    },
+    "answer": "C",
+    "explain": "A BSM integra o grupo B3, mas possui personalidade jurídica própria, além de autonomia administrativa, financeira e orçamentária, o que garante independência em suas atividades de supervisão.",
+  },
+  {
+    "id": "QBSM016",
+    "module": "Título I – Aspectos institucionais",
+    "chapter": "Capítulo II – Infraestrutura do mercado",
+    "theme": "BSM - Escopo de Atuação",
+    "level": "Difícil",
+    "q": "No exercício de suas atribuições, a BSM deve:",
+    "options": {
+      "A": "Supervisionar apenas operações suspeitas previamente denunciadas.",
+      "B": "Verificar uma amostra das operações realizadas no mercado.",
+      "C": "Monitorar integralmente as operações realizadas nos mercados da B3.",
+      "D": "Atuar somente mediante solicitação da CVM."
+    },
+    "answer": "C",
+    "explain": "A BSM realiza o monitoramento contínuo e integral (100%) das operações realizadas nos mercados administrados pela B3, de forma preventiva e repressiva, visando identificar irregularidades, manipulações e práticas abusivas.",
+  },
+  {
+    "id": "Q14001",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo II – Risco corporativo e controles internos",
+    "theme": "COSO - Objetivos e Componentes",
+    "level": "Médio",
+    "q": "O framework COSO estabelece uma estrutura integrada para o sistema de controles internos. Sobre os cinco componentes inter-relacionados do Cubo COSO, analise as afirmações abaixo:\n\nI - O ambiente de controle estabelece a base para todos os outros componentes, refletindo o comprometimento da administração com integridade e valores éticos.\nII - A avaliação de riscos envolve a identificação e a análise dos riscos relevantes ao alcance dos objetivos da organização.\nIII - As atividades de controle consistem em políticas e procedimentos estabelecidos para assegurar que as diretrizes da administração sejam executadas.\nIV - Informação e comunicação asseguram que informações relevantes sejam identificadas, capturadas e comunicadas em formato e tempo adequados.\nV - O monitoramento compreende avaliações contínuas e independentes sobre a qualidade do sistema de controle interno ao longo do tempo.\n\nÉ correto o que se afirma em:",
+    "options": {
+      "A": "I, II e III apenas",
+      "B": "II, III e V apenas",
+      "C": "I, III, IV e V apenas",
+      "D": "I, II, III, IV e V"
+    },
+    "answer": "D",
+    "explain": "Todas as afirmativas descrevem corretamente os cinco componentes do COSO: Ambiente de Controle, Avaliação de Riscos, Atividades de Controle, Informação e Comunicação e Monitoramento. Esses componentes são interdependentes e operam de forma integrada para apoiar o alcance dos objetivos nas categorias de Operações, Comunicação (Reporting) e Conformidade."
+  },
+  {
+    "id": "Q14002",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo II – Risco corporativo e controles internos",
+    "theme": "Categorias de Risco",
+    "level": "Fácil",
+    "q": "Um fundo de investimento em ações, em razão de uma crise geopolítica internacional, observou uma queda abrupta no valor de sua carteira, acompanhando uma forte desvalorização generalizada do mercado acionário doméstico.\n\nEssa situação caracteriza, primordialmente, a materialização do:",
+    "options": {
+      "A": "Risco de crédito",
+      "B": "Risco de liquidez",
+      "C": "Risco de mercado",
+      "D": "Risco operacional"
+    },
+    "answer": "C",
+    "explain": "O cenário descrito evidencia o risco de mercado, caracterizado por perdas decorrentes de movimentos adversos nos preços dos ativos em função de fatores econômicos, políticos ou sistêmicos que afetam amplamente o mercado. Não se trata de inadimplência (crédito), dificuldade de negociação (liquidez) ou falha interna (operacional)."
+  },
+  {
+    "id": "Q14003",
+    "module": "Título VIII – Compliance",
+    "chapter": "Capítulo V – Segurança cibernética e segurança da informação",
+    "theme": "Risco Operacional - Vertentes",
+    "level": "Médio",
+    "q": "Uma instituição financeira sofreu um ataque cibernético do tipo ransomware, que criptografou seus sistemas internos e interrompeu a execução de ordens de clientes por 48 horas, gerando prejuízos financeiros, multas regulatórias e danos reputacionais.\n\nEsse evento caracteriza a materialização do risco operacional, especificamente em sua vertente de:",
+    "options": {
+      "A": "Risco Legal",
+      "B": "Risco Tecnológico",
+      "C": "Risco de Fraude Externa",
+      "D": "Risco de Continuidade de Negócios"
+    },
+    "answer": "B",
+    "explain": "Ataques cibernéticos estão diretamente associados ao risco tecnológico, uma vertente do risco operacional relacionada a falhas ou vulnerabilidades em sistemas de informação, tecnologia e cibersegurança. Embora o evento possa gerar impactos legais, reputacionais e de continuidade, a causa primária é tecnológica."
+  },
+  {
+    "id": "Q14004",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo II – Risco corporativo e controles internos",
+    "theme": "Política de Gerenciamento de Riscos",
+    "level": "Fácil",
+    "q": "De acordo com a Resolução BCB nº 4.557/2017, a avaliação da eficácia da implementação da Política de Gerenciamento de Riscos (PGR) deve ser formalizada em relatório e submetida:",
+    "options": {
+      "A": "Apenas à Diretoria Executiva, semestralmente.",
+      "B": "À Diretoria Executiva e ao Conselho de Administração, se houver, no mínimo anualmente.",
+      "C": "Exclusivamente ao Banco Central do Brasil, a cada dois anos.",
+      "D": "Somente ao Comitê de Auditoria, trimestralmente."
+    },
+    "answer": "B",
+    "explain": "A Resolução BCB nº 4.557/2017 determina que a instituição elabore relatório anual sobre a eficácia da implementação da Política de Gerenciamento de Riscos, o qual deve ser submetido à Diretoria Executiva e ao Conselho de Administração, quando existente."
+  },
+  {
+    "id": "Q14005",
+    "module": "Título VI – Câmara de compensação e liquidação",
+    "chapter": "Capítulo I – Câmara B3",
+    "theme": "MRP - Características e Limites",
+    "level": "Médio",
+    "q": "Sobre o Mecanismo de Ressarcimento de Prejuízos (MRP), administrado pela BSM, é CORRETO afirmar:",
+    "options": {
+      "A": "Cobre operações realizadas em mercados de bolsa e de balcão organizado.",
+      "B": "O valor máximo de ressarcimento por ocorrência é de R$ 200.000,00 (duzentos mil reais).",
+      "C": "É financiado por contribuições das companhias listadas na B3.",
+      "D": "O prazo para apresentação da reclamação é de 12 meses."
+    },
+    "answer": "B",
+    "explain": "O MRP garante ressarcimento de prejuízos até o limite máximo de R$ 200.000,00 por ocorrência, conforme regulamento vigente. Ele se aplica apenas a operações em mercados organizados de bolsa, é financiado por corretoras e distribuidoras e permite a apresentação de reclamações em até 18 meses."
+  },
+  {
+    "id": "Q14006",
+    "module": "Título VIII – Compliance",
+    "chapter": "Capítulo IV – Operações ilícitas",
+    "theme": "Práticas Abusivas - Front Running",
+    "level": "Difícil",
+    "q": "Um analista de uma gestora de recursos, com acesso prévio às ordens que seriam executadas pela própria gestora, utiliza uma conta pessoal em outra instituição para negociar o mesmo ativo pouco antes da execução de uma ordem relevante de cliente.\n\nEssa conduta configura:",
+    "options": {
+      "A": "Spoofing",
+      "B": "Insider Trading",
+      "C": "Front Running",
+      "D": "Manipulação de preços"
+    },
+    "answer": "C",
+    "explain": "O front running ocorre quando alguém se antecipa à execução de ordens relevantes de terceiros, das quais tem conhecimento prévio, para obter benefício próprio. Não se trata de insider trading, pois a informação refere-se a ordens de negociação, e não a fatos relevantes da companhia emissora."
+  },
+  {
+    "id": "Q14007",
+    "module": "Título VIII – Compliance",
+    "chapter": "Capítulo I – PLD/FTP",
+    "theme": "Risco Operacional - Risco Legal",
+    "level": "Médio",
+    "q": "Uma corretora foi multada pelo Banco Central por não cumprir, no prazo regulamentar, exigência prevista em norma vigente.\n\nEssa penalidade decorreu da materialização do:",
+    "options": {
+      "A": "Risco Estratégico",
+      "B": "Risco de Reputação",
+      "C": "Risco Operacional (Risco Legal)",
+      "D": "Risco Regulamentar"
+    },
+    "answer": "C",
+    "explain": "O descumprimento de normas legais ou regulatórias caracteriza o risco legal, uma vertente do risco operacional. O risco regulamentar refere-se a impactos decorrentes de mudanças futuras na regulação, e não ao descumprimento de regras já existentes."
+  },
+  {
+    "id": "Q14008",
+    "module": "Título V – Negociação",
+    "chapter": "Capítulo II – Ambiente de negociação",
+    "theme": "Supervisão de Mercado - BSM",
+    "level": "Fácil",
+    "q": "A supervisão exercida pela BSM Supervisão de Mercados sobre as negociações realizadas na B3 tem como principal objetivo:",
+    "options": {
+      "A": "Garantir rentabilidade aos investidores.",
+      "B": "Atuar como órgão regulador do Sistema Financeiro Nacional.",
+      "C": "Preservar a integridade do mercado por meio da detecção e coibição de práticas irregulares.",
+      "D": "Definir os preços de negociação dos ativos."
+    },
+    "answer": "C",
+    "explain": "A BSM é responsável pela supervisão e monitoramento das operações nos mercados da B3, com foco na prevenção e repressão de práticas abusivas, manipulação de preços e uso indevido de informação privilegiada."
+  },
+  {
+    "id": "Q14009",
+    "module": "Título VI – Câmara de compensação e liquidação",
+    "chapter": "Capítulo I – Câmara B3",
+    "theme": "MRP - Recurso e Instâncias",
+    "level": "Difícil",
+    "q": "Após o indeferimento de um pedido de ressarcimento pelo Diretor de Autorregulação da BSM, o investidor poderá interpor recurso junto:",
+    "options": {
+      "A": "À CVM",
+      "B": "Ao Conselho de Supervisão da BSM",
+      "C": "À Ouvidoria da B3",
+      "D": "Diretamente ao Poder Judiciário"
+    },
+    "answer": "B",
+    "explain": "O Conselho de Supervisão da BSM é a instância responsável por julgar recursos contra decisões relacionadas ao MRP. Somente após o esgotamento dessa instância administrativa é que o investidor poderá recorrer ao Judiciário."
+  },
+  {
+    "id": "Q14010",
+    "module": "Título VIII – Compliance",
+    "chapter": "Capítulo III – Adequação ao perfil do cliente (Suitability)",
+    "theme": "Auditoria Interna - Independência",
+    "level": "Médio",
+    "q": "Para que a Auditoria Interna exerça adequadamente sua função de avaliação independente dos controles internos e da gestão de riscos, é fundamental que possua:",
+    "options": {
+      "A": "Subordinação operacional à Diretoria Executiva",
+      "B": "Independência e livre acesso às informações e áreas da instituição",
+      "C": "Atuação exclusiva na apuração de fraudes",
+      "D": "Vinculação funcional à área de Compliance"
+    },
+    "answer": "B",
+    "explain": "A independência organizacional e o livre acesso a informações, pessoas e documentos são princípios essenciais da Auditoria Interna, garantindo objetividade e efetividade na avaliação dos controles internos, riscos e processos de governança."
+  },
+  {
+    "id": "Q15001",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Tipos de Perda - Perda Transitória",
+    "level": "Médio",
+    "q": "No contexto da gestão de riscos em câmaras de compensação e liquidação, a perda transitória caracteriza-se por:",
+    "options": {
+      "A": "Uma perda definitiva e irreversível, mesmo após a adoção das salvaguardas.",
+      "B": "Uma perda que pode ser revertida ou mitigada ao longo do tempo por meio da atuação das salvaguardas.",
+      "C": "O valor máximo de exposição antes da inadimplência de um participante.",
+      "D": "A soma das perdas de todos os participantes inadimplentes."
+    },
+    "answer": "B",
+    "explain": "A perda transitória é aquela que ocorre inicialmente, mas que pode ser recuperada ou mitigada posteriormente por meio da execução de garantias, fundos de liquidação ou demais salvaguardas da câmara. Não representa, portanto, uma perda definitiva.",
+  },
+  {
+    "id": "Q15002",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Tipos de Perda - Perda Potencial",
+    "level": "Médio",
+    "q": "Na estrutura de gerenciamento de riscos da câmara, a perda potencial corresponde:",
+    "options": {
+      "A": "À perda efetivamente realizada após a liquidação das posições.",
+      "B": "À perda máxima já absorvida pelo fundo de liquidação.",
+      "C": "À estimativa de perda que pode ocorrer caso um evento de inadimplência se concretize.",
+      "D": "À perda residual após a execução de todas as garantias."
+    },
+    "answer": "C",
+    "explain": "A perda potencial representa a estimativa de prejuízo que pode vir a ocorrer em caso de inadimplência de um participante, considerando condições adversas de mercado, antes da aplicação das salvaguardas.",
+  },
+  {
+    "id": "Q15003",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Tipos de Perda - Perda Permanente",
+    "level": "Difícil",
+    "q": "Após a utilização de todas as garantias, fundos e demais mecanismos de salvaguardas, uma eventual perda remanescente caracteriza-se como:",
+    "options": {
+      "A": "Perda transitória.",
+      "B": "Perda potencial.",
+      "C": "Perda permanente.",
+      "D": "Perda agregada."
+    },
+    "answer": "C",
+    "explain": "A perda permanente é aquela que permanece mesmo após a utilização integral de todas as salvaguardas disponíveis, representando prejuízo definitivo para a estrutura da câmara ou para seus participantes.",
+  },
+  {
+    "id": "Q15004",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Tipos de Perda - Perda Agregada",
+    "level": "Difícil",
+    "q": "No gerenciamento de riscos, a perda agregada é melhor definida como:",
+    "options": {
+      "A": "A perda individual de um único participante inadimplente.",
+      "B": "A perda máxima possível em um único ativo financeiro.",
+      "C": "A soma das perdas resultantes de um ou mais eventos de inadimplência considerados em conjunto.",
+      "D": "A perda estimada antes da aplicação de qualquer teste de estresse."
+    },
+    "answer": "C",
+    "explain": "A perda agregada corresponde à soma das perdas decorrentes de múltiplos eventos de inadimplência ou cenários adversos considerados simultaneamente, sendo relevante para testes de estresse e análise de suficiência das salvaguardas.",
+  },
+  {
+    "id": "Q15005",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Túnel de Rejeição - Tipo 1",
+    "level": "Fácil",
+    "q": "O túnel de rejeição do Tipo 1, utilizado nos sistemas de gerenciamento de risco da câmara, tem como principal objetivo:",
+    "options": {
+      "A": "Rejeitar operações que ultrapassem limites de oscilação de preço definidos para o ativo.",
+      "B": "Bloquear operações que resultem em insuficiência imediata de garantias do participante.",
+      "C": "Impedir negociações em caso de falha sistêmica.",
+      "D": "Cancelar ordens suspeitas de manipulação de mercado."
+    },
+    "answer": "B",
+    "explain": "O túnel de rejeição Tipo 1 está associado à verificação de garantias, rejeitando operações que gerem insuficiência imediata de cobertura de risco por parte do participante.",
+  },
+  {
+    "id": "Q15006",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Túnel de Rejeição - Tipo 2",
+    "level": "Médio",
+    "q": "O túnel de rejeição Tipo 2 diferencia-se do Tipo 1 por:",
+    "options": {
+      "A": "Atuar exclusivamente após a liquidação financeira.",
+      "B": "Considerar cenários de estresse e impactos potenciais de mercado.",
+      "C": "Ser aplicado apenas a investidores não residentes.",
+      "D": "Rejeitar operações apenas por critérios operacionais."
+    },
+    "answer": "B",
+    "explain": "O túnel de rejeição Tipo 2 incorpora análises mais amplas de risco, incluindo cenários de estresse e impactos potenciais, indo além da verificação imediata de garantias.",
+  },
+  {
+    "id": "Q15007",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Túnel de Rejeição - Tipo 3",
+    "level": "Difícil",
+    "q": "O túnel de rejeição Tipo 3 é caracterizado, principalmente, por:",
+    "options": {
+      "A": "Avaliar apenas o risco de crédito individual do participante.",
+      "B": "Analisar o impacto da operação sobre a estrutura global de salvaguardas da câmara.",
+      "C": "Rejeitar ordens exclusivamente por variação de preço.",
+      "D": "Atuar somente após a ocorrência de inadimplência."
+    },
+    "answer": "B",
+    "explain": "O túnel de rejeição Tipo 3 avalia os impactos agregados da operação sobre a estrutura de risco da câmara, considerando efeitos sistêmicos e a suficiência das salvaguardas globais.",
+  },
+  {
+    "id": "Q15008",
+    "module": "Título IV – Gestão de risco",
+    "chapter": "Capítulo I – Gestão de risco na Câmara",
+    "theme": "Túnel de Rejeição - Tipo 4",
+    "level": "Difícil",
+    "q": "O túnel de rejeição Tipo 4 representa o nível mais restritivo de controle de risco, pois:",
+    "options": {
+      "A": "É acionado apenas em horários de leilão.",
+      "B": "Considera exclusivamente o risco operacional.",
+      "C": "Avalia cenários extremos e a resiliência da câmara frente a perdas severas.",
+      "D": "É aplicado somente a derivativos de alta volatilidade."
+    },
+    "answer": "C",
+    "explain": "O túnel de rejeição Tipo 4 está associado à análise de cenários extremos, avaliando a capacidade da câmara de suportar perdas severas sem comprometer sua integridade e continuidade operacional.",
+  },
+  {
     "id": "Q_CAM_017",
     "module": "Título IV – Gestão de risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
