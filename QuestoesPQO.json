@@ -7375,22 +7375,22 @@
     "answer": "C",
     "explain": "A central depositária é responsável pela custódia, registro e transferência eletrônica de ativos."
   },
-  {
-    "id": "Q9670",
-    "module": "Título I – Aspectos institucionais",
-    "chapter": "Capítulo II – Infraestrutura do mercado",
-    "theme": "Sistema de Pagamentos Brasileiro (SPB)",
-    "level": "Médio",
-    "q": "A respeito do Sistema de Pagamentos Brasileiro (SPB), analise as afirmativas abaixo: I. Uma de suas características é o uso obrigatório de contrapartes centrais para liquidação de obrigações resultantes de compensação multilateral II. Possui como característica a certeza da liquidação proporcionada pela contraparte central com base em mecanismos de gerenciamento de riscos e salvaguardas constituídas para tratamento de casos de insolvência de instituições III. Irrevogabilidade e finalidade das liquidações são características do SPB Está correto o que se afirma em:",
-    "options": {
-      "A": "I e II",
-      "B": "I e III",
-      "C": "II e III",
-      "D": "Todas as alternativas"
-    },
-    "answer": "C",
-    "explain": "I é falso, pois o uso de CCP não é obrigatório em todos os casos; II e III estão corretos, pois o SPB garante certeza, irrevogabilidade e finalidade."
+ {
+  "id": "Q9670",
+  "module": "Título I – Aspectos institucionais",
+  "chapter": "Capítulo II – Infraestrutura do mercado",
+  "theme": "Sistema de Pagamentos Brasileiro (SPB) - Características",
+  "level": "Médio",
+  "q": "A respeito do Sistema de Pagamentos Brasileiro (SPB), analise as afirmativas a seguir:\n\nI – Uma de suas características é o uso obrigatório de contrapartes centrais para a liquidação de obrigações resultantes de compensação multilateral.\nII – O SPB busca assegurar a certeza da liquidação, inclusive por meio da atuação de contrapartes centrais que utilizam mecanismos de gerenciamento de riscos e salvaguardas para o tratamento de casos de insolvência de instituições participantes.\nIII – A irrevogabilidade e a finalidade das liquidações constituem características fundamentais do SPB.\n\nEstá correto o que se afirma em:",
+  "options": {
+    "A": "I e II",
+    "B": "I e III",
+    "C": "II e III",
+    "D": "I, II e III"
   },
+  "answer": "C",
+  "explain": "A afirmativa I é incorreta, pois o uso de contraparte central (CCP) não é obrigatório para todos os sistemas integrantes do SPB, existindo sistemas de liquidação bruta em tempo real e outros arranjos que não envolvem CCP. A afirmativa II está correta, pois a certeza da liquidação é um dos pilares do SPB, sendo reforçada, quando aplicável, pela atuação de contrapartes centrais com mecanismos de gerenciamento de riscos e salvaguardas para situações de insolvência. A afirmativa III também está correta, uma vez que a irrevogabilidade e a finalidade das liquidações são princípios essenciais do SPB, garantindo segurança jurídica e redução do risco sistêmico."
+},
   {
     "id": "Q9671",
     "module": "Título I – Aspectos institucionais",
@@ -8640,21 +8640,21 @@
     "explain": "O Agente de Custódia (corretora ou banco) é responsável pelo recolhimento do IRRF no Tesouro Direto."
   },
   {
-    "id": "Q1995420213044",
-    "module": "Título II – Mercados de bolsa e de balcão",
-    "chapter": "Capítulo I – Mercado de renda variável",
-    "theme": "Índice de Governança Corporativa – IGC",
-    "level": "Médio",
-    "q": "Sobre o Índice de Governança Corporativa – IGC, analise as afirmações abaixo: I. São ações com práticas de Governança Corporativa diferenciadas II. Considera empresas do nível 1, 2 e Novo Mercado III. É um índice que considera somente ativos negociados em Mercado de Balcão Está correto o que se afirma em:",
-    "options": {
-      "A": "I e II",
-      "B": "I e III",
-      "C": "II e III",
-      "D": "I, II e III"
-    },
-    "answer": "A",
-    "explain": "I e II estão corretas. III está errada, pois o IGC inclui empresas listadas na bolsa, não apenas balcão."
+  "id": "Q1995420213044",
+  "module": "Título II – Mercados de bolsa e de balcão",
+  "chapter": "Capítulo I – Mercado de renda variável",
+  "theme": "Índice de Governança Corporativa – IGC",
+  "level": "Médio",
+  "q": "Sobre o Índice de Governança Corporativa (IGC), analise as afirmações a seguir:\n\nI – É composto por ações de empresas que adotam práticas diferenciadas de governança corporativa.\nII – Considera empresas listadas nos segmentos Nível 1, Nível 2 e Novo Mercado da B3.\nIII – É um índice que considera exclusivamente ativos negociados no mercado de balcão.\n\nEstá correto o que se afirma em:",
+  "options": {
+    "A": "I e II",
+    "B": "I e III",
+    "C": "II e III",
+    "D": "I, II e III"
   },
+  "answer": "A",
+  "explain": "O IGC é formado por ações de empresas que adotam práticas diferenciadas de governança corporativa e que estejam listadas nos segmentos Nível 1, Nível 2 ou Novo Mercado da B3 (afirmações I e II corretas). A afirmação III é incorreta, pois o índice é composto por ações negociadas em mercado de bolsa, e não exclusivamente no mercado de balcão."
+},
   {
     "id": "Q1995420213045",
     "module": "Título II – Mercados de bolsa e de balcão",
@@ -9423,22 +9423,22 @@
     "answer": "C",
     "explain": "I é falsa (valor de face é R$ 1.000). II é verdadeira (PU < valor de face devido ao deságio). III é falsa (o título oscila com as taxas de juros)."
   },
-  {
-    "id": "Q1995420223077",
-    "module": "Título II – Mercados de bolsa e de balcão",
-    "chapter": "Capítulo I – Mercado de renda variável",
-    "theme": "COE - IR e recolhimento",
-    "level": "Médio",
-    "q": "Um Certificado de Operações Estruturadas – COE foi emitido pelo Banco SharkBank com as seguintes características: - Atrelado ao índice de ações (renda variável) dos Estados Unidos - Prazo de 4 anos - Janela de resgate semestral - Emissão do tipo Valor Nominal Protegido (VNP). Júlio é um investidor conservador e decidiu fazer a aplicação nesse COE. Ficou por 8 meses e teve lucro. Nesse caso, qual será o I.R devido por Júlio e quem fará o recolhimento?",
-    "options": {
-      "A": "20%; Próprio Júlio",
-      "B": "20%; SharkBank",
-      "C": "15%; SharkBank",
-      "D": "15%; Próprio Júlio"
-    },
-    "answer": "B",
-    "explain": "COE tem tributação regressiva. 8 meses = até 180 dias? 8 meses > 180 dias? Na verdade, 8 meses são aproximadamente 240 dias, então alíquota de 20%. O recolhimento é feito pela instituição financeira (SharkBank)."
+{
+  "id": "Q1995420223077",
+  "module": "Título II – Mercados de bolsa e de balcão",
+  "chapter": "Capítulo I – Mercado de renda variável",
+  "theme": "COE - Tributação e Recolhimento de IR",
+  "level": "Médio",
+  "q": "Um Certificado de Operações Estruturadas (COE) foi emitido pelo Banco SharkBank com as seguintes características:\n\n- Atrelado a índice de ações dos Estados Unidos\n- Prazo total de 4 anos\n- Janela de resgate semestral\n- Emissão do tipo Valor Nominal Protegido (VNP)\n\nJúlio, investidor conservador, aplicou nesse COE, permaneceu investido por 8 meses e obteve lucro no resgate.\n\nNesse caso, qual será a alíquota de Imposto de Renda devida por Júlio e quem será responsável pelo recolhimento?",
+  "options": {
+    "A": "20%; Próprio Júlio",
+    "B": "20%; SharkBank",
+    "C": "15%; SharkBank",
+    "D": "15%; Próprio Júlio"
   },
+  "answer": "B",
+  "explain": "Os rendimentos de COE seguem a tabela regressiva do Imposto de Renda aplicável à renda fixa. Para aplicações com prazo superior a 180 dias e até 360 dias, a alíquota é de 20%. O recolhimento do IR ocorre na fonte, sendo de responsabilidade da instituição financeira emissora do COE, no caso, o Banco SharkBank."
+},
   {
     "id": "Q1995420223079",
     "module": "Título II – Mercados de bolsa e de balcão",
@@ -24628,22 +24628,22 @@
     "answer": "A",
     "explain": "I. INCORRETA: A comunicação de operações suspeitas deve ser feita ao COAF (Conselho de Controle de Atividades Financeiras), e não diretamente à CVM. A CVM recebe informações do COAF quando pertinente. II. CORRETA: O prazo para comunicação ao COAF é de 24 horas após a conclusão da análise interna que identificou a suspeita. III. CORRETA: A Resolução CVM 50/21 estabelece o conteúdo mínimo das comunicações e impõe o dever de sigilo (\"não dar ciência\") sobre a comunicação feita, para evitar que o investigado seja alertado (\"tipping-off\")."
   },
-  {
-    "id": "QMR001",
-    "module": "Título II – Mercados de bolsa e de balcão",
-    "chapter": "Capítulo I – Mercado de renda variável",
-    "theme": "Matriz de Risco – Conceitos Fundamentais",
-    "level": "Médio",
-    "q": "A matriz de risco é uma ferramenta utilizada pelas organizações com o objetivo principal de:\n\nApoiar a identificação, avaliação e priorização dos riscos aos quais estão expostas, considerando a probabilidade de ocorrência e o impacto associado.\n\nAssinale a alternativa correta.",
-    "options": {
-      "A": "Mensurar exclusivamente perdas financeiras históricas.",
-      "B": "Identificar, avaliar e priorizar riscos com base em impacto e probabilidade.",
-      "C": "Determinar indicadores-chave de desempenho operacional.",
-      "D": "Substituir auditorias internas e controles preventivos."
-    },
-    "answer": "B",
-    "explain": "A matriz de risco cruza, de forma estruturada, a probabilidade de ocorrência e o impacto dos riscos, permitindo avaliá-los e priorizá-los. Ela não se limita a perdas históricas, nem substitui controles ou auditorias, tampouco é um KPI."
+{
+  "id": "Q14291",
+  "module": "Título V – Negociação",
+  "chapter": "Capítulo II – Ambiente de negociação",
+  "theme": "Conta de Intermediação - Manutenção e Renovação de Contratos",
+  "level": "Médio",
+  "q": "Caso o participante de negociação pleno não informe, até o horário limite estabelecido, os contratos a serem mantidos em conta de intermediação, o sistema de controle de posições da B3 efetuará:",
+  "options": {
+    "A": "A renovação automática dos contratos.",
+    "B": "O cancelamento automático dos contratos.",
+    "C": "A suspensão temporária dos contratos.",
+    "D": "O encerramento automático dos contratos."
   },
+  "answer": "A",
+  "explain": "De acordo com o manual operacional da B3, caso o participante de negociação pleno não informe, até o horário limite, os contratos a serem renovados para manutenção em conta de intermediação, o sistema de controle de posições efetua a renovação automática dos contratos, seguindo a ordem e os critérios definidos nos normativos da B3. A renovação não depende de ação expressa quando não há instrução dentro do prazo."
+},
   {
     "id": "QIII001",
     "theme": "Estrutura de contas",
