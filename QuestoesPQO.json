@@ -269,9 +269,9 @@
       "D": "Depósito de garantias adicionais."
     },
     "answer": "A",
-    "explain": "Cabe à B3, sem prejuízo da competência sancionadora da BSM e de outras providências previstas, (i) cancelar a autorização de acesso de participantes autorizados que deixarem de atender requisitos e (ii) aplicar multas por atraso no cumprimento de obrigações, conforme valores e condições definidos nos manuais e normativos aplicáveis.",
+    "explain": "Cabe à B3, sem prejuízo da competência sancionadora da BSM e de outras providências previstas, (i) cancelar a autorização de acesso de participantes autorizados que deixarem de atender requisitos e (ii) aplicar multas por atraso no cumprimento de obrigações, conforme valores e condições definidos nos manuais e normativos aplicáveis."
   },
-{
+  {
     "id": "Q_CAM_016",
     "module": "Título IV – Gestão de risco",
     "chapter": "Capítulo I – Gestão de risco na Câmara",
@@ -286,7 +286,7 @@
     },
     "answer": "C",
     "explain": "A centralização do risco pelas câmaras visa reduzir o risco sistêmico, evitando que a inadimplência de um participante se propague para os demais. Ela não elimina o risco nem dispensa o uso de garantias."
-   },
+  },
   {
     "id": "QTRLD001",
     "module": "Título IV – Gestão de risco",
