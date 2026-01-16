@@ -7437,7 +7437,7 @@
     "D": "O Ajuste Diário, aplicando uma multa compulsória sobre o patrimônio líquido de todos os investidores do mercado à vista."
   },
   "answer": "B",
-  "explain": "No Default Waterfall de uma CCP, após o esgotamento das garantias individuais do participante inadimplente, são acionados os recursos mutualizados, como o Fundo de Garantia ou Fundo de Compensação. Esses recursos coletivos têm a função de absorver perdas residuais e preservar a estabilidade do sistema, não incluindo mecanismos de negociação, taxas privadas ou penalidades generalizadas.",
+  "explain": "No Default Waterfall de uma CCP, após o esgotamento das garantias individuais do participante inadimplente, são acionados os recursos mutualizados, como o Fundo de Garantia ou Fundo de Compensação. Esses recursos coletivos têm a função de absorver perdas residuais e preservar a estabilidade do sistema, não incluindo mecanismos de negociação, taxas privadas ou penalidades generalizadas."
 },
   {
     "id": "Q9675",
