@@ -26835,8 +26835,8 @@
     "D": "A atuação exclusivamente reativa, onde as salvaguardas são calculadas apenas após a confirmação do inadimplemento."
   },
   "answer": "B",
-  "explain": "A gestão integrada de riscos da CCP baseia-se em uma visão consolidada das exposições do participante, permitindo a compensação de riscos entre diferentes mercados e instrumentos. Isso viabiliza a otimização de garantias a partir do cálculo do risco líquido do portfólio, sem eliminar riscos operacionais nem atuar de forma meramente reativa.",
-},
+  "explain": "A gestão integrada de riscos da CCP baseia-se em uma visão consolidada das exposições do participante, permitindo a compensação de riscos entre diferentes mercados e instrumentos. Isso viabiliza a otimização de garantias a partir do cálculo do risco líquido do portfólio, sem eliminar riscos operacionais nem atuar de forma meramente reativa."
+ },
   {
     "id": "Q51020",
     "module": "Título I – Aspectos institucionais",
